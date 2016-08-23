@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            在线预约-百爪鱼
+        </title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <link href="../css/main.css" rel="stylesheet" />
+        <link href="../css/dsn.css" rel="stylesheet"/>
+        <script src="../js/jquery-1.9.0.min.js"></script>
+        <script src="../js/jquery.lazyload.min.js"></script>
+        <script src="../js/dsn.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="headerTop">
+                <span onclick="location.href='../index.html'">百爪鱼</span>
+                <i>预约咨询</i>
+                <a href="#" class="dsn-icon" id="show-pop-menus"></a>
+            </div>
+        </header>
+        <div class="pop-menus">
+            <a href="" class="login-info">设计师</a>
+	        <a href="javascript:void(0)" class="login-exit" onclick="logout()">[退出]</a>
+	        <h1><a href="#" class="dsn-icon" id="hide-pop-menus"></a></h1>
+            <ul class="clearfix">
+                <li><a href="../index.html" class="dsn-icon"></a><span>首页</span></li> 
+			    <li><a href="../decorate/decorate-pics.html" class="dsn-icon"></a><span>装修图库</span></li> 
+			    <li><a href="../case/case.html" class="dsn-icon"></a><span>设计案例</span></li> 
+			    <li><a href="../designer/designer.html" class="dsn-icon"></a><span>找设计师</span></li> 
+			    <li><a href="../demand/demand.html" class="dsn-icon"></a><span>提交需求</span></li>
+            </ul>
+        </div>
+        <div class="receive-phone no_app_push">
+            留下您的信息，让一野室内设计事务所联系您
+        </div>
+        <form action="" name="appform" method="post">
+            <div class="user-frame">
+                <input id="zxd-name" type="text" placeholder="您的称呼" name="name" />
+            </div>
+            <div class="user-frame">
+                <input id="zxd-tel" type="tel" name="mobile" pattern="1[3|4|5|7|8|][0-9]{9}" placeholder="手机号码" />
+            </div>
+            <div class="user-frame">
+                <input type="text" id="areaSel" class="area-sel" name="area" placeholder="房屋面积"/>
+                <label class="unit">㎡</label>
+            </div>
+            <div class="user-frame after-arrow" id="project-type">
+                <select id="select-itme-type" name="hometype">
+                    <option>房屋类型</option>
+                    <option value="1">住宅空间</option>
+                    <option value="2">餐饮空间</option>
+                    <option value="3">办公空间</option>
+                    <option value="4">酒店空间</option>
+                    <option value="5">商业展示</option>
+                    <option value="6">娱乐空间</option>
+                    <option value="7">休闲场所</option>
+                    <option value="8">文化空间</option>
+                    <option value="9">医疗机构</option>
+                    <option value="10">售楼中心</option>
+                    <option value="11">金融机构</option>
+                    <option value="12">运动场所</option>
+                    <option value="13">教育机构</option>
+                    <option value="14">其他</option>
+                </select>
+                <label id="getText"></label>
+            </div>
+            <div class="select-city clearfix">
+                <select id="s3" hidden="hidden"></select>
+                <div id="select-province" class="provincePos">
+                    <select name="User_Shen" id="User_Shen" onChange="changeProvince('User_Shen','User_City','User_Town');"></select>
+                </div>
+                <div id="select-city" class="cityPos">
+                    <select name="User_City" id="User_City">
+                    </select>
+                </div>
+                <input type="hidden" id="User_Town" name="User_Town" value="" />
+            </div>
+            <div class="user-frame">
+                <input type="text" id="markTxt" name="remark" placeholder="备注信息" />
+            </div>
+            <input type="hidden" value="554997" id="uid" name="uid" />
+            <input type="button" class="submitBtn" id="zxd-form-submit" value="提交">
+        </form>
+        <div class="botTip">温馨提示：
+            <br>
+            1.百爪鱼针对所有用户不收取任何交易服务费用，因此不存在交易服务费用的问题；
+            <br>
+            2.与设计师进行线下交易而造成的资金损失百爪鱼网是完全没办法处理的，请用户朋友们切记，只有选择在线交易才能保障您的权益。
+            <br>
+        </div>
+        <div class="zxd-dialog">
+            <p class="zxd-dialog-title">恭喜您，预约成功！</p>
+            <p class="zxd-dialog-info">土巴兔客服将会在24小时内与您电话联系，审核信息真实性，以便安排服务。</p>
+            <a href="#" id="zxd-dialog-ok" class="zxd-dialog-btn">好的</a>
+        </div>
+        <div class="zxd-mask"></div>
+        <script src="../js/GlobalProvinces.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var gpm = new GlobalProvincesModule;
+            gpm.def_province = ["省/市", ""];
+            gpm.def_city1 = ["市/地区", ""];
+            gpm.def_city2 = ["县/市", ""];
+            gpm.initProvince(document.getElementById('User_Shen'));
+            gpm.initCity1(document.getElementById('User_City'), gpm.getSelValue(document.getElementById('User_Shen')));
+        </script>
+        <script>
+            /*省市区选择*/
+            function checkForm() {
+                var name = $('#zxd-name').val(),
+                tel = $('#zxd-tel').val(),
+                province = $('#User_Shen').val(),
+                city = $('#User_City').val(),
+                areaSel = $("#areaSel").val(),
+                marktxt = $("#markTxt").val(),
+                type = $('#select-itme-type').val();
+
+                if (!name) {
+                    alert('请填写您的称呼');
+                    $('#zxd-name').focus();
+                    return;
+                }
+                if (!tel) {
+                    alert('请填写您的手机号码，方便设计师第一时间联系您');
+                    $('#zxd-tel').focus();
+                    return;
+
+                }
+                var telRegexp = /^(1[3|4|5|7|8|][0-9]{9}$)/;
+                if (!telRegexp.test(tel)) {
+                    alert('请填写正确的中国大陆11位手机号码');
+                    $('#zxd-tel').focus();
+                    return;
+                }
+
+                if (!areaSel) {
+                    alert('请填写您的房屋面积');
+                    $('#areaSel').focus();
+                    return;
+                }
+                if (isNaN(areaSel)) {
+                    alert('房屋面积只能填写数字');
+                    $('#areaSel').focus();
+                    return;
+                }
+                if (type == "房屋类型") {
+                    alert('请选择您的房屋类型');
+                    return;
+                }
+
+                if (province == '') {
+                    alert('请填写您所在的省');
+                    return;
+                }
+                if (city == '') {
+                    alert('请填写您所在的市');
+                    return;
+                }
+                return true;
+            }
+            function scrollHandle(e) {
+                e.preventDefault();
+            }
+            $('.zxd-mask').height($(document).height());
+            $('#zxd-tel').blur(function(e) {
+                var telRegexp = /^(1[3|5|8])[\d]{9}$/,
+                tel = $('#zxd-tel').val();
+
+                if (!telRegexp.test(tel)) {
+                
+                } else {
+                
+                }
+                if (!$("#zxd-tel").val()) {
+                
+                }
+            });
+            $('#zxd-form-submit').click(function(e) {
+                e.preventDefault();
+                if (checkForm()) {
+                    //百度统计函数
+                    try {
+                        _hmt && _hmt.push(['_trackEvent', 'msjsyy', 'myytj', '4_2']);
+                    } catch(e) {
+
+}
+                    var uid = $('#uid').val(),
+                    name = $('#zxd-name').val(),
+                    mobile = $('#zxd-tel').val(),
+                    province = $('#User_Shen').val(),
+                    city = $('#User_City').val(),
+                    area = $("#areaSel").val(),
+                    remark = $("#markTxt").val(),
+                    type = $('#select-itme-type').val();
+
+                    $.post('http://m.shejiben.com/zsj/post', {
+                        'uid': uid,
+                        'name': name,
+                        'mobile': mobile,
+                        'area': area,
+                        'hometype': type,
+                        'province': province,
+                        'city': city,
+                        'remark': remark
+                    },
+                    function(data) {
+                        if (data == 'ok') {
+                            location.href = "http://m.shejiben.com/zsj/success/uid/" + uid + '/';
+                            appform.reset();
+                        } else {
+                            alert(data);
+                        }
+                    },
+                    'text');
+                }
+            });
+            /*省市区选择结束*/
+        </script>
+        <input type='hidden' id='pagename' value='yuyue' />
+        <div class="tel_400">
+            <a href="tel:13825433980">
+                <span class="span-info">找设计师请拨打：</span>
+                <i class="icon_tel_red"></i>
+                <span class="span-tel">13825433980</span>
+            </a>
+        </div>
+        <div class="bottombar"></div>
+        <div class="pg-ft">
+	      <ul class="terminal-nav">
+	        <li>
+	          <a class="active" href="javascript:void(0)">触屏版</a>
+	        </li>
+	        <li>
+	          <span class="i-sep"></span>
+	          <a href="../../pc/index.action">电脑版</a>
+	          <span class="i-sep"></span>
+	        </li>
+	        <li>
+	          <a href="" rel="nofollow">
+	            关于我们
+	          </a>
+	        </li>
+	      </ul>
+	      <div class="company-info">
+	        @2014 百爪鱼 粤ICP备08125558号-2
+	      </div>
+	   </div>
+	   <div id="scrollButton" class="scrollButton"></div>
+    </body>
+
+</html>

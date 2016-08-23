@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>设计案例</title>
+    <meta name="description" content="" />
+    <meta name="mobile-agent" content=""/>
+    <link type="text/css" rel="stylesheet" href="../css/new_global.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/works.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/header_menu.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/common.css"/>
+    <script type="text/javascript">
+  		var pathName = window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/sea.js"></script>
+    <script type="text/javascript">
+      seajs.config({
+        alias: {
+          'jquery': path+'/html/pc/js/jquery_module.js',
+          'common': path+'/html/pc/js/main.js',
+          'form': path+'/html/pc/js/module.form.js',
+          'ui': path+'/html/pc/js/module.ui.js',
+          'colorbox': path+'/html/pc/js/jquery.colorbox.min.js',
+          'newHeader': path+'/html/pc/js/userCenter.js'
+        },
+        preload: ['jquery', 'common'] //预加载jquery和main.js
+      });
+      $(function(){
+      	  //筛选条件选择样式切换
+	      $(".selectLsist a").click(function(){
+	      	$(this).addClass("onselect").siblings().removeClass("onselect");
+	      	var id = $(this).find("span").attr("id");
+	      	alert("id ："+id);
+	      });
+      });
+    </script>
+    <style type="text/css">
+      /*内页是窄版*/ .index_logo,.top_menu{width:990px;} .index_logo #search_case{margin-left:100px !important;}
+    </style>
+  </head>
+  <body>
+    <div class="sjbNewTop" id="sjbNewTop">
+      <div class="newTopBg">
+      	<div class="head1">
+          <div class="hea_top_right">
+            <ul class="tp_node">
+              <li style="width:90px;" id="nav_login" >
+                <span id="userName" class="name">
+                  <a href="" class="bg1" id="bg" onblur="if(this.rel==1) {this.className='bg1'; $('caozuo').style.display='none'}"
+                  rel="1" hidefocus="">
+                    <span class="nick">业主</span>
+                    <em class="downAdrrow"></em>
+                  </a>
+                  <div class="caozuo" id="caozuo" style="display: none;" onmouseover="$('bg').rel=2;" onmouseout="$('bg').rel=1;">
+                    <div class="redArrow"></div>
+                    <ul class="cz">
+                      <li>
+                        <a href="" class="my">个人中心</a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的收藏
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的问答
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="jy">
+                          	我的交易
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的金币
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的余额
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	账号设置
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="tc">
+                          	退出
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!-- 申请定制设计 -->
+              <li class="dzsj">
+                <a href="" target="_blank" rel="nofollow">申请定制设计</a>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--客服服务 -->
+              <li class="cur" style="width:80px;">
+                <a href="javascript:;">
+                     客服服务
+                  <span class="jt"></span>
+                </a>
+                <div class="kf_server" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="kflive800" lim_company="235802" lim_skill="3012" rel="nofollow">在线客服</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow" target="_blank">意见反馈</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">帮助中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--设计师中心 -->
+              <li class="cur" style="width:92px;">
+                <a href="../designer/designer-index.html">
+                	设计师中心
+                  <span class="jt"></span>
+                </a>
+                <div class="sj_center" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="../designer/order-home.html" rel="nofollow">接单大厅</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">社交广场</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">模型下载</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">推广中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="newMessage" class="newMessage">
+            <div class="closeNewMessage" id="closeNewMessage"></div>
+            <div class="messageItem" id="messageItem"></div>
+            <p class="clear"></p>
+          </div>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航-->
+      <div class="index_logo">
+        <a href="" title="">
+          <div class="logo"></div>
+        </a>
+        <div id="search_case">
+          <form id="quicksearch" method="get" action="" target="_blank">
+            <input type="hidden" name="searchType" value="1" id="searchType"/>
+            <span id="search_span">
+              <div id="search_title">找图片</div>
+              <em class="arrow"></em>
+              <label id="s_zsj" style="display: none;">
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="2">找图集</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="10"> 找案例</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="7">找设计师</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="9">找问答</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="3">找模型</a>
+              </label>
+            </span>
+            <input type="text" value="请输入搜索关键词" class="key" name="q" id="search_val"/>
+            <em class="icon_search"></em>
+            <input type="submit" value="搜索" class="submit"/>
+          </form>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航 end-->
+    </div>
+    <p class="clear"></p>
+    <!--主导航-->
+    <div class="wrap wrap_top_menu">
+      <div class="top_menu">
+        <!--整站主导航-->
+        <ul>
+          <li>
+            <a href="../index.html">首页</a>
+          </li>
+          <li class="cur">
+            <a href="">设计案例</a>
+            <div class="inner_menu">
+              <a href="case.html">网咖案例</a>
+              <a href="case.html">电竞案例</a>
+              <a href="case-explain.html">案例解析</a>
+            </div>
+          </li>
+          <li>
+            <a href="../pics/pics-case.html">装修图库</a>
+            <div class="inner_menu">
+              <a href="../pics/pics-case.html">网咖图库</a>
+              <a href="../pics/pics-case.html">电竞图库</a>
+              <a href="../pics/pics-topic.html">图库专题</a>
+            </div>
+          </li>
+          <li>
+            <a href="">有问必答</a>
+          </li>
+          <li>
+            <a href="../designer/designer-index.html">找设计师</a>
+          </li>
+          <li>
+            <a href="">逛商品</a>
+          </li>
+          <li class="last">
+            <a href="javascript:;">设计师专区</a>
+            <div class="inner_menu">
+              <a href="">3DMAX模型下载</a>
+              <a href="">设计资讯</a>
+              <a href="">人物专访</a>
+              <a href="">人脉广场</a>
+              <a href="">空间谈</a>
+            </div>
+          </li>
+        </ul>
+        <!--整站主导航 End-->
+        <!--首页面包屑导航-->
+        <!--首页面包屑导航 end-->
+      </div>
+    </div>
+    <!--主导航-->
+    <div class="dmato"></div>
+    <div class="content_width">
+      <div class="content_width ">
+      	<!-- 案例搜索下拉框脚本 -->
+        <script type="text/javascript">
+          var token = "0";
+          var appid = "0";
+          var openid = "0";
+          var token_weibo = "0";
+          seajs.use(['newHeader', 'common'],
+          function(Header, common) {
+            $(document).ready(function() {
+              Header.init();
+              common.initHeader();
+              $('#quicksearch .submit').click(function() {
+                return common.checkSearchForm();
+              });
+            });
+
+            var searchType = "10";
+            var arr = new Array("1", "2", '10', '7', '9', '3');
+            var urlArr = new Array({
+              '1': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索图片的关键词，如：儿童房",
+                3 : "找图片　　"
+              }],
+              '2': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索灵感图集",
+                3 : "找图集"
+              }],
+              '10': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索案例",
+                3 : "找案例"
+              }],
+              '7': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索设计师",
+                3 : "找设计师"
+              }],
+              '9': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索问答",
+                3 : "找问答"
+              }],
+              '3': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索模型",
+                3 : "找模型　"
+              }]
+            });
+            common.searchFun(searchType, arr, urlArr);
+            common.searchBannerEvent(arr, urlArr);
+          });
+        </script>
+        <style type="text/css">
+          /*内页是窄版*/ .index_logo,.top_menu{width:990px;} .index_logo #search_case{margin-left:
+          100px !important;}
+        </style>
+        <!-- 2015.7.13修改的样式 -->
+        <style type="text/css">
+          /*改为宽版*/ .sjbNewTop .newTopBg .head1 , .index_logo, .top_menu{width:1180px;}
+          .content_width_index{padding-top: 0px !important;z-index: 100 !important;}
+          .content_width { width: 1180px;} .index_logo #search_case {margin-left:
+          130px !important;} .ask_links{ width: 1180px;} .ask_links .itemModule .itemTips{
+          width: 1065px;}
+        </style>
+        <p class="clear"></p>
+        <div class="crumbs">
+          <span>我的位置：</span>
+          <span>
+            <a href="">百爪鱼</a>
+          </span>
+          	＞
+          <span>
+            <a href="">网咖案例</a>
+          </span>
+        </div>
+        <!-- 筛选框 -->
+        <div class="fiterbox">
+          <div class="fiterList">
+            <div class="fiterLine">
+              <span class="title">网咖风格：</span>
+              <div class="selectLsist">
+                <a href="javascript:void(0)" class="onselect">
+                  <span id="0">全部</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="1">欧式</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="2">中式</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="3">新古典</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="4">东南亚</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="5">美式</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="6">田园</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="7">地中海</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="8">现代</span>
+                </a>
+              </div>
+            </div>
+            <div class="fiterLine">
+              <span class="title">地段：</span>
+              <div class="selectLsist">
+                <a href="javascript:void(0)" class="onselect">
+                  <span id="9">全部</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="10">小地段</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="11">二居</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="12">三居</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="13">四居</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="14">复式</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="15">样板房</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="16">别墅豪宅</span>
+                </a>
+              </div>
+            </div>
+            <div class="fiterLine">
+              <span class="title">造价：</span>
+              <div class="selectLsist">
+                <a href="" class="onselect">
+                  <span>全部</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="17">0-5万</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="18">5-10万</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="19">10-15万</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="20">15-30万</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="21">30-50万</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="22">50-100万</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="23">100万以上</span>
+                </a>
+              </div>
+            </div>
+            <div class="fiterLine">
+              <span class="title">面积：</span>
+              <div class="selectLsist">
+                <a href="" class="onselect">
+                  <span id="24">全部</span>
+                </a>
+                <a href="javascript:void(0)">
+                  <span id="25">30-60平米</span>
+                </a>
+                <a href="javascript:void(0)" >
+                  <span>60-90平米</span>
+                </a>
+                <a href="javascript:void(0)" >
+                  <span id="26">90-120平米</span>
+                </a>
+                <a href="javascript:void(0)" >
+                  <span id="26">120-140平米</span>
+                </a>
+                <a href="javascript:void(0)" >
+                  <span id="27">140-200平米</span>
+                </a>
+                <a href="javascript:void(0)" >
+                  <span id="28">200平米以上</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 筛选框 END -->
+        <!-- 列表 -->
+        <div class="caseImageList">
+          <div class="caseList">
+            <a href="case-detail.html" target="_blank" >
+              <img src="http://img.shejiben.com/front_new/bg/layout.gif" data-original="http://pic1.shejiben.com/i/upload/2016/03/25/20160325145705-618ae8bb-la.jpg"
+               width="282" height="282" />
+            </a>
+            <div class="caseIntroduce">
+              <a href="case-detail.html" target="_blank" >
+                <p class="caseTitle">人闲桂花落</p>
+              </a>
+              <p class="caseProperty">
+                <span class="caseSpace">复式</span>
+                <span class="delimiter">|</span>
+                <span class="caseStyle">现代</span>
+                <span class="delimiter">|</span>
+                <span class="caseArea">280平米</span>
+                <span class="delimiter">|</span>
+                                    造价：
+                <span class="casePrice">46万元</span>
+              </p>
+            </div>
+            <div class="delimiter_s"></div>
+            <div class="caseAuthor">
+              <div class="authorHeadPhoto float_l">
+                <img src="http://pic.shejiben.com/user/85/sjb_headphoto_2090485.jpg?1458283140" alt="尚层装饰北京有限公司" width="22" height="22" />
+              </div>
+              <div class="authorNick float_l">
+                设计师：
+                <a class="showUser" data-id="2090485" href=""
+                target="_blank">尚层装饰北京有限公司</a>
+              </div>
+              <p class="clear"></p>
+            </div>
+          </div>
+          <div class="caseList">
+            <a href="case-detail.html" target="_blank" alt="">
+              <img src="http://img.shejiben.com/front_new/bg/layout.gif" data-original="http://pic1.shejiben.com/i/upload/2016/03/25/20160325123157-bea2590f-la.jpg"
+              alt="" width="282" height="282" />
+            </a>
+            <div class="caseIntroduce">
+              <a href="case-detail.html" target="_blank" alt="成都壹玖玖壹设计机构-《1991DESI">
+                <p class="caseTitle">成都壹玖玖壹设计机构-《1991DESI</p>
+              </a>
+              <p class="caseProperty">
+                <span class="caseSpace">三居</span>
+                <span class="delimiter">|</span>
+                <span class="caseStyle">美式</span>
+                <span class="delimiter">|</span>
+                <span class="caseArea">160平米</span>
+                <span class="delimiter">|</span>
+                                造价：
+                <span class="casePrice">暂无</span>
+              </p>
+            </div>
+            <div class="delimiter_s">
+            </div>
+            <div class="caseAuthor">
+              <div class="authorHeadPhoto float_l">
+                <img src="http://pic.shejiben.com/user/74/sjb_headphoto_1222874.jpg?1458658066" alt="" width="22" height="22" />
+              </div>
+              <div class="authorNick float_l">
+                设计师：
+                <a class="showUser" data-id="1222874" href="" target="_blank">成都壹玖玖壹设计机构</a>
+              </div>
+              <p class="clear">
+              </p>
+            </div>
+          </div>
+          <div class="caseList">
+            <a href="case-detail.html" target="_blank" alt="">
+              <img src="http://img.shejiben.com/front_new/bg/layout.gif" data-original="http://pic1.shejiben.com/i/upload/2016/03/24/20160324183336-285a73ef-la.jpg"
+              alt="" width="282" height="282" />
+            </a>
+            <div class="caseIntroduce">
+              <a href="case-detail.html" target="_blank" alt="">
+                <p class="caseTitle">杭州·长龙领航90地段样板房</p>
+              </a>
+              <p class="caseProperty">
+                <span class="caseSpace">样板房设计</span>
+                <span class="delimiter">|</span>
+                <span class="caseStyle"></span>
+                <span class="delimiter">|</span>
+                <span class="caseArea">90平米</span>
+                <span class="delimiter">|</span>造价：
+                <span class="casePrice">45万元</span>
+              </p>
+            </div>
+            <div class="delimiter_s">
+            </div>
+            <div class="caseAuthor">
+              <div class="authorHeadPhoto float_l">
+                <img src="http://pic.shejiben.com/user/46/headphoto_558746.jpg?1383788939"
+                alt="吴文粒" width="22" height="22" />
+              </div>
+              <div class="authorNick float_l">
+                  设计师：
+                <a class="showUser" data-id="558746" href=""
+                target="_blank">
+                  吴文粒
+                </a>
+              </div>
+              <p class="clear"></p>
+            </div>
+          </div>
+          <div class="caseList">
+            <a href="case-detail.html" target="_blank" alt="">
+              <img src="http://img.shejiben.com/front_new/bg/layout.gif" data-original="http://pic1.shejiben.com/i/upload/2016/03/24/20160324180552-d4a5fb4e-la.jpg"
+              alt="" width="282" height="282" />
+            </a>
+            <div class="caseIntroduce">
+              <a href="case-detail.html" target="_blank" alt="">
+                <p class="caseTitle">荷香细语—现代中式</p>
+              </a>
+              <p class="caseProperty">
+                <span class="caseSpace">三居</span>
+                <span class="delimiter">|</span>
+                <span class="caseStyle">混搭</span>
+                <span class="delimiter">|</span>
+                <span class="caseArea">120平米</span>
+                <span class="delimiter">|</span>
+                               造价：
+                <span class="casePrice">40万元</span>
+              </p>
+            </div>
+            <div class="delimiter_s">
+            </div>
+            <div class="caseAuthor">
+              <div class="authorHeadPhoto float_l">
+                <img src="http://pic.shejiben.com/user/91/sjb_headphoto_6197291.jpg?1458815479" alt="张来香" width="22" height="22" />
+              </div>
+              <div class="authorNick float_l">
+                设计师：
+                <a class="showUser" data-id="6197291" href="" target="_blank">张来香</a>
+              </div>
+              <p class="clear"></p>
+            </div>
+          </div>
+          <div class="caseList">
+            <a href="case-detail.html" target="_blank" alt="">
+              <img src="http://img.shejiben.com/front_new/bg/layout.gif" data-original="http://pic1.shejiben.com/i/upload/2016/03/24/20160324173547-4dfed8a6-la.jpg"
+              alt="" width="282" height="282" />
+            </a>
+            <div class="caseIntroduce">
+              <a href="case-detail.html" target="_blank" alt="">
+                <p class="caseTitle">苏州晓安设计-橡树湾-北欧-春邑</p>
+              </a>
+              <p class="caseProperty">
+                <span class="caseSpace">二居</span>
+                <span class="delimiter">|</span>
+                <span class="caseStyle"></span>
+                <span class="delimiter">|</span>
+                <span class="caseArea">90平米</span>
+                <span class="delimiter">|</span>
+                                造价：
+                <span class="casePrice">17万元</span>
+              </p>
+            </div>
+            <div class="delimiter_s">
+            </div>
+            <div class="caseAuthor">
+              <div class="authorHeadPhoto float_l">
+                <img src="" alt="" width="22" height="22" />
+              </div>
+              <div class="authorNick float_l">
+                设计师：
+                <a class="showUser" data-id="886377" href="" target="_blank"> 周晓安 </a>
+              </div>
+              <p class="clear">
+              </p>
+            </div>
+          </div>
+          <p class="clear"></p>
+        </div>
+        <div class="page">
+          <p class="page_num">
+            <a class="on">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a href="">8</a>
+            <a href="">9</a>
+            <a href="javascript:;">···</a>
+            <a href="">185</a>
+            <a href="" class="next" id=nextpageid>下一页&gt;</a>
+          </p>
+        </div>
+        <!-- 列表 END -->
+        <script type="text/javascript">
+          seajs.use(path+'/html/pc/js/case.js');
+          seajs.use('common',
+           function(SJB) {
+             SJB.commonSubToolBar.init();
+          });
+          seajs.use('common', function(SJB) {
+		     SJB.commonBottomZb.init();
+		  });
+        </script>
+      </div>
+    </div>
+    <!--底部模版 闭合标签配对-->
+    <!--底部模版 闭合标签配对 End-->
+    <p class="clear"></p>
+    <bgsound src="" autostart=true loop=2 id='bgmusic'></bgsound>
+      <p class="cl"></p>
+      <!--版权等-->
+      <div class="wrap wrap_cppyright">
+        <div class="cppyright_content">
+          <div class="string clear"></div>
+          <ul>
+            <li>
+              <a href="" rel="nofollow" target="_blank">关于我们</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">联系我们</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">意见建议</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">帮助中心</a>
+            </li>
+            <li class="no_border">
+              <a href="" rel="nofollow" target="_blank">使用条款</a>
+            </li>
+          </ul>
+          <p class="statement">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。</p>
+          <p class="bottom_bah">
+            ©2012shejiben.com,All Rights Reserved.(<a hidefocus="" href="" rel="nofollow"> 粤ICP备0812558号-2</a>)
+          </p>
+          <div class="bottom_icon">
+            <a href="" target="_blank" rel="nofollow" title="" alt="">
+              <label class="icon_gongan"></label>
+            </a>
+            <a rel="nofollow" href="" target="_blank">
+              <label class="icon_falv"></label>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--版权等 End-->
+  </body>
+</html>

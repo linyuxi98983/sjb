@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>作品详情</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="mobile-agent" content=""/>
+    <link href="../css/global.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/sjs_dwt_new.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/header_menu.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+  		var pathName = window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.colorbox.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/myUserCenter.js"></script>
+  </head>
+  <body>
+    <div class="sjbNewTop" id="sjbNewTop">
+      <div class="newTopBg">
+        <div class="head1">
+          <div class="hea_top_right">
+            <ul class="tp_node">
+              <li style="width:90px;" id="nav_login">
+                <a href="" rel="nofollow">登录</a>
+                <a href="" rel="nofollow" style="margin-left:15px;">注册</a>
+                <span style="display:none;">
+                  <span>nini</span>
+                  <span>消息</span>
+                </span>
+              </li>
+              <li class="po">|</li>
+              <li class="dzsj">
+                <a href="" target="_blank" rel="nofollow">申请定制设计</a>
+              </li>
+              <li class="po">|</li>
+              <li class="cur" style="width:80px;">
+                <a href="javascript:;">客服服务
+                  <span class="jt"></span>
+                </a>
+                <div class="kf_server" style="display:none;">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="kflive800" lim_company="235802" lim_skill="3012"rel="nofollow">在线客服</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow" target="_blank">意见反馈</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">帮助中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="po">|</li>
+              <li class="cur" style="width:92px;">
+                <a href="javascript:;">设计师中心
+                  <span class="jt"></span>
+                </a>
+                <div class="sj_center" style="display:none;">
+                  <ul>
+                    <li>
+                      <a href="" rel="nofollow">接单大厅</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">社交广场</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">模型下载</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">推广中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="newMessage" class="newMessage">
+            <div class="closeNewMessage" id="closeNewMessage"></div>
+            <div class="messageItem" id="messageItem"></div>
+            <p class="clear"></p>
+          </div>
+        </div>
+      </div>
+      <div class="index_logo">
+        <a href="" title=" ">
+          <div class="logo"></div>
+        </a>
+        <div id="search_case">
+          <form id="quicksearch" method="get" action=""
+          onsubmit="return checkSearchForm()" target="_blank">
+            <input type="hidden" name="searchType" value="" id="searchType" />
+            <span id="search_span">
+              <div id="search_title"></div>
+              <em class="arrow"></em>
+              <label id="s_zsj" style="display:none;"></label>
+            </span>
+            <input type="text" value="请输入搜索关键词" onfocus=""
+            onblur="" class="key" name="q" id="search_val"/>
+            <em class="icon_search"></em>
+            <input type="submit" value="搜索" class="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <p class="clear"></p>
+    <div class="wrap wrap_top_menu">
+      <div class="top_menu">
+        <ul>
+          <li>
+            <a href="../index.html">首页</a>
+          </li>
+          <li>
+            <a href="case.html">设计案例</a>
+            <div class="inner_menu">
+              <a href="case.html">网咖案例</a>
+              <a href="case.html">电竞案例</a>
+              <a href="case-explain.html">案例解析</a>
+            </div>
+          </li>
+          <li>
+            <a href="../pics/pics-case.html">装修图库</a>
+            <div class="inner_menu">
+              <a href="../pics/pics-case.html">网咖图库</a>
+              <a href="../pics/pics-case.html">电竞图库</a>
+              <a href="../pics/pics-topic.html">图库专题</a>
+            </div>
+          </li>
+          <li>
+            <a href="">有问必答</a>
+          </li>
+          <li>
+            <a href="../designer/designer-index.html">找设计师</a>
+          </li>
+          <li>
+            <a href="">逛商品</a>
+          </li>
+          <li class="last">
+            <a href="javascript:;">
+              设计师专区
+            </a>
+            <div class="inner_menu">
+              <a href="">3DMAX模型下载</a>
+              <a href="">设计资讯</a>
+              <a href="">人物专访</a>
+              <a href="">人脉广场</a>
+              <a href="">空间谈</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dmato"></div>
+    <div class="content_width">
+      <div class="content_width ">
+      	<script type="text/javascript">
+          blogcheck();
+          greet_text();
+          var token = "0";
+          var appid = "0";
+          var openid = "0";
+          var token_weibo = "0";
+		  
+          
+          var searchType = "";
+          var arr = new Array("1", "2", '10', '7', '9', '3');
+          var urlArr = new Array({
+            '1': [{
+              0 : "",
+              1 : "q",
+              2 : "搜索图片的关键词，如：儿童房",
+              3 : "找图片　　"
+            }],
+            '2': [{
+              0 : "",
+              1 : "q",
+              2 : "搜索灵感图集",
+              3 : "找图集"
+            }],
+            '10': [{
+              0 : "",
+              1 : "q",
+              2 : "搜索案例",
+              3 : "找案例"
+            }],
+            '7': [{
+              0 : "",
+              1 : "q",
+              2 : "搜索设计师",
+              3 : "找设计师"
+            }],
+            '9': [{
+              0 : "http://www.shejiben.com/search.php",
+              1 : "q",
+              2 : "搜索问答",
+              3 : "找问答"
+            }],
+            '3': [{
+              0 : "http://www.shejiben.com/search.php",
+              1 : "q",
+              2 : "搜索模型",
+              3 : "找模型　"
+            }]
+          });
+
+          jq(function() {
+            searchFun(searchType);
+            /**重置掉搜索下拉的宽度**/
+            resetSliderWidth();
+            jq("#search_span").hover(function() {
+              resetSliderWidth();
+            })
+
+          });
+
+          function resetSliderWidth() {
+            var searchW = jq('#search_title').width();
+            jq('#s_zsj').css("width", (searchW - 2) + 'px');
+          }
+
+          jQuery('.kflive800').bind('click',
+          function() {
+            window.open('http://dzt.twos.net.cn/LR/Chatpre.aspx?id=DZT58706561&lng=cn', '_blank', "height=450,width=630");
+          })
+        </script>
+        <style type="text/css">
+          /*内页是窄版*/ .index_logo,.top_menu{width:990px;} .index_logo #search_case{margin-left:
+          100px !important;}
+        </style>
+        <p class="clear"></p>
+        <div class="pageTag">
+          	我的位置：
+          <a href="">百爪鱼</a>
+          	＞
+          <a href="">网咖案例</a>
+          <i></i>
+          	＞忆.往昔——美式迷人情调
+          <p class="clear"></p>
+        </div>
+        <div class="photo_box_new" style="display:none;">
+          <div class="reels_pic" onselectstart="return false;">
+            <span class="pic" id="container_pic"></span>
+            <span class="pic_list" style="display:none"></span>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+            <div class="btn_all">
+              <div class="btn_share">
+                <span class="btn_name">分享</span>
+                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare share-bd">
+                  <a class="bds_baidu"></a>
+                  <a class="bds_qzone"></a>
+                  <a class="bds_tqq"></a>
+                  <a class="bds_tsina"></a>
+                </div>
+              </div>
+              <div class="question">
+                <em class="icon icon_question"></em>
+                <a href="javascript:void(0);">提问(0)</a>
+              </div>
+              <div class="collection" data-src=''>
+                <em class="icon icon_collection"></em>
+                <a href="javascript:void(0);"> 收藏(0)</a>
+              </div>
+              <div class="download">
+                <em class="icon icon_download"></em>
+                <a href="javascript:void(0);">下载(0)</a>
+              </div>
+            </div>
+          </div>
+          <div class="reels_msg" id="lbAnchors">
+            <div id="scroller" style="height: 466px;">
+              <div id="scroll_up"></div>
+              <div id="scroll_bar" style="display: block; top: 414px;"></div>
+              <div id="scroll_down"></div>
+            </div>
+            <div id="shower">
+              <div class="column_name">
+                <em class="title"></em>
+                <em class="icon_close"></em>
+              </div>
+              <div class="user_msg">
+                <a href="#" class="head" id="user_head"></a>
+                <div class="msg">
+                  <span class="name">
+                    <a href="#" id="user_name"></a>
+                  </span>
+                  <span class="location">
+                    <em class="icon icon_location"></em>
+                    <em id="address"></em>
+                  </span>
+                  <span class="price">
+                    <em class="icon icon_price"></em>
+                    <em id="price_datail"></em>
+                  </span>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <div class="user_reservation">
+                <a href="javascript:void(0);" id="sjs_case_image" class="btn_reservation"></a>
+                <span class="tel">
+                  <em class="icon icon_tel"></em>
+                  <em class="400_num"></em>
+                </span>
+              </div>
+              <div class="questions" style="display:none;">
+                <span class="title">
+                  <em class="icon icon_question"></em>
+                  <em class="name">该图的问答</em>
+                </span>
+              </div>
+            </div>
+          </div>
+          <a href="" class="cur_url"></a>
+        </div>
+        <div style="display:none">
+          <div id="getImageQuestion">
+            <div class="addToCollectionFormError" style="display:none;">
+              <div class="dialogStatus" id="" style="display:none;color:#f00;">
+              </div>
+            </div>
+            <div class="otherDesignerWorkingOn">正在努力获取这张图片的问题，请稍等...</div>
+          </div>
+          <div id="addQuestionDialog">
+            <div id="addQuestionDialog_0">
+              <div class="addToCollectionFormError">
+                <div class="dialogStatus" id="" style="display:none;color:#f00;"></div>
+              </div>
+              <div class="dialogCaption">您需要的答案可能已经存在：</div>
+              <div class="existQuestions">
+                <ul></ul>
+              </div>
+            </div>
+            <div id="addQuestionDialog_1" style="display:none;">
+              <div class="qTitle">提问
+                <a id="closeQuestionBox" class="close2" href="javascript:;"></a>
+              </div>
+              <form id="addQuestion" name="addQuestion" action="javascript:;">
+                <div class="addToCollectionFormError">
+                  <div class="dialogStatus" id="" style="display:none;color:#f00;"></div>
+                </div>
+                <div>
+                  <input type="text" name="questionTitle" id="questionTitle" placeholder="例如：多大的面积能装修成这样.预算多少"
+                  onfocus=" this.style.border='1px solid #68a666';" onblur="this.style.border='1px solid #d8d8d8'"/>
+                </div>
+                <div>
+                  <textarea id="questionContent" name="questionContent" rows="3" cols="40"
+                  placeholder="对装修设计有疑惑，预算、网咖风格、风水、选材、施工，将你的问题提出来，让业内专家帮你解答，提问最好附上图片哦" onfocus="this.style.border='1px solid #68a666' "
+                  onblur="this.style.border='1px solid #d8d8d8'">
+                  </textarea>
+                </div>
+              </form>
+            </div>
+            <div id="addQuestionDialog_2">
+            </div>
+            <div class="dialogControls">
+              <div class="collect_btn" style="float:left;margin:10px 0px 25px 0px;">
+                <input value="提问" type="button" id="addToQuestion" class="delsubmit newsubmit"/>
+                <p class="pmsg">5000位装修设计专家，三分钟内为您解答设计疑惑</p>
+              </div>
+              <p class="clear"></p>
+            </div>
+            <p class="clear"></p>
+            <div class="dialogCaption" style="display:none;padding:0px 40px;">
+              您需要的答案可能已经存在：
+            </div>
+            <div class="existQuestions newexistQuestions" style="height:120px;padding:0px 40px;">
+              <ul></ul>
+            </div>
+            <p style="padding:0px 30px;">收到答案时，系统将发送邮件到您的注册邮箱</p>
+          </div>
+          <div id="submitQuestionOk">
+            <div class="addToCollectionFormError">
+              <div class="dialogStatus" id="" style="display:none;color:#f00;"></div>
+            </div>
+            <div class="otherDesignerWorkingOn">
+              <a href="" class="lv succ_qu" target="_blank">点击查看我的提问</a>
+            </div>
+          </div>
+          <div id="submitQuestionOk2">
+            <div class="addToCollectionFormError">
+              <div class="dialogStatus" id="" style="display:none;color:#f00;"></div>
+            </div>
+            <div class="otherDesignerWorkingOn">
+              <a href="" class="lv">警告：您的文本中含有系统不允许的内容，被屏蔽.</a>
+            </div>
+          </div>
+          <div id="noLoginSubmitQuestionOk">
+            <div class="otherDesignerWorkingOn">
+              提问成功：由于您未登录百爪鱼，无法接收专家们的回复。
+            </div>
+            <div class="noLoginToLogin">
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" id="blogUid" value="2090485" />
+        <div class="caseInfo">
+          <div class="caseDetail">
+            <h4 class="caseTitle">忆.往昔——美式迷人情调</h4>
+            <div class="caseProperty">
+              <span>参考造价：
+                <em class="red">50万元</em>
+              </span>
+              <span class="del"> | </span>
+              <span>网咖风格：美式</span>
+              <span class="del">|</span>
+              <span>空间：别墅设计</span>
+              <span class="del">|</span>
+              <span>面积：500平米</span>
+              <span class="del">|</span>
+              <span>浏览数：4904</span>
+            </div>
+            <div class="caseDescription">
+              <div class="desTitle">
+                <strong>案例简介</strong>
+                Case description
+              </div>
+              <div class="desIcon"></div>
+              　　好的空间作品就像是在叙述着一个故事，深深地刻写在读者心里。本案的别墅装修设计为龙湖好望山项目，设计师张玲将美式乡村网咖风格自然地流露在细微的每一处。
+              <br/>
+              <br/>
+              　　每一根线条，每一个空间，都经过精心的设计和安排，似乎每一个元素都是为这个空间而生，给予繁忙、嘈杂的生活平添了一份厚厚的记忆和暖暖的感受。
+              <br/>
+              <br/>
+              　　设计师对美式乡村网咖风格有着别样的情怀和独到的见解，通过使用当代造型语言方式去寻求人类历史传统文化脉络延续的根源，打造出了具有如此浓重与深厚文化感的空间环境。整体质感强烈、温馨，似乎每一个细节都在诉说着那个关于历史与记忆的故事。
+            </div>
+            <div class="imgContent">
+              <div class="caseImgList">
+                <div class="wraps">
+                  <div class="case_btn">
+                    <span class="add addQuestion-detail outmouse me_btn new-bg" data-src="http://pic1.shejiben.com/i/upload/2016/03/26/20160326170035-43ad3889-2s.jpg"
+                    data-id="2221417">
+                      <em></em>
+                      <a href="javascript:;">提问</a>
+                    </span>
+                    <span class="add addCollection-detail cols new-bg" data-id="2221417" data-src="http://pic1.shejiben.com/i/upload/2016/03/26/20160326170035-43ad3889-2s.jpg">
+                      <em></em>
+                      <a href="javascript:;">收藏</a>
+                    </span>
+                  </div>
+                  <div class="case_title">
+                    <a href="" target="_blank">美式迷人情调设计书房效果图</a>
+                  </div>
+                </div>
+                <div>
+                  <img class="preview-box" data-id="2221417" src="http://pic1.shejiben.com/i/upload/2016/03/26/20160326170035-43ad3889-2s.jpg"
+                  alt="" onselectstart="return false" ondragstart="return false"
+                  oncontextmenu="return false" />
+                </div>
+                <div class="imgDescription">
+                  浓烈的色彩加上怀旧的复古感，造就了这个具有浓厚艺术气息的书房。在美式情调的空间里，继续品味关于家美好的故事……
+                </div>
+              </div>
+              <div class="caseImgList">
+                <div class="wraps">
+                  <div class="case_btn">
+                    <span class="add addQuestion-detail outmouse me_btn new-bg" data-src="http://pic1.shejiben.com/i/upload/2016/03/26/20160326173505-15094895-2s.jpg"
+                    data-id="2221495">
+                      <em></em>
+                      <a href="javascript:;">提问</a>
+                    </span>
+                    <span class="add addCollection-detail cols new-bg" data-id="2221495" data-src="http://pic1.shejiben.com/i/upload/2016/03/26/20160326173505-15094895-2s.jpg">
+                      <em></em>
+                      <a href="javascript:;">收藏</a>
+                    </span>
+                  </div>
+                  <div class="case_title">
+                    <a href="" target="_blank">美式迷人情调大气休闲区设计效果图</a>
+                  </div>
+                </div>
+                <div>
+                  <img class="preview-box" data-id="2221495" src="http://pic1.shejiben.com/i/upload/2016/03/26/20160326173505-15094895-2s.jpg"
+                  alt="" onselectstart="return false" ondragstart="return false"
+                  oncontextmenu="return false" />
+                </div>
+              </div>
+            </div>
+            <div class="otherCase">
+              <h4>TA的其他作品</h4>
+              <div class="otherCaseContent">
+                <div class="otherCaseList">
+                  <a href="">
+                    <img src="http://pic.shejiben.com/i/upload/2016/04/07/20160407150246-a6483023-la.jpg"
+                    width="320" height="320" alt="" />
+                  </a>
+                  <div class="caseName">树影婆娑清风扬</div>
+                </div>
+                <div class="otherCaseList">
+                  <a href="">
+                    <img src="http://pic1.shejiben.com/i/upload/2016/04/06/20160406100438-ce2b9938-la.jpg"
+                    width="320" height="320" alt="" />
+                  </a>
+                  <div class="caseName">怀旧格调里的自然</div>
+                </div>
+                <p class="clear"></p>
+              </div>
+            </div>
+          </div>
+          <div class='image_comment' id='image_comment'>
+            <p class='p_tlt'>
+              所有评论&nbsp;(0)
+            </p>
+            <ul>
+              <li class='li_01' id='commentBox'>
+                <a href='javascript:void(0)' target='_blank' class='com_a'>
+                  <img src='http://img.shejiben.com/headphoto/noheadphoto.gif'/>
+                </a>
+                <div class='com_div'>
+                  <label class='def_value'>说点什么吧！
+                  </label>
+                  <input class='input_text' id='comment_input' type='text' autocomplete='off'/>
+                  <input class='sub_btn send_comment_btn send_comment_btn_post' value='提交' type='submit'/>
+                </div>
+                <div class='clear'></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="authorInfo_new_outside">
+          <div class="authorInfo_new">
+            <div class="author_info">
+              <a href="/sjs/2090485/" class="author_head">
+                <img src="http://pic.shejiben.com/user/85/sjb_headphoto_2090485.jpg?1458283140"/>
+              </a>
+              <span class="author_name">
+                <a href="/sjs/2090485/" class="name">尚层装饰北京有限公司</a>
+                <span class="icon_renzhen">
+                  <em class="icon_qy" title="企业身份认证"></em>
+                  <em class="icon_zm" title="行业知名设计师"></em>
+                </span>
+                <p class="city">北京
+                  <a href="" target="_blank">北京</a>
+                </p>
+              </span>
+            </div>
+            <div class="order_total">
+              <ul>
+                <li>
+                  <em>2</em>
+                  <label>预约</label>
+                </li>
+                <li>
+                  <em>0</em>
+                  <label>签单</label>
+                </li>
+                <li>
+                  <em>
+                    <a href="">0</a>
+                  </em>
+                  <label>评价</label>
+                </li>
+                <div class="clear"></div>
+              </ul>
+            </div>
+            <div class="price">￥
+              <em>120-480</em>/ ㎡
+            </div>
+            <a class="btn reservation" id="sjs_case_r" href="javascript:void(0)" data-id="2090485">
+             	 找TA设计
+            </a>
+            <a class="btn tel_400" href="javascript:void(0)">
+              <em></em>
+              <label>
+                4006-808-509 转 9999
+              </label>
+              <div class="notice">
+                <p>找设计师？一个电话搞定！</p>
+                <span></span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <p class="clear"></p>
+      <a href="javascript:;" class="topIcon" id="backToTopBtn"></a>
+      
+      <script type="text/javascript" src="../js/popup.js"></script>
+      <script type="text/javascript" src="../js/case_new.js"></script>
+      <script type="text/javascript" src="../js/photocasebox.js"></script>
+    </div>
+    
+    <p class="clear"></p>
+    <script type="text/javascript" src="../js/lazyload.js"></script>
+    <script type="text/javascript" src="../js/blog_yuyue.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        jQuery("img").lazyload({
+          effect: "fadeIn",
+          failurelimit: 10,
+          threshold: 200
+        });
+        jQuery(".pageTag").hover(function() {
+          jQuery(this).find('ul').show();
+        },
+        function() {
+          jQuery(this).find('ul').hide();
+        });
+      });
+    </script>
+    <!-- 这是4个博客top的css -->
+    <div id="bd_statistics"></div>
+    <div id="out_footer">
+      <!-- 尾部开始 -->
+      <p class="cl clear"></p>
+      <div id="sjb_footer_new">
+        <div class="sjb_footer_new">
+          <p class="clear"></p>
+          <div class="sjb-link">
+            <p class="our-links">
+              <a href="" target="_blank" rel="nofollow">关于我们</a>
+              <span class="link-devide">|</span>
+              <a href="" target="_blank" rel="nofollow">联系我们</a>
+              <span class="link-devide">|</span>
+              <a href="" target="_blank" rel="nofollow">意见建议</a>
+              <span class="link-devide">|</span>
+              <a href="" target="_blank" rel="nofollow">帮助中心
+              </a>
+              <span class="link-devide">|</span>
+              <a href="" target="_blank" rel="nofollow">使用条款</a>
+            </p>
+            <p class="statement">
+              免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。
+            </p>
+            <p class="sjs-icp">
+              ©2012 百爪鱼-定制化装修设计服务平台, All Rights Reserved. (
+              <a hidefocus="" href="http://www.miitbeian.gov.cn" rel="nofollow">
+                	粤ICP备08125558号-2
+              </a>
+              )
+            </p>
+            <div class="auth-icons">
+              <a href="http://szcert.ebs.org.cn/d6c3aa01-b00f-4d32-aef4-70ad63021bab"
+              target="_blank" rel="nofollow" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示">
+                <span class="gaj">
+                </span>
+              </a>
+              <a href="" target="_blank" rel="nofollow">
+                <span class="gad"></span>
+              </a>
+              <p class="clear"></p>
+            </div>
+          </div>
+        </div>
+        <p class="cl"></p>
+      </div>
+    </div>
+    <!-- 结束 -->
+    <div id="small_window"></div>
+    <div class="none_f" id="goTop" style="display: block;">
+      <a href="javascript:void(0);" class="make_designer" id="make_designer" onclick="return blog.sendReserveMsg(2090485)"></a>
+      <a href="" target="_blank" class="my_collection" id="my_collection"></a>
+      <a href="javascript:void(0)" class="backTop" id="backTop" onclick="backToTop()" style="display:none;"></a>
+      <div class="pop_code" id="pop_code" style="display:none;">
+        <div class="code_con">
+          <span>
+            <img alt="加百爪鱼为微信好友" width="173" height="173" src="http://img.shejiben.com/front_new/bg/collect_wx.gif"/>
+          </span>
+          <b>
+            加百爪鱼为微信好友
+          </b>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

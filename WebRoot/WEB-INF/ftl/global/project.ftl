@@ -1,0 +1,1 @@
+<#macro spring code>${springUtil.getMessage(code)}</#macro>

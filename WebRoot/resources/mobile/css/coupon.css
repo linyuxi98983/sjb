@@ -1,0 +1,245 @@
+html.hairlines *{border-width:.5px !important;}
+body,header,footer,section,div,span,p,img,a,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,i,b,u,del,button,input,textarea{padding:0;margin:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);font-family:Helvetica;}
+input,textarea{-webkit-user-select:auto !important;}
+:focus{outline:none;}
+img{vertical-align:middle;border:0 none !important;}
+ul{list-style:none;}
+a{text-decoration:none;}
+section{margin:0 auto;}
+header,footer{margin:0 auto;width:100%;}
+em,i{font-style:normal;}
+input{outline:none;}
+html,body{width:100%;height:100%;}
+button{border:0 none !important;}
+table{border-spacing: 0;border-collapse: collapse;}
+u,del{text-decoration:none;}
+/* webkit引擎的浏览器取消默认样式 */
+input[type="submit"],input[type="reset"],input[type="button"],button{-webkit-appearance:none;}
+
+body{background-color:#eee;}
+
+/* media query */
+html,body{font-size:20px;-webkit-overflow-scrolling: touch;}
+@media only screen and (min-width:640px){
+	html,body{font-size:40px;}
+}
+.header .back{text-indent:-99rem;}
+.clearfix:after{clear: both;display: table;content: " "}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.row:before,
+.row:after{
+  display: table;
+  content: " ";
+}
+.row:after{
+    clear: both;
+}
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{
+  position: relative;
+  min-height: 1px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.simple_block{
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 4rem;
+    height:4rem;
+    background: rgba(0,0,0,0.7);
+    z-index: 133;
+    display: none;
+    opacity: 0;
+    color: #fff;
+    top:40%;
+    left:10%;
+}
+.f_mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 111;
+    display:none
+}
+/* 箭头 */
+.arrow_con{display:block;padding:.45rem;line-height:1.2rem;}
+.arrow_con > *{overflow:hidden;}
+.arrow,.arrow_d{display:block;background-position:right center;background-color:white;background-repeat:no-repeat;background-size:.55rem .55rem;}
+.arrow{background-image:url(../images/jump_arrow.png);}
+.arrow_d{background-image:url(../images/arrow_down.png);}
+.arrow_d.up{background-image:url(../images/arrow_up.png);}
+/********************礼券列表********************************/
+.coupon_list.lists{padding-bottom: 2.5rem;}
+.coupon_list ul{width: 91.73%;margin: 0 auto;margin-top: 0.5rem;}
+.coupon_list ul li{border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;margin-bottom:.25rem;background-color:white;}
+.coupon_list ul li a{display:block;}
+.coupon_list .wrap{position:relative;min-height:1.7rem;display: block;height:95px}
+.coupon_list .wrap img{display:block;width:1.7rem;border-radius:.15rem;position:absolute;top:0;left:0;}
+/**
+.coupon_list .wrap span{display:block;width:4rem;position:absolute;top:0;right:0;height:100%;margin-right:.75rem;}
+**/
+.coupon_list .wrap i{display:table;font-size:.75rem;color:#fe435d;font-weight:bold;height:100%;width:100%;text-align:right;}
+.coupon_list .wrap i em{display:table-cell;vertical-align:middle;}
+.coupon_list .wrap .coupon_content{}
+.coupon_list .wrap .coupon_content.coupon_red{background: url(../images/coupon_red.png) repeat-y;background-size: cover;}
+.coupon_list .wrap .coupon_content.coupon_grey{background: url(../images/coupon_grey.png) repeat-y;background-size: cover;}
+.coupon_list .wrap .coupon_content dt{margin-left: 0.3rem;font-size:.55rem;color:#fff;overflow:hidden;line-height: 1.1rem;white-space: nowrap;text-overflow:ellipsis}
+.coupon_list .wrap .coupon_content dd{font-size:.55rem;color:#969696;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-break:break-all;line-height:.6rem;margin-top:.1rem;float:left;}
+.coupon_list .wrap dl{float: left;padding-left:3px;padding-top:30px}
+.coupon_list .wrap .coupon_info{width: 78%;font-size:14px;text-align:center;overflow:hidden;float:right}
+.coupon_list .wrap .coupon_info .deadline{font-size:10px}
+.coupon_list .wrap .coupon_info dt{margin: 0 auto;font-size: 0.6rem;width: 3.675rem;text-align: center;line-height: 0.94rem;}
+.coupon_list .wrap .coupon_info .tag{background-color: #e92e4a;color: #fff;width: 3.1rem;font-size: 0.55rem;height: 0.9rem}
+.coupon_list .wrap .coupon_info .time{color: #000050;}
+.coupon_list .wrap .coupon_info .use_state{color: #323232;}
+.coupon_list .wrap .coupon_info .no_tag{background-color: #fff;}
+.coupon_list .wrap .coupon_info span{font-size:14px;font-weight:bold;}
+
+.coupon_act{position: fixed;bottom:0;left:0;text-align: center;height: 2.25rem;line-height: 2.25rem;background-color: #f75753;color: #fff;font-size: 0.8rem;z-index:999;}
+.coupon_list .wrap .coupon_content dt:first-child{margin-top: 0.3rem;font-size:18px;}
+/********************礼券详情****************************/
+.coupon_detail{background-color: #fff;}
+.coupon_detail .detail_info{margin-left: 0.75rem;width: 85.3%;font-size: 0.65rem;color: #454c5b;border-bottom: 1px solid #e1e1e1;height: 2rem;line-height: 2rem;}
+.coupon_detail .detail_info .use{width: 49%;border-left: 1px solid #e1e1e1;}
+.coupon_detail .detail_info span{margin-left: 0.85rem;}
+.coupon_detail .detail_info:first-child{font-weight: bold;}
+.coupon_detail .detail_info:last-child{border-bottom: none;}
+.coupon_detail{border-bottom: 1px solid #e1e1e1;}
+.coupon_empty{width: 100%;height: 100%;background: url(../images/coupon_empty.png) center  no-repeat #fff;background-size: 5.75rem 8.475rem;margin-top: -4rem;}
+.coupon_active{z-index:2;position:absolute;top:0;right:0;width:2rem;height:2.2rem;line-height:2.2rem;font-size:.7rem;overflow:hidden;t}
+.detail_info .whole_info{line-height: 0.8rem;padding: 0.25rem 0}
+/*************************激活礼券********************************/
+.coupon_input{background-color: #fff;border-bottom: 1px solid #ebebeb;}
+.coupon_input div{width: 93.75%;margin: 0 auto;}
+.coupon_input input{border-bottom: 1px solid #ebebeb;width: 100%;display: block;padding: 1.1rem 0 0.3rem 0}
+.coupon_input input[type="password"]{border-bottom: none;}
+.coupon_tip div{font-size: 0.6rem;color: #323232;}
+.coupon_tip{position: fixed;left: 1rem;bottom:4.55rem;}
+.coupon_tip div:last-child{margin-top: 0.5rem;}
+.coupon_list .wrap .coupon_info .tag_grey{background-color: #969696;}
+.detail_info .attr_name{width: 14.4%;}
+.detail_info .attr_name_con{width: 85.6%;}
+.detail_info .state{width: 28.8%;}
+.detail_info.introc{width: 88%;}
+.introc .attr_name{width: 14%;}
+
+/* 好评类型 */
+.review_nav{border-bottom: 1px solid #e0e0e0;background-color:#fff}
+.review_nav ul li{float: left;width: 50%;text-align: center;font-size: 12px;}
+.review_nav ul li a{display: block;height: 40px;line-height: 34px;}
+.review_nav ul li a span{display: block;border-left: 1px solid #e0e0e0;padding: 3px 0;font-size:14px}
+.review_nav ul li:first-child a span{border-left: 0;}
+.review_nav ul li.on a{border-bottom:3px solid #70cac3;height: 37px;}
+.review_nav ul li.on a span{padding-bottom: 0;}
+
+/****************************************现金券背景class****************************************/
+/*已领取现金券--绿色背景*/
+.ticket_green_get{
+	background:url(../images/ticket_green_get.png);
+	background-size:100% 100%;
+}
+/*已领取现金券--红色背景*/
+.ticket_red_get{
+	background:url(../images/ticket_red_get.png);
+	background-size:100% 100%;
+}
+/*未使用现金券--绿色背景*/
+.ticket_green{
+	background:url(../images/ticket_green.png);
+	background-size:100% 100%;
+}
+/*未使用现金券--红色背景*/
+.ticket_red{
+	background:url(../images/ticket_red.png);
+	background-size:100% 100%;
+}
+/*已使用现金券--绿色背景*/
+.ticket_green_used{
+	background:url(../images/ticket_green_used.png);
+	background-size:100% 100%;
+}
+/*已使用现金券--红色背景*/
+.ticket_red_used{
+	background:url(../images/ticket_red_used.png);
+	background-size:100% 100%;
+}
+/*已过期现金券--绿色背景*/
+.ticket_green_overdue{
+	background:url(../images/ticket_green_overdue.png);
+	background-size:100% 100%;
+}
+/*已过期现金券--红色背景*/
+.ticket_red_overdue{
+	background:url(../images/ticket_red_overdue.png);
+	background-size:100% 100%;
+}
+/*立即领取现金券--绿色*/
+.ticket_green_init{
+	background:url(../images/ticket_green_init.png);
+	background-size:100% 100%;
+}
+/*立即领取现金券--红色*/
+.ticket_red_init{
+	background:url(../images/ticket_red_init.png);
+	background-size:100% 100%;
+}
+.ticket_green_get .coupon_info span,.ticket_green .coupon_info span,.ticket_green_used .coupon_info span,.ticket_green_overdue .coupon_info span,.ticket_green_init .coupon_info span{color:#66B51B;}
+.ticket_red_get .coupon_info span,.ticket_red .coupon_info span,.ticket_red_used .coupon_info span,.ticket_red_overdue .coupon_info span,.ticket_red_init .coupon_info span{color:#DF633F;}
+@media only screen and (min-width:350px){
+	.coupon_list .wrap dl{padding-left:7px}
+}
+@media only screen and (min-width:400px){
+	.coupon_list .wrap dl{padding-left:11px}
+}

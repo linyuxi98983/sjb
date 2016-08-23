@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>编辑作品 - 百爪鱼</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <style type="text/css">
+           .tcBox{display:block;} 
+           #colorbox, #cboxOverlay, #cboxWrapper{display:block;border:none;}
+           #cboxTitle{
+           		height: 40px;
+           		line-height: 40px;
+           		background: #333;
+           		color: #999;
+           		font-size:16px;
+           		font-family: 'Microsoft YaHei' ! important;
+           		font-weight: normal;
+           		width:100%;
+           		top: -40px;
+           	} 
+           #cboxContent{margin-top: 40px;} 
+           #cboxSlideshow, #cboxPrevious,#cboxNext, #cboxClose{
+           		text-indent: -9999px;
+           		top: -30px;
+           		right: 15px;
+           		display:inline-block;
+           		width: 15px;
+           		height: 15px;
+           		background: url(../images/small_img.png) -240px -120px;
+           	} 
+           	.edit_prod_info .qd_cont .prod_type select{ 
+           		margin-bottom:10px;
+           		padding-left: 0px;
+           	} 
+           	.edit_prod_info .qd_cont .prod_type label{float:none;}
+        </style>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/upload.js"></script>
+        <script type="text/javascript">
+	        function closeColorbox(){
+	        	alert("取消");
+	        }
+	        function subPhoto(obj){
+	        	alert("确定");
+	        }
+        </script>
+    </head>
+    <body>
+    	<div id="cboxOverlay" style="opacity: 0.5; cursor: pointer; border: none;"></div>
+    	<div id="colorbox" class="" style="padding-bottom: 32px; padding-right: 0px;width: 725px; height: 409px; top: 0px; left: 0px; border: none;">
+   			<div id="cboxWrapper" style="height: 401px; width: 725px; border: none;">
+		        <div>
+		            <div id="cboxTopLeft" style="float: left;"></div>
+		            <div id="cboxTopCenter" style="float: left; width: 725px;"></div>
+		            <div id="cboxTopRight" style="float: left;"></div>
+		        </div>
+	        	<div style="clear: left;">
+	            	<div id="cboxMiddleLeft" style="float: left; height: 409px;"></div>
+	            	<div id="cboxContent" style="float: left; width: 725px; height: 409px;">
+	                	<div id="cboxLoadedContent" style="width: 725px; overflow: auto; height: 409px;margin-top:-40px">
+	                    	<div class="tcBox edit_prod_info">
+	                        	<div class="qd_cont">
+	                            	<div class="prod_name">
+	                                	<label>作品名称：</label>
+	                                	<input type="text" value="第二个作品" id="name" onkeyup="wordsLimit(this,40)"/>
+	                            	</div>
+	                            	<div class="prod_type">
+                                    <label>作品分类：</label>
+                                    <select name='kind' id='kind'>
+                                        <option value='0' selected='selected'>选择分类</option>
+                                        <option value='1'>住宅空间</option>
+                                        <option value='2'>公共空间</option>
+                                    </select>
+                                    <select name="subkind" id="subkind">
+                                        <option value="0">选择分类</option>
+                                    </select>
+                                    <select name="subsubkind" id="subsubkind">
+                                        <option value="0">选择分类</option>
+                                    </select>
+                                    <select name='style' id='style'>
+                                        <option value='-1' selected='selected'>选择网咖风格</option>
+                                        <option value='0'>混搭网咖风格</option>
+                                        <option value='2'>欧式网咖风格</option>
+                                        <option value='4'>中式网咖风格</option>
+                                        <option value='6'>新古典网咖风格</option>
+                                        <option value='8'>东南亚网咖风格</option>
+                                        <option value='9'>美式网咖风格</option>
+                                        <option value='11'>田园网咖风格</option>
+                                        <option value='12'>地中海网咖风格</option>
+                                        <option value='15'>现代网咖风格</option>
+                                        <option value='16'>简约网咖风格</option>
+                                        <option value='17'>日式网咖风格</option>
+                                        <option value='18'>宜家网咖风格</option>
+                                        <option value='19'>北欧网咖风格</option>
+                                        <option value='20'>简欧网咖风格</option>
+                                        <option value='21'>LOFT网咖风格</option>
+                                    </select>
+                                </div>
+		                            <div class="prod_info">
+		                                <label>项目信息：</label>
+		                                <input type="text" value="90" id="area"/>
+		                                <em class="_01">㎡</em>
+		                                <input type="text" value="300" id="price"/>
+		                                <em class="_02">万元</em>
+		                            </div>
+		                            <div class="prod_desc">
+		                                <label>作品描述：</label>
+		                                <textarea id="comment">第二个作品</textarea>
+		                            </div>
+		                            <div class="btne edit_prod">
+		                                <input type="hidden" value="3144245" id="cid"/>
+		                                <input type="submit" class="btn_click" onclick="subPhoto(this)" value="确定"/>
+		                                <input type="submit" class="btn_unclick" onclick="closeColorbox()" value="取消"/>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div id="cboxMiddleRight" style="float: left; height: 409px;"></div>
+		        </div>
+		        <div style="clear: left;">
+		            <div id="cboxBottomLeft" style="float: left;"></div>
+		            <div id="cboxBottomCenter" style="float: left; width: 725px;"></div>
+		            <div id="cboxBottomRight" style="float: left;"></div>
+		        </div>
+		    </div>
+		    <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+		</div>
+    </body>
+</html>

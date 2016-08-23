@@ -1,0 +1,1417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="position: relative;">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>百爪鱼</title>
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/beyond_index.css" rel="stylesheet" type="text/css" />
+    <link href="css/header_menu.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+  		var pathName =  window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/sea.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      seajs.config({
+        alias: {
+          'jquery': path+'/html/pc/js/jquery_module.js',
+          //jquery version must be 1.7x
+          'common': path+'/html/pc/js/main.js',
+          'form': path+'/html/pc/js/module.form.js',
+          'ui': path+'/html/pc/js/module.ui.js',
+          'colorbox': path+'/html/pc/js/jquery.colorbox.min.js',
+          'newHeader': path+'/html/pc/js/userCenter.js'
+        },
+        preload: ['jquery', 'common'] //预加载jquery和main.js
+      });
+    </script>
+    <style type="text/css">.sjbNewTop{height: auto;}</style>
+    <style type="text/css">
+      /*首页是宽版*/ .sjbNewTop .newTopBg .head1{width:1180px;} .content_width_index{padding-top:
+      0px !important;z-index: 100 !important;} html,body{background: #fff !important;}
+    </style>
+  </head>
+  
+  <body style="position: relative;">
+    <div class="sjbNewTop" id="sjbNewTop">
+      <div class="newTopBg">
+        <div class="head1">
+          <div class="hea_top_right">
+            <ul class="tp_node">
+              <li style="width:90px;" id="nav_login" class="">
+                <span id="userName" class="name">
+                  <a href="" class="bg1" id="bg" onblur="if(this.rel==1) {this.className='bg1'; $('caozuo').style.display='none'}"
+                  rel="1" hidefocus="">
+                    <span class="nick">业主</span>
+                    <em class="downAdrrow"></em>
+                  </a>
+                  <div class="caozuo" id="caozuo" style="display: none;" onmouseover="$('bg').rel=2;" onmouseout="$('bg').rel=1;">
+                    <div class="redArrow"></div>
+                    <ul class="cz">
+                      <li>
+                        <a href="" class="my">个人中心</a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的收藏
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的问答
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="jy">
+                          	我的交易
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的金币
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的余额
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	账号设置
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="tc">
+                          	退出
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!-- 申请定制设计 -->
+              <li class="dzsj">
+                <a href="" target="_blank" rel="nofollow">申请定制设计</a>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--客服服务 -->
+              <li class="cur" style="width:80px;">
+                <a href="javascript:;">
+                     客服服务
+                  <span class="jt"></span>
+                </a>
+                <div class="kf_server" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="kflive800" lim_company="235802" lim_skill="3012" rel="nofollow">在线客服</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow" target="_blank">意见反馈</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">帮助中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--设计师中心 -->
+              <li class="cur" style="width:92px;">
+                <a href="javascript:;">
+                	设计师中心
+                  <span class="jt"></span>
+                </a>
+                <div class="sj_center" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="" rel="nofollow">接单大厅</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">社交广场</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">模型下载</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">推广中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="newMessage" class="newMessage">
+            <div class="closeNewMessage" id="closeNewMessage"></div>
+            <div class="messageItem" id="messageItem"></div>
+            <p class="clear"></p>
+          </div>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航-->
+      <div class="index_logo">
+        <a href="" title="">
+          <div class="logo"></div>
+        </a>
+        <div id="search_case">
+          <form id="quicksearch" method="get" action="" target="_blank">
+            <input type="hidden" name="searchType" value="1" id="searchType"/>
+            <span id="search_span">
+              <div id="search_title">找图片</div>
+              <em class="arrow"></em>
+              <label id="s_zsj" style="display: none;">
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="2">找图集</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="10"> 找案例</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="7">找设计师</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="9">找问答</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="3">找模型</a>
+              </label>
+            </span>
+            <input type="text" value="请输入搜索关键词" class="key" name="q" id="search_val"/>
+            <em class="icon_search"></em>
+            <input type="submit" value="搜索" class="submit"/>
+          </form>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航 end-->
+    </div>
+    <p class="clear"></p>
+    <!--主导航-->
+    <div class="wrap wrap_top_menu">
+      <div class="top_menu">
+        <!--整站主导航-->
+        <ul>
+          <li class="cur">
+            <a href="index.html" class="on onindex">首页</a>
+          </li>
+          <li>
+            <a href="case/case.html">设计案例</a>
+            <div class="inner_menu">
+              <a href="case/case.html">网咖案例</a>
+              <a href="case/case.html">电竞案例</a>
+              <a href="case/case-explain.html">案例解析</a>
+            </div>
+          </li>
+          <li>
+            <a href="pics/pics-case.html">装修图库</a>
+            <div class="inner_menu">
+              <a href="pics/pics-case.html">网咖图库</a>
+              <a href="pics/pics-case.html">电竞图库</a>
+              <a href="pics/pics-topic.html">图库专题</a>
+            </div>
+          </li>
+          <li>
+            <a href="">有问必答</a>
+          </li>
+          <li>
+            <a href="">找设计师</a>
+          </li>
+          <li>
+            <a href="">逛商品</a>
+          </li>
+          <li class="last">
+            <a href="javascript:;">
+              设计师专区
+            </a>
+            <div class="inner_menu">
+              <a href="">3DMAX模型下载</a>
+              <a href="">设计资讯</a>
+              <a href="">人物专访</a>
+              <a href="">人脉广场</a>
+              <a href="">空间谈</a>
+            </div>
+          </li>
+        </ul>
+        <!--整站主导航 End-->
+        <!--首页面包屑导航-->
+        <div class="column_side">
+          <div class="column column_outside">
+            <div class="column_content content_outside">
+              <div class="column_name">
+                网咖设计
+                <em></em>
+              </div>
+              <div class="column_list">
+                <a href="case/case.html" target="_blank" class="red">三居</a>
+                <a href="case/case.html" target="_blank" class="">复式</a>
+                <a href="case/case.html" target="_blank" class="red">别墅豪宅</a>
+                <a href="case/case.html" target="_blank" class="">样板房</a>
+                <a href="case/case.html" target="_blank" class="">田园</a>
+                <a href="case/case.html" target="_blank" class="red">欧式</a>
+                <a href="case/case.html" target="_blank" class="red">中式</a>
+                <a href="case/case.html" target="_blank" class="">新古典</a>
+                <a href="case/case.html" target="_blank" class="red">美式</a>
+                <a href="case/case.html" target="_blank" class="">地中海</a>
+                <a href="case/case.html" target="_blank" class="red">现代</a>
+                <a href="case/case.html" target="_blank" class="">混搭</a>
+                <a href="case/case.html" target="_blank"></a>
+                <div class="clear"></div>
+              </div>
+              <!--二级菜单-->
+              <div class="column column_inner inner_01" style="display: none;">
+                <div class="column_content column_content_cur">
+                  <div class="column_name no_border">地段</div>
+                  <div class="column_list">
+                    <a href="case/case.html" class="" target="_blank">小地段</a>
+                    <a href="case/case.html" class="" target="_blank">二居</a>
+                    <a href="case/case.html" class="" target="_blank">三居</a>
+                    <a href="case/case.html" class="" target="_blank">四居</a>
+                    <a href="case/case.html" class="" target="_blank">复式</a>
+                    <a href="case/case.html" class="" target="_blank">样板房</a>
+                    <a href="case/case.html" class="" target="_blank">别墅豪宅</a>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="column_content">
+                  <div class="column_name">网咖风格</div>
+                  <div class="column_list">
+                    <a href="case/case.html" class="" target="_blank">欧式</a>
+                    <a href="case/case.html" class="" target="_blank">中式</a>
+                    <a href="case/case.html" class="" target="_blank">新古典</a>
+                    <a href="case/case.html" class="" target="_blank">东南亚</a>
+                    <a href="case/case.html" class="" target="_blank">美式</a>
+                    <a href="case/case.html" class="" target="_blank">田园</a>
+                    <a href="case/case.html" class="" target="_blank">地中海</a>
+                    <a href="case/case.html" class="" target="_blank">现代</a>
+                    <a href="case/case.html" class="" target="_blank">混搭</a>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <!--二级菜单 End-->
+            </div>
+            <div class="column_content content_outside">
+              <div class="column_name no_border">
+                电竞设计
+                <em></em>
+              </div>
+              <div class="column_list">
+                <a href="case/case.html" target="_blank" class="red">餐厅设计</a>
+                <a href="case/case.html" target="_blank" class="">售楼处设计</a>
+                <a href="case/case.html" target="_blank" class="red">办公室设计</a>
+                <a href="case/case.html" target="_blank" class="red">主题酒店</a>
+                <a href="case/case.html" target="_blank" class="red">酒吧/KTV</a>
+                <a href="case/case.html" target="_blank" class="">会所</a>
+                <a href="case/case.html" target="_blank" class="">商业展示</a>
+                <a href="case/case.html" target="_blank" class="">购物中心</a>
+                <a href="case/case.html" target="_blank" class="red">咖啡店</a>
+                <a href="case/case.html" target="_blank" class="red">展厅设计</a>
+                <div class="clear"></div>
+              </div>
+              <!--二级菜单-->
+              <div class="column column_inner inner_02" style="display: none;">
+                <div class="column_content">
+                  <div class="column_name">需求风格</div>
+                  <div class="column_list">
+                    <a href="case/case.html" class="" target="_blank">酒店空间</a>
+                    <a href="case/case.html" class="" target="_blank">购物空间</a>
+                    <a href="case/case.html" class="" target="_blank">文化空间</a>
+                    <a href="case/case.html" class="" target="_blank">商业展示</a>
+                    <a href="case/case.html" class="" target="_blank">医疗机构</a>
+                    <a href="case/case.html" class="" target="_blank">办公空间</a>
+                    <a href="case/case.html" class="" target="_blank">餐饮空间</a>
+                    <a href="case/case.html" class="" target="_blank">娱乐空间</a>
+                    <a href="case/case.html" class="" target="_blank">休闲场所</a>
+                    <a href="case/case.html" class="" target="_blank">售楼中心</a>
+                    <a href="case/case.html" class="" target="_blank">金融机构</a>
+                    <a href="case/case.html" class="" target="_blank">运动场所</a>
+                    <a href="case/case.html" class="" target="_blank">教育机构</a>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <!--二级菜单 End-->
+            </div>
+            <div class="column_content no_border content_outside">
+              <div class="column_name">
+                   室内设计师
+                <em></em>
+              </div>
+              <div class="column_list">
+                <a href="" target="_blank" class="">北京</a>
+                <a href="" target="_blank" class="red">上海</a>
+                <a href="" target="_blank" class="">广州</a>
+                <a href="" target="_blank" class="red">深圳设计师</a>
+                <a href="" target="_blank" class="red">别墅</a>
+                <a href="" target="_blank" class="">复式</a>
+                <a href="" target="_blank" class="red">样板</a>
+                <a href="" target="_blank" class="red">网咖设计师</a>
+                <a href="" target="_blank" class="red">酒店</a>
+                <a href="" target="_blank" class="">咖啡店</a>
+                <a href="" target="_blank" class="red">办公室设计师</a>
+                <a href="" target="_blank"></a>
+                <a href="" target="_blank"></a>
+                <div class="clear"></div>
+              </div>
+              <div class="column column_inner inner_03" style="display: none;">
+                <div class="column_content">
+                  <div class="column_name no_border">所在城市</div>
+                  <div class="column_list">
+                    <a href="" class="" target="_blank">北京</a>
+                    <a href="" class="" target="_blank">上海</a>
+                    <a href="" class="" target="_blank">广州</a>
+                    <a href="" class="" target="_blank">深圳</a>
+                    <a href="" class="" target="_blank">南京</a>
+                    <a href="" class="" target="_blank">天津</a>
+                    <a href="" class="" target="_blank">杭州</a>
+                    <a href="" class="" target="_blank">武汉</a>
+                    <a href="" class="" target="_blank">成都</a>
+                    <a href="" class="" target="_blank">西安</a>
+                    <a href="" class="" target="_blank">福州</a>
+                    <a href="" class="" target="_blank">苏州</a>
+                    <a href="" class="" target="_blank">郑州</a>
+                    <a href="" class="" target="_blank">合肥</a>
+                    <a href="" class="" target="_blank">贵阳</a>
+                    <a href="" class="" target="_blank">宁波</a>
+                    <a href="" class="" target="_blank">长沙</a>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="column_content">
+                  <div class="column_name">擅长空间</div>
+                  <div class="column_list">
+                    <a href="" class="" target="_blank">家居住宅</a>
+                    <a href="" class="" target="_blank">别墅豪宅</a>
+                    <a href="" class="" target="_blank">办公室</a>
+                    <a href="" class="" target="_blank">酒店</a>
+                    <a href="" class="" target="_blank">餐厅</a>
+                    <a href="" class="" target="_blank">咖啡厅</a>
+                    <a href="" class="" target="_blank">酒吧KTV</a>
+                    <a href="" class="" target="_blank">商业展示</a>
+                    <a href="" class="" target="_blank">医院</a>
+                    <a href="" class="" target="_blank">幼儿园</a>
+                    <a href="" class="" target="_blank">会所</a>
+                    <a href="" class="" target="_blank">样板房</a>
+                    <a href="" class="" target="_blank">售楼处</a>
+                    <a href="" class="" target="_blank">文化空间</a>
+                    <a href="" class="" target="_blank">运动空间</a>
+                    <div class="clear">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--首页面包屑导航 end-->
+      </div>
+    </div>
+    <!--主导航-->
+    <div class="dmato"></div>
+    <div class="content_width content_width_index" id="content">
+      <div class=" ">
+      	<!-- 案例搜索下拉框脚本 -->
+        <script type="text/javascript">
+          seajs.use(['newHeader', 'common'],
+          function(Header, common) {
+            $(document).ready(function() {
+              Header.init();
+              common.initHeader();
+              $('#quicksearch').bind('submit',
+              function() {
+                return common.checkSearchForm();
+              });
+            });
+
+            var searchType = "";
+            var arr = new Array("1", "2", '10', '7', '9', '3');
+            var urlArr = new Array({
+              '1': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索图片的关键词，如：儿童房",
+                3 : "找图片　　"
+              }],
+              '2': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索灵感图集",
+                3 : "找图集"
+              }],
+              '10': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索案例",
+                3 : "找案例"
+              }],
+              '7': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索设计师",
+                3 : "找设计师"
+              }],
+              '9': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索问答",
+                3 : "找问答"
+              }],
+              '3': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索模型",
+                3 : "找模型　"
+              }]
+            });
+            common.searchFun(searchType, arr, urlArr);
+            common.searchBannerEvent(arr, urlArr);
+          });
+        </script>
+        <style>
+          #content{margin-top: 0;} .swiper-container { height: 420px; } .slider_mark
+          { width: auto; position: absolute; bottom: 15px !important; left: 50% !important;
+          height: 15px; z-index: 100; margin-left: -50px; } .slider_mark li { width:
+          10px; height: 10px; float: left; margin: 0 5px; background: #000; opacity:
+          0.75; border-radius: 5px; cursor: pointer; } .slider_mark .swiper-pagination-bullet-active{
+          background: #707070;}
+        </style>
+        <!--滚动图-->
+        <!--sliderShow-->
+        <div class="swiper-container" id="index_slider">
+          <ul class="banner_slider swiper-wrapper" style="width: 8040px; height: 420px; transform: translate3d(-2680px, 0px, 0px); transition-duration: 0.3s;">
+            <li class="swiper-slide swiper-slide-duplicate" style="width: 1340px; height: 420px; background: url(&quot;http://pic1.shejiben.com/hot_sjb/389_7963.jpg?1457351754&quot;) 50% 50% no-repeat;">
+              <a href="" target="_blank" style="display:block;width:100%;height:420px;">
+                &nbsp;
+              </a>
+            </li>
+            <!-- -->
+            <li class="swiper-slide" style="width: 1340px; height: 420px; background: url(&quot;http://pic.shejiben.com/hot_sjb/389_7678.jpg?1457316845&quot;) 50% 50% no-repeat;">
+              <a href="" target="_blank"
+              style="display:block;width:100%;height:420px;">
+                &nbsp;
+              </a>
+            </li>
+            <!-- -->
+            <li class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 1340px; height: 420px; background: url(&quot;http://pic.shejiben.com/hot_sjb/389_8054.jpg?1457000845&quot;) 50% 50% no-repeat;">
+              <a href="" target="_blank" style="display:block;width:100%;height:420px;">
+                &nbsp;
+              </a>
+            </li>
+            <!-- -->
+            <li class="swiper-slide" style="width: 1340px; height: 420px; background: url(&quot;http://pic1.shejiben.com/hot_sjb/389_8036.jpg?1457316851&quot;) 50% 50% no-repeat;">
+              <a href="" target="_blank" style="display:block;width:100%;height:420px;">
+                &nbsp;
+              </a>
+            </li>
+            <!-- -->
+            <li class="swiper-slide" style="width: 1340px; height: 420px; background: url(&quot;http://pic1.shejiben.com/hot_sjb/389_7963.jpg?1457351754&quot;) 50% 50% no-repeat;">
+              <a href="" target="_blank" style="display:block;width:100%;height:420px;">
+                &nbsp;
+              </a>
+            </li>
+            <!-- -->
+            <li class="swiper-slide swiper-slide-duplicate" style="width: 1340px; height: 420px; background: url(&quot;http://pic.shejiben.com/hot_sjb/389_7678.jpg?1457316845&quot;) 50% 50% no-repeat;">
+              <a href="" target="_blank"
+              style="display:block;width:100%;height:420px;">
+                &nbsp;
+              </a>
+            </li>
+          </ul>
+          <ul class="slider_mark">
+            <li class="swiper-pagination-switch"></li>
+            <li class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></li>
+            <li class="swiper-pagination-switch"></li>
+            <li class="swiper-pagination-switch"></li>
+          </ul>
+        </div>
+        <!--找设计师-->
+        <div class="column_index search_designers" id="search_designers">
+          <div class="column_name">
+            <p>找设计师</p>
+            <label>
+              <a href="" target="_blank">北京</a>
+              <a href="" target="_blank">上海</a>
+              <a href="" target="_blank">广州</a>
+              <a href="" target="_blank">深圳</a>
+              <a href="" target="_blank">苏州</a>
+              <a href="" target="_blank">杭州</a>
+              <a href="" target="_blank">更多 &gt;</a>
+            </label>
+            <div class="clear">
+            </div>
+          </div>
+          <div class="content_designers">
+            <ul class="tab_name">
+              <li class="des-tab-list cur">
+                设计大咖
+                <em></em>
+              </li>
+              <li class="des-tab-list">
+                最新签单
+                <em></em>
+              </li>
+              <li class="des-tab-list">
+                餐厅设计
+                <em></em>
+              </li>
+              <li class="des-tab-list">
+                行业大腕
+                <em></em>
+              </li>
+            </ul>
+            <div class="designers_detail">
+              <!--设计大咖-->
+              <div class="designers_list" id="designers_list_01" style="display: block;">
+                <span class="prev"></span>
+                <span class="next"></span>
+                <span class="prev2" style="display:none;"></span>
+                <span class="next2" style="display:none;"></span>
+                <!--大图-->
+                <div class="scroll_content swiper-container swiper-container_01" id="designers_list_scroll_01">
+                  <ul class="designers_list_top swiper-wrapper" id="designers_list_scroll"
+                  style="width: 7344px; height: 184px; transform: translate3d(-1020px, 0px, 0px); transition-duration: 0s;">
+                    <li class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 204px; height: 184px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/387_7957.jpg?1450171794"
+                        src="http://pic1.shejiben.com/hot_sjb/387_7957.jpg?1450171794" style="display: block;"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">杨小林</a>
+                        <a href="" class="user_company" target="_blank">杨小林设计事务..</a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide swiper-slide-visible" style="width: 204px; height: 184px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/387_7967.jpg?1450868501"
+                        src="http://pic1.shejiben.com/hot_sjb/387_7967.jpg?1450868501" style="display: block;"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">王斌</a>
+                        <a href="" class="user_company" target="_blank">大斌空间设计</a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide swiper-slide-visible" style="width: 204px; height: 184px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/387_7980.jpg?1451634542"
+                        src="http://pic1.shejiben.com/hot_sjb/387_7980.jpg?1451634542" style="display: block;"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">于晴</a>
+                        <a href="" class="user_company" target="_blank">于晴室内设计</a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide swiper-slide-visible" style="width: 204px; height: 184px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/387_7970.jpg?1451048149"
+                        src="http://pic1.shejiben.com/hot_sjb/387_7970.jpg?1451048149" style="display: block;"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">张明杰</a>
+                        <a href="" class="user_company" target="_blank">简文设计</a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide swiper-slide-visible" style="width: 204px; height: 184px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/387_6422.jpg?1455555555"
+                        src="http://pic1.shejiben.com/hot_sjb/387_6422.jpg?1455555555" style="display: block;"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">赖小丽</a>
+                        <a href="" class="user_company" target="_blank">胭脂设计事务所</a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide" style="width: 204px; height: 184px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/387_7958.jpg?1450172308"
+                        src="http://pic1.shejiben.com/hot_sjb/387_7958.jpg?1450172308" style="display: block;"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">何育红</a>
+                        <a href="" class="user_company" target="_blank">何育红设计事务..</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!--大图End-->
+                <!--小图-->
+                <div class="scroll_content scroll_content-s swiper-container swiper-container-s01"
+                id="designers_list_scroll_b1">
+                  <ul class="designers_list_bottom swiper-wrapper" style="width: 5916px; height: 84px; transform: translate3d(-1020px, 0px, 0px); transition-duration: 0s;">
+                    <li class="swiper-slide swiper-slide-duplicate" style="width: 102px; height: 84px;">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/386_7987.jpg?1451986342"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <a href="" class="username" target="_blank">周鹏</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--小图 End-->
+              </div>
+              <!--设计大咖 End-->
+              <!--精英设计-->
+              <div class="designers_list" id="designers_list_02" style="display:none;">
+                <div class="scroll_content swiper-container swiper-container_02" id="designers_list_scroll_02">
+                  <ul class="designers_list_top swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic.shejiben.com/user/17/sjb_headphoto_1342217.jpg?1427266552"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">陈海峰</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll_content scroll_content-s swiper-container swiper-container-s02"
+                id="designers_list_scroll_b2">
+                  <ul class="designers_list_bottom swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic.shejiben.com/user/44/sjb_headphoto_761944.jpg?1426327559"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <a href="" class="username" target="_blank">何博彦/佛山..</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--精英设计 End-->
+              <div class="designers_list" id="designers_list_03" style="display:none;">
+                <div class="scroll_content swiper-container swiper-container_03" id="designers_list_scroll_03">
+                  <ul class="designers_list_top swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic.shejiben.com/hot_sjb/383_7800.jpg?1456380332"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="user_name" target="_blank">阿森</a>
+                        <a href="" class="user_company" target="_blank">阿森设计</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll_content scroll_content-s swiper-container swiper-container-s03"
+                id="designers_list_scroll_b3">
+                  <ul class="designers_list_bottom swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/382_7815.jpg?1456380703"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <a href="" class="username" target="_blank">贵阳凡恩设计</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="designers_list" id="designers_list_04" style="display:none;">
+                <div class="scroll_content swiper-container swiper-container_04" id="designers_list_scroll_04">
+                  <ul class="designers_list_top swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/381_7368.jpg?1448349023"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <div class="user_msg">
+                        <a href="" class="img" target="_blank"></a>
+                        <a href="" class="user_name" target="_blank">梁景华</a>
+                        <a href="" class="user_company" target="_blank"></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="scroll_content scroll_content-s swiper-container swiper-container-s04"
+                id="designers_list_scroll_b4">
+                  <ul class="designers_list_bottom swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="" class="img" target="_blank">
+                        <img class="lazy" data-original="http://pic1.shejiben.com/hot_sjb/380_7377.jpg?1455555555"
+                        src="http://img.shejiben.com/front_end/bg/grey.gif"/>
+                      </a>
+                      <a href="" class="username" target="_blank">郑忠</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <!--设计案例-->
+        <div class="column_index search_case">
+          <div class="column_name">
+            <p>设计案例</p>
+            <label>
+              <a href="" target="_blank">酒店空间</a>
+              <a href="" target="_blank">购物空间</a>
+              <a href="" target="_blank">文化空间</a>
+              <a href="" target="_blank">办公空间</a>
+              <a href="" target="_blank">餐饮空间</a>
+              <a href="" target="_blank">更多 &gt;</a>
+            </label>
+            <div class="clear">
+            </div>
+          </div>
+          <div class="index_case_list">
+            <ul>
+              <li>
+                <a href="case/case-detail.html" class="big_img" target="_blank">
+                  <img src="http://pic1.shejiben.com/i/upload/2015/03/21/20150321163930-a959a7f9-la.jpg" style="opacity: 1;"/>
+                </a>
+                <a href="case/case-detail.html" class="small_img" target="_blank">
+                  <img src="http://pic.shejiben.com/user/0/sjb_headphoto_2558500_d.jpg?1427092089" style="opacity: 1;"/>
+                </a>
+                <a href="case/case-detail.html" class="title" target="_blank">陆凡作品：上海天哲科技.中环企..</a>
+                <span class="name">陆凡</span>
+              </li>
+              <li>
+                <a href="case/case-detail.html" class="big_img" target="_blank">
+                  <img src="http://pic1.shejiben.com/i/upload/2015/06/26/20150626113526-dffd1974-la.jpg"/>
+                </a>
+                <a href="case/case-detail.html" class="small_img" target="_blank">
+                  <img src="http://pic.shejiben.com/user/55/sjb_headphoto_3475955_d.jpg?1435307875"/>
+                </a>
+                <a href="case/case-detail.html" class="title" target="_blank">深圳JUS架势高级定制会所设计..</a>
+                <span class="name">尚谷国际</span>
+              </li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+        </div>
+        <!--设计机构-->
+        <div class="column_index search_company">
+          <div class="column_name">
+            <p>设计机构</p>
+            <label>
+              <a href="" target="_blank">北京</a>
+              <a href="" target="_blank">上海</a>
+              <a href="" target="_blank">广州</a>
+              <a href="" target="_blank">深圳</a>
+              <a href="" target="_blank">苏州</a>
+              <a href="" target="_blank">杭州</a>
+              <a href="" target="_blank">更多 &gt;</a>
+            </label>
+            <div class="clear"></div>
+          </div>
+          <div class="index_rank_img">
+            <div class="index_rank_img_1">
+              <a href="" target="_blank">
+                <img src="http://pic.shejiben.com/hot_sjb/377_7942.jpg?1456897619" width="550" height="174"/>
+              </a>
+            </div>
+            <div class="index_rank_img_2" style="left: 210px;">
+              <a href="" target="_blank">
+                <img src="http://pic.shejiben.com/hot_sjb/377_7937.jpg?1456984280" width="550" height="174"/>
+              </a>
+            </div>
+            <div class="index_rank_img_3" style="left: 760px;">
+              <a href="" target="_blank">
+                <img src="http://pic.shejiben.com/hot_sjb/377_8049.jpg?1457060007" width="550" height="174"/>
+              </a>
+            </div>
+            <div class="index_rank_img_4" style="left: 970px;">
+              <a href="" target="_blank">
+                <img src="http://pic.shejiben.com/hot_sjb/377_7986.jpg?1456897584" width="550" height="174"/>
+              </a>
+            </div>
+            <!--所有设计机构 End-->
+          </div>
+        </div>
+        <!--网咖图库，电竞图库-->
+        <div class="column_index search_pic" id="search_pic">
+          <div class="column_name">
+            <div class="column_name_l">
+              <p class="cur">网咖图库</p>
+              <p>电竞图库</p>
+            </div>
+            <div class="column_name_r">
+              <label>
+                <a href="" target="_blank">客厅</a>
+                <a href="" target="_blank">卧室</a>
+                <a href="" target="_blank">卫生间</a>
+                <a href="" target="_blank">餐厅</a>
+                <a href="" target="_blank">厨房</a>
+                <a href="" target="_blank">儿童房</a>
+                <a href="" target="_blank">阳台</a>
+                <a href="" target="_blank">更多 &gt;</a>
+              </label>
+              <label style="display:none;">
+                <a href="" target="_blank">酒店</a>
+                <a href="" target="_blank">商场</a>
+                <a href="" target="_blank">商店</a>
+                <a href="" target="_blank">办公室</a>
+                <a href="" target="_blank">餐厅</a>
+                <a href="" target="_blank">酒吧/KTV</a>
+                <a href="" target="_blank">售楼处</a>
+                <a href="" target="_blank">更多 &gt;</a>
+              </label>
+            </div>
+            <div class="clear">
+            </div>
+          </div>
+          <div class="pic_content">
+            <ul class="index_pic_list">
+              <li class="li_01">
+                <a href="pics/pics-case.html" target="_blank" class="img">
+                  <img class="lazy" src="http://pic.shejiben.com/hot_sjb/376_6296.jpg?1457322403"
+                  data-original="http://pic.shejiben.com/hot_sjb/376_6296.jpg?1457322403"
+                  style="display: block; opacity: 1;"/>
+                </a>
+                <a href="pics/pics-case.html" target="_blank" class="title">
+                  客厅变身SHOW，秀出居家新潮流
+                </a>
+              </li>
+              <li class="">
+                <a href="pics/pics-case.html" target="_blank" class="img">
+                  <img class="lazy" src="http://pic1.shejiben.com/hot_sjb/376_6297.jpg?1457322475"
+                  data-original="http://pic1.shejiben.com/hot_sjb/376_6297.jpg?1457322475"
+                  style="display: block; opacity: 1;"/>
+                </a>
+                <a href="pics/pics-case.html" target="_blank" class="title">阳台改造,酷到飞上天</a>
+              </li>
+              <li class="">
+                <a href="pics/pics-case.html" target="_blank" class="img">
+                  <img class="lazy" src="http://pic1.shejiben.com/hot_sjb/376_6298.jpg?1457322546"
+                  data-original="http://pic1.shejiben.com/hot_sjb/376_6298.jpg?1457322546"
+                  style="display: block;"/>
+                </a>
+                <a href="pics/pics-case.html" target="_blank" class="title">精美卫生间设计,漂亮极了</a>
+              </li>
+              <li class="">
+                <a href="pics/pics-case.html" target="_blank" class="img">
+                  <img class="lazy" src="http://pic1.shejiben.com/hot_sjb/376_6299.jpg?1457329663"
+                  data-original="http://pic1.shejiben.com/hot_sjb/376_6299.jpg?1457329663"
+                  style="display: block; opacity: 1;"/>
+                </a>
+                <a href="pics/pics-case.html" target="_blank" class="title">家庭餐厅,这样装准没错</a>
+              </li>
+              <div class="clear"></div>
+            </ul>
+            <ul class="index_pic_list" style="display:none;">
+              <li class="">
+                <a href="pics/pics-case.html" target="_blank" class="img">
+                  <img class="lazy" src="http://img.shejiben.com/front_end/bg/grey.gif"
+                  data-original="http://pic1.shejiben.com/hot_sjb/375_6308.jpg?1456888133"/>
+                </a>
+                <a href="pics/pics-case.html" target="_blank" class="title">一见倾心,时尚购物空间设计</a>
+              </li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+        </div>
+        <!--原创出品-->
+        <div class="column_index search_original">
+          <div class="column_name">
+            <p>原创出品</p>
+            <label>
+              <a href="case/case-detail.html" target="_blank">设计资讯</a>
+              <a href="case/case-detail.html" target="_blank">空间谈</a>
+              <a href="case/case-detail.html" target="_blank">名人访谈</a>
+            </label>
+            <div class="clear"></div>
+          </div>
+          <div class="index_original_list">
+            <a class="column_name red" href="" target="_blank">
+                        案例解析
+            <em></em>
+            </a>
+            <div class="original_detail">
+              <a href="case/case-detail.html" class="img" target="_blank">
+                <img class="lazy" src="http://pic1.shejiben.com/hot_sjb/374_6219.jpg?1456967842"
+                data-original="http://pic1.shejiben.com/hot_sjb/374_6219.jpg?1456967842"
+                style="display: block; opacity: 1;"/>
+              </a>
+              <a href="case/case-detail.html" class="title" target="_blank">【第220期】沉静——86平米乡村美..</a>
+            </div>
+          </div>
+          <div class="index_original_list">
+            <a class="column_name green" href="" target="_blank">
+              设计师专访
+              <em></em>
+            </a>
+            <div class="original_detail">
+              <a href="" class="img" target="_blank">
+                <img class="lazy" src="http://pic.shejiben.com/hot_sjb/373_6223.jpg?1457055893"
+                data-original="http://pic.shejiben.com/hot_sjb/373_6223.jpg?1457055893"
+                style="display: block; opacity: 1;"/>
+              </a>
+              <a href="" class="title" target="_blank">何博彦:美感设计,缤纷色彩</a>
+            </div>
+          </div>
+        </div>
+        <div class="column_index bantonglan">
+          <div class="sjs_index_bantonglan ">
+            <a href="" target="_blank">
+              <img class="lazy" src="http://pic1.shejiben.com/hot_sjb/390_6441.jpg?1456544432"
+              data-original="http://pic1.shejiben.com/hot_sjb/390_6441.jpg?1456544432"
+              style="display: block;"/>
+            </a>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <!--最新动态-->
+        <div class="column_index search_news">
+          <div class="column_name">
+            <p>最新动态</p>
+            <label>
+              <a href="" target="_blank">更多 &gt;</a>
+            </label>
+            <div class="clear"></div>
+          </div>
+          <div class="index_news_list">
+            <div class="news_info answer_list">
+              <p class="column_name">大家都在逛有问必答</p>
+              <div class="column_new_content" id="showQuestionList">
+                <div class="scroll_content" style="height: 3030px; margin-top: -404px;">
+                  <div class="list">
+                    <div class="news_list">
+                      <img src="http://pic.shejiben.com/user/4/headphoto_5404.jpg?1378092562"/>
+                      <div class="news_msg">
+                        <a href="" target="_blank">
+                          阿里斯顿热水器打火打不着要怎么办
+                        </a>
+                        <p class="answer">
+                          	回答：阿里斯顿热水器打不着火常见故障原因分析： 　　 1电脑板控制型阿里斯顿燃气热水器打不着火；①阿里斯..
+                        </p>
+                        <p class="last_time">
+                          1分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://pic.shejiben.com/user/50/headphoto_4650.jpg?1378092198"/>
+                      <div class="news_msg">
+                        <a href="" target="_blank">
+                          小音箱有杂音要怎么办？
+                        </a>
+                        <p class="answer">
+                          	回答：第一,请检查周围有没有磁场 （如：电视机） 第二,声卡的质量问题 第三,更换驱动 第四,如果你用..
+                        </p>
+                        <p class="last_time">
+                          2分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://pic.shejiben.com/user/88/headphoto_5188.jpg?1378092166"/>
+                      <div class="news_msg">
+                        <a href="" target="_blank">
+                          连云港家具城都有哪些
+                        </a>
+                        <p class="answer">
+                          	回答：A 南方家园家具广场 地址： 灌南县其他连云港市灌南县 B 金海隆家具城 地址： 青口镇青口镇..
+                        </p>
+                        <p class="last_time">
+                          2分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://pic.shejiben.com/user/16/headphoto_5116.jpg?1378092258"/>
+                      <div class="news_msg">
+                        <a href="" target="_blank">
+                          成都家百利家私质量怎么样
+                        </a>
+                        <p class="answer">
+                          	回答：成都家百利家私家具很不错，很上档次的。家私引用欧洲的设计理念，追求一种雅致、时尚的生活品味；崇尚成熟..
+                        </p>
+                        <p class="last_time">
+                          2分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://pic.shejiben.com/user/69/headphoto_5169.jpg?1378092367"/>
+                      <div class="news_msg">
+                        <a href="" target="_blank">长沙酒店装修公司哪家专业？</a>
+                        <p class="answer">
+                          	回答：长沙倾诚装修设计有限公司 地址：长沙岳麓区金星中路398号玛依拉大酒店1102室 长沙河西名匠装..
+                        </p>
+                        <p class="last_time">
+                          4分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://pic.shejiben.com/user/61/headphoto_5061.jpg?1378092145"/>
+                      <div class="news_msg">
+                        <a href="" target="_blank">盼盼透气防盗门多少钱能买到？</a>
+                        <p class="answer">
+                          	回答：你好，开封盼盼防盗门价格一般在500元到600元左右一扇。开封南北门业有限公司的盼盼防盗门报价是55..
+                        </p>
+                        <p class="last_time">
+                          4分钟前
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="check_more" href="" target="_blank">
+                去问答频道看看
+                <em class="arrow">&gt;</em>
+              </a>
+            </div>
+            <div class="news_info commit">
+              <p class="column_name">
+                大家都在发布需求
+              </p>
+              <div class="column_new_content" id="showDemandList">
+                <div class="scroll_content" style="height: 3030px; margin-top: -404px;">
+                  <div class="list">
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/79.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">李先生提交了设计需求</span>
+                        <p class="answer">
+                          <em>上海长宁区125平二手房翻新设计</em>
+                        </p>
+                        <p class="last_time">
+                          2分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/11.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">卓小姐提交了设计需求</span>
+                        <p class="answer">
+                          <em>福建莆田500平展厅设计</em>
+                        </p>
+                        <p class="last_time">
+                          10分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/105.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          陈女士提交了设计需求
+                        </span>
+                        <p class="answer">
+                          <em>
+                            北京朝阳区90平旧房翻新设计
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          1小时前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://img.shejiben.com/headphoto/113.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">刘先生提交了设计需求</span>
+                        <p class="answer">
+                          <em>江苏南京栖霞区120平住宅设计</em>
+                        </p>
+                        <p class="last_time">1小时前</p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/41.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">商先生提交了设计需求</span>
+                        <p class="answer">
+                          <em>北京海淀区30平办公室设计</em>
+                        </p>
+                        <p class="last_time">1小时前</p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/131.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">韩小姐提交了设计需求</span>
+                        <p class="answer">
+                          <em>北京朝阳区150平住宅设计</em>
+                        </p>
+                        <p class="last_time">1小时前</p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/127.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">张先生提交了设计需求</span>
+                        <p class="answer">
+                          <em>北京大兴区90平住宅设计</em>
+                        </p>
+                        <p class="last_time">1小时前</p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/111.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">张先生提交了设计需求</span>
+                        <p class="answer">
+                          <em>福建福州300平住宅设计</em>
+                        </p>
+                        <p class="last_time">2小时前</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/79.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">李先生提交了设计需求</span>
+                        <p class="answer">
+                          <em>
+                            上海长宁区125平二手房翻新设计
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          2分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://img.shejiben.com/headphoto/137.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          季女士提交了设计需求
+                        </span>
+                        <p class="answer">
+                          <em>
+                            上海浦东新区90平住宅设计
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          51分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/96.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          吴先生提交了设计需求
+                        </span>
+                        <p class="answer">
+                          <em>
+                            湖北武汉180平住宅设计
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          1小时前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://img.shejiben.com/headphoto/135.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          张泰提交了设计需求
+                        </span>
+                        <p class="answer">
+                          <em>
+                            黑龙江齐齐哈尔300平复式住宅设计
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          1小时前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/105.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          陈女士提交了设计需求
+                        </span>
+                        <p class="answer">
+                          <em>
+                            北京朝阳区90平旧房翻新设计
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          1小时前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/111.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          张先生提交了设计需求
+                        </span>
+                        <p class="answer">
+                          <em>福建福州300平住宅设计</em>
+                        </p>
+                        <p class="last_time">
+                          2小时前
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="check_more" href="" target="_blank">
+                提交我的设计需求
+                <em class="arrow">
+                  &gt;
+                </em>
+              </a>
+            </div>
+            <div class="news_info order">
+              <p class="column_name">
+                大家都在预约设计师
+              </p>
+              <div class="column_new_content" id="showOrderList">
+                <div class="scroll_content" style="height: 3030px; margin-top: -404px;">
+                  <div class="list">
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/129.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          唐浩预约了
+                          <a href="" target="_blank" style="display:inline-block">
+                            原筑设计
+                          </a>
+                          做设计
+                        </span>
+                        <p class="answer">
+                          <em>
+                            临沂
+                          </em>
+                          <em>
+                            餐饮空间
+                          </em>
+                          <em>
+                            287㎡
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          1小时前
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list">
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/1.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          孙跃豪预约了
+                          <a href="" target="_blank" style="display:inline-block">
+                            城色空间..
+                          </a>
+                          做设计
+                        </span>
+                        <p class="answer">
+                          <em> 天津市</em>
+                          <em>
+                            住宅空间
+                          </em>
+                          <em>
+                            198㎡
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          4分钟前
+                        </p>
+                      </div>
+                    </div>
+                    <div class="news_list">
+                      <img src="http://www.shejiben.com/img/headphoto/129.jpg"/>
+                      <div class="news_msg">
+                        <span class="news_title">
+                          唐浩预约了
+                          <a href="" target="_blank" style="display:inline-block">
+                            原筑设计
+                          </a>
+                          做设计
+                        </span>
+                        <p class="answer">
+                          <em>
+                            临沂
+                          </em>
+                          <em>
+                            餐饮空间
+                          </em>
+                          <em>
+                            287㎡
+                          </em>
+                        </p>
+                        <p class="last_time">
+                          1小时前
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="check_more" href="" target="_blank">
+                去找设计师
+                <em class="arrow">
+                  &gt;
+                </em>
+              </a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <!--底部模版 闭合标签配对 End-->
+            <script src="js/idangerous.swiper.min.js" type="text/javascript"></script>
+            <script src="js/index_new.js" type="text/javascript"></script>
+            <script type="text/javascript">
+              seajs.use('index_new.js');
+              seajs.use('common',
+              function(SJB) {
+                SJB.commonSubToolBar.init();
+              })
+            </script>
+          </div>
+        </div>
+        <p class="clear"></p>
+        <bgsound src="" autostart="true" loop="2" id="bgmusic"></bgsound>
+        <p class="cl"></p>
+        <!--版权等-->
+        <div class="wrap wrap_cppyright">
+          <div class="cppyright_content">
+            <div class="string clear"></div>
+            <ul>
+              <li>
+                <a href="" rel="nofollow" target="_blank">关于我们</a>
+              </li>
+              <li>
+                <a href="" rel="nofollow" target="_blank">联系我们</a>
+              </li>
+              <li>
+                <a href="" rel="nofollow" target="_blank">意见建议</a>
+              </li>
+              <li>
+                <a href="" rel="nofollow" target="_blank">帮助中心</a>
+              </li>
+              <li class="no_border">
+                <a href="" rel="nofollow" target="_blank">使用条款</a>
+              </li>
+            </ul>
+            <p class="statement">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。</p>
+            <p class="bottom_bah">
+              ©2012shejiben.com,All Rights Reserved.(
+              <a hidefocus="" href="" rel="nofollow">粤ICP备0812558号-2</a>
+              )
+            </p>
+            <div class="bottom_icon">
+              <a href="" target="_blank" rel="nofollow" title="" alt="">
+                <label class="icon_gongan"></label>
+              </a>
+              <a rel="nofollow" href="" target="_blank">
+                <label class="icon_falv"></label>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--版权等 End-->
+        <div style="display:none;">
+          <a href="" target="_blank">
+            <img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a class="bottom_show_left" href="javascript:void(0)" style="left: -105px; display: none;"></a>
+    <form action="" method="post" target="frm_dealer" id="frm_dealer_form">
+      <input type="hidden" id="clickValId" name="key" value=""/>
+    </form>
+    <iframe frameborder="0" height="0" name="frm_dealer" id="clsIframe"></iframe>
+  </body>
+</html>

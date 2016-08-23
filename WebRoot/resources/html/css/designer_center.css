@@ -1,0 +1,600 @@
+@charset "utf-8";
+/* CSS Document */
+html , body { min-width: 1180px;}
+.wrapper{ width:100%; height:auto; position:relative;}
+.container{ width:990px; height:auto; margin:0 auto; margin-top:20px; padding-bottom:80px;}
+
+#content{ padding: 0;}
+.pay_notice .icon{ background:url(http://img.shejiben.com/my/popularize_center/small_img.png?20150325);}
+/*=========右侧内容区=============*/
+.content{ width:822px; height:auto; float:right;}
+
+.user_msg{ background:#FFF; position:relative;}
+.user_msg .msg_detail{ height:120px;} 
+.user_msg .msg_detail dl{ padding:20px 0px 0px 20px; width:628px; float:left;}
+.user_msg .msg_detail .head { width:70px; height:70px; float:left; position: relative;}
+.user_msg .msg_detail .head a.img_mark{ width: 70px; height: 70px; line-height: 70px; color: #fff; text-align: center; font-size: 12px; background: #000; display:none; position: absolute; top:0; left: 0;  filter:alpha(opacity=75);-moz-opacity:0.75;-khtml-opacity: 0.75;opacity:0.75; }
+.user_msg .msg_detail .head:hover a.img_mark{ display: block;}
+.user_msg .msg_detail .msg{ float:left; width:530px; margin-left:20px;}
+.user_msg .msg_detail .msg .top{ width:165px;}
+.user_msg .msg_detail .msg .top .name{  width:auto; float:left; position: relative;}
+.user_msg .msg_detail .msg .top .name label{ height:18px; font-size:18px; display: block; font-weight: bold; font-family: '宋体';}
+.user_msg .msg_detail .msg .top em{ width:45px; height:18px; line-height:18px; float:left; background:url(http://img.shejiben.com/my/popularize_center/small_img.png); color:#FFF; text-indent:18px; font-size:10px; -webkit-text-size-adjust: none;}
+.user_msg .msg_detail .msg .top .name .update_name{ width: 40px; height: 18px; display: none; line-height: 18px; text-align: center; float: left; background:#dd4f50; color: #fff; position:absolute; top:0; left: 0;}
+.user_msg .msg_detail .msg .top .name:hover a.update_name{ display: block;}
+.user_msg .msg_detail .msg .top .icon_rz{ background-position: -239px -29px; margin-left:5px;}
+.user_msg .msg_detail .msg .top .icon_qy{ background-position: -151px -199px; margin-left:5px;}
+.user_msg .msg_detail .msg .top .icon_zm{background-position: -56px -199px; margin-left:10px;}
+.user_msg .msg_detail .msg .top .icon_jy{background-position: -239px -50px; margin-left:10px;}
+.user_msg .msg_detail .msg .top .icon_xr{background-position: -104px -199px; margin-left:10px;}
+.user_msg .msg_detail .msg .mid{ clear:both; margin:0; padding:0; width:100%; margin-top:10px; color:#666666;float: left;}
+
+.user_msg .msg_detail .msg .bottom{width:165px; float:left; padding-top:10px;}
+.user_msg .msg_detail .msg .bottom label{ width:60px; float:left; color:#666666; margin-top: 3px;}
+
+ul.light_icon{ width:auto; float:left;}
+ul.light_icon li{ width:17px; height:19px; float:left; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat; margin-left:5px; color:#666666;}
+ul.light_icon li.li_01{ background-position:-95px -144px;}
+ul.light_icon li.li_02{ background-position:-116px -144px;}
+ul.light_icon li.li_03{ background-position:-138px -144px;}
+ul.light_icon li.li_04{ background-position:-160px -144px;}
+ul.light_icon .light_01{ background-position:-3px -144px;}
+ul.light_icon .light_02{ background-position:-25px -144px;}
+ul.light_icon .light_03{ background-position:-47px -144px;}
+ul.light_icon .light_04{ background-position:-69px -144px;}
+ul.light_icon li:hover .state{ display:block;}
+
+
+.msg_detail ul.light_icon .state_01 { left:161px; top:9px;}
+.msg_detail ul.light_icon .state_02 { left:183px; top:9px;}
+.msg_detail ul.light_icon .state_03 { left:205px; top:9px;}
+.msg_detail ul.light_icon .state_04 { left:227px; top:9px;}
+
+.state{ width:auto;  height:auto;   position:absolute; z-index:2; display:none; top:0px; left:0;}
+.state .detail{ width:auto; height:auto; padding:12px; background:#fffdee; border:1px #ffe9d0 solid; border-bottom:none;}
+.state .border_bottom { width:100%; background:url(http://img.shejiben.com/my/popularize_center/bg_bottom.png) repeat-x; height:5px;}
+.state p{ width:100%;  padding-bottom:8px; font-size:12px;}
+.state a{ color:#DD4F50;}
+
+
+.user_msg .msg_detail .mid { width:110px; height:auto; margin-top:30px; float:right; margin-right:63px;}
+
+
+.user_msg .user_account{width:822px; border-top:1px #eeeeee solid; height:125px; overflow:hidden;}
+.user_msg .user_account ul{ width:101%; }
+.user_msg .user_account ul li{ width:24.8%; height:125px; float:left; border-right:1px #eeeeee solid; }
+.user_msg .user_account ul li .ins{ width:205px; height:22px; line-height:22px; display:block; padding-top:23px;}
+.user_msg .user_account ul li .ins .left{ width:auto; height:auto; float:left; padding-left:30px;}
+.user_msg .user_account ul li .ins .right{width:auto; float:left; border:1px #eeeeee solid; width:55px; text-align:center; margin-left:40px;}
+.user_msg .user_account ul li .ins .right:hover{ background: #dd4f50; border: 1px #dd4f50 solid; color: #fff;}
+.clear{ clear:both;}
+.user_msg .user_account ul li .total{ clear:both; width:205px; margin-top:15px; height:auto; padding-left:30px;}
+.user_msg .user_account ul li .total em{ font-size:36px; color:#dd4f50; padding-right:10px; font-family:Arial, Helvetica, sans-serif;}
+
+.content .notice{ background:#fffdee; height:30px; line-height:30px; border:1px #ffe9d0 solid; margin:10px 0;}
+.content .notice span{ width:20px; height:15px; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat -178px -145px; float:left; margin:9px 10px 0 10px;}
+.content .notice p{ width:auto; float:left; color:#666;}
+.content .notice p a:hover{color: #dd4f50;}
+.content .new_list{ width:364px; height:auto; background:#FFF; padding: 0 20px; border:1px #eeeeee solid; color:#666666; float:left;}
+.content .new_list .title{ padding:15px 0 24px 0; height:24px; line-height:24px;}
+.content .new_list .title p{ width:auto; float:left; font-size:14px; color:#333333; font-weight: bold;}
+.content .new_list .title a{width:auto; float:right; color:#999;}
+.content .new_list .title a:hover{ color: #dd4f50;}
+.content .new_list ul{}
+.content .new_list ul li{ margin-bottom:30px; height:10px; width:100%;} 
+.content .new_list ul li a{ color:#666666; width:255px; white-space: nowrap; display:block; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.content .new_list ul li a:hover{color:#df3132;}
+.content .new_list ul li span{ width:auto; float:right; margin-left:40px; text-align:right;color:#999;}
+.content .right { float:right; }
+
+/*====进度条====*/
+
+.progress_bar {width: 50px; height: 50px; margin:15px 30px; background:url(http://img.shejiben.com/my/popularize_center/progress_bar.png) no-repeat;} 
+.progress_bar_0{ background-position:-45px -20px;}
+
+.progress_bar_1 , .progress_bar_2 , .progress_bar_3 , .progress_bar_4 , .progress_bar_5 { background-position:-45px -96px;}
+.progress_bar_26 , .progress_bar_27 , .progress_bar_28 , .progress_bar_29 , .progress_bar_30{ background-position:-45px -181px;}
+.progress_bar_51 , .progress_bar_52 , .progress_bar_53 , .progress_bar_54 , .progress_bar_55{ background-position:-45px -265px;}
+.progress_bar_76 , .progress_bar_77 , .progress_bar_78 , .progress_bar_79 , .progress_bar_80{ background-position:-45px -351px;}
+
+.progress_bar_6 , .progress_bar_7 , .progress_bar_8 , .progress_bar_9 , .progress_bar_10{ background-position:-132px -96px;}
+.progress_bar_31 , .progress_bar_32 , .progress_bar_33 , .progress_bar_34 , .progress_bar_35{ background-position:-132px -181px;}
+.progress_bar_56 , .progress_bar_57 , .progress_bar_58 , .progress_bar_59 , .progress_bar_60{ background-position:-132px -265px;}
+.progress_bar_81 , .progress_bar_82 , .progress_bar_83 , .progress_bar_84 , .progress_bar_85{ background-position:-132px -351px;}
+
+
+.progress_bar_11 , .progress_bar_12 , .progress_bar_13 , .progress_bar_14 , .progress_bar_15{ background-position:-220px -96px;}
+.progress_bar_36 , .progress_bar_37 , .progress_bar_38 , .progress_bar_39 , .progress_bar_40{ background-position:-220px -182px;}
+.progress_bar_61 , .progress_bar_62 , .progress_bar_63 , .progress_bar_64 , .progress_bar_65{ background-position:-220px -265px;}
+.progress_bar_86 , .progress_bar_87 , .progress_bar_88 , .progress_bar_89 , .progress_bar_90{ background-position:-218px -351px;}
+
+.progress_bar_16 , .progress_bar_17 , .progress_bar_18 , .progress_bar_19 , .progress_bar_20{ background-position:-307px -96px;}
+.progress_bar_41 , .progress_bar_42 , .progress_bar_43 , .progress_bar_44 , .progress_bar_45{ background-position:-307px -181px;}
+.progress_bar_66 , .progress_bar_67 , .progress_bar_68 , .progress_bar_69 , .progress_bar_70{ background-position:-306px -265px;}
+.progress_bar_91 , .progress_bar_92 , .progress_bar_93 , .progress_bar_94 , .progress_bar_95 , .progress_bar_96 , .progress_bar_97 , .progress_bar_98 , .progress_bar_99{ background-position:-307px -351px;}
+
+.progress_bar_21 , .progress_bar_22 , .progress_bar_23 , .progress_bar_24 , .progress_bar_25{ background-position:-400px -96px;}
+.progress_bar_46 , .progress_bar_47 , .progress_bar_48 , .progress_bar_49 , .progress_bar_50{ background-position:-400px -181px;}
+.progress_bar_71 , .progress_bar_72 , .progress_bar_73 , .progress_bar_74 , .progress_bar_75{ background-position:-400px -265px;}
+.progress_bar_100{ background-position:-399px -351px;}
+
+.progress_bar .font_16 { text-align:center; width:50px; height:50px; line-height:50px; font-size: 14px; color:#DD4F50;}
+/*.progress_bar {width: 50px; height: 50px; position:absolute; border-radius: 50%; margin:15px 20px; background:#dd4f50;} 
+.pie_left, .pie_right {width: 50px; height: 50px; position: absolute; top: 0;left: 0; }  
+.pie_left .left, .pie_right .right {display: block; width:50px; height:50px; background:#DCDCDC; border-radius: 50%; position: absolute; top: 0; left: 0;}  
+.pie_right, .right {clip:rect(0,auto,auto,25px); }  
+.pie_left, .left {clip:rect(0,25px,auto,0); }
+.font_16 {width:42px; height:42px; border-radius:50%; left:4px; top:4px; background:#FFF; position:absolute; text-align:center; line-height:42px; font-size: 14px; color:#DD4F50;}*/
+
+/*====右边浮动的二维码====*/
+.user_msg .msg_detail .right{ position:absolute; top:0;right: 0; width: 42px; height: 38px; } 
+
+.user_msg .right:hover .code_right , .user_msg .right:hover .arrow{ display:block;}
+.user_msg .right .code_left{ width:42px; height:38px; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat -258px -107px;}
+.user_msg .right em.arrow{ width: 10px; height: 10px; z-index: 2; display: block; position: absolute; top:5px; left:45px; display: none; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat -279px -246px;}
+.user_msg .right .code_right{ width:97px; height:145px; position: absolute; top:0; left: 50px; padding:10px 10px 10px 5px; background:#FFF; border:1px #e8e8e8 solid; display: none;}
+.user_msg .right .code_img { width:95px; height:95px;}
+.user_msg .right .code_right span{ text-align:center; color:#999; width:100px; line-height:20px; display:block; padding-top:10px;}
+
+/*=======================推广中心==================*/
+.banner{ width:100%; height:350px; background:url(http://img.shejiben.com/my/popularize_center/banner_01.jpg) center center; overflow: hidden;}
+.banner .contact_us{ width:400px; margin:0 auto; padding-top:300px; color:#e6673a;}
+.banner .contact_us label{ width:auto; float:left; line-height:25px; font-size:14px;}
+.banner .contact_us a{ background:url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat -216px -76px; width:82px; height:27px; line-height:25px; text-indent:30px; margin-right:10px; display:block; float:left;}
+.service{width:990px; height:auto; margin:0 auto; margin-top:58px; position:relative;}
+.service ul{}
+.service ul li{ width:260px; height:65px; color:#999999; float:left; margin: 0 40px 80px 20px;}
+.service ul li .service_detail {width:170px; float:left;}
+.service ul li p{ color:#666; height:18px; font-size:14px; padding-bottom:10px;}
+.service ul li .ins{width:170px; padding-top:15px; line-height:18px;}
+.service ul li .img{ width:72px; height:60px; margin-right:15px; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat; float:left;}
+.service ul .li_01 .img{ background-position:0 0;}
+.service ul .li_02 .img{ background-position:-87px 0;}
+.service ul .li_03 .img{ background-position:-160px 0;}
+.service ul .li_04 .img{ background-position:0 -74px;}
+.service ul .li_05 .img{ background-position:-80px -75px;}
+.service ul .li_06 .img{ background-position:-141px -75px;}
+
+
+.tab{ width:100px; height:auto; position:fixed; right:-100px;bottom:10px; display:none;}
+.tab ul {}
+.tab ul li{ width:100%; height:40px; line-height:40px; margin:0; padding:0; text-align:center; border-bottom:1px #d7d7d7 solid; background:#eeeeee;}
+.tab ul li.cur{ background:#e6833a;}
+.tab ul li.cur a{ color:#FFF;}
+.tab ul li a{ color:#4D4D4D;display:inline-block;width:100%; height:40px;}
+.tab ul li:hover {background:#e6833a;}
+.tab ul li:hover a {color:#FFF;}
+.tab ul li.cur {background:#e6833a;}
+.tab ul li.cur a {color:#FFF;}
+.table_msg{width:990px; height:auto; margin:0 auto; margin-top:80px; clear:both; background:#FFF; border-left:1px #efe7d4 solid; position:relative;}
+.table_msg tr{width:990px;}
+.table_msg .table_cloumn td{ height:50px; background:#e6833a; color:#FFF; border-right:1px #e8e8e8 solid; font-size:14px; text-align:center; font-weight:bold;}
+.table_msg td img{margin:0 auto;}
+.table_msg .table_cloumn .yellow { background:#ecb737;}
+.table_msg td.yellow { background:#fff7e4;}
+.table_msg td { text-align:center; height:50px; border-right:1px #e8e8e8 solid; line-height:25px; border-bottom:1px #efe7d4 solid; color:#4d4d4d; font-size:12px;}
+.table_msg .question label{ background:url(http://img.shejiben.com/my/popularize_center/question.png) no-repeat right; padding-right:25px; min-height:14px; display:block;}
+.table_msg .title{ font-size:14px; color:#4d4d4d; font-weight:bold;}
+.table_msg  .stage_01{width:45px; height:18px; line-height:18px; float:left; background:url(http://img.shejiben.com/my/popularize_center/small_img.png); background-position: -54px -200px; color:#FFF; margin-left:80px; font-size:12px; text-indent:9px;}
+.table_msg .stage_02{width:45px; height:18px; line-height:18px; float:left; background:url(http://img.shejiben.com/my/popularize_center/small_img.png); background-position: -240px -50px; color:#FFF; margin-left:70px; font-size:12px; text-indent:11px;}
+.table_msg .stage_03{width:45px; height:18px; line-height:18px; float:left; background:url(http://img.shejiben.com/my/popularize_center/small_img.png); background-position: -105px -200px; color:#FFF; margin-left:70px; font-size:12px; text-indent:11px;}
+.table_msg .no_border{border-right:none;}
+.table_msg .td_01{ text-align:right; padding:0 10px;}
+.table_msg .question:hover .ins{ display:block;}
+.table_msg .ins{ width:340px; height:auto; position:absolute; display:none; text-align:left;}
+.table_msg .ins .detail{width:auto; height:auto; display:block; padding:7px; border:1px #ffe9d0 solid; border-bottom:none; background:#FFFDEE; overflow:hidden; color:#6A6667;}
+.table_msg .ins .detail span{ width:auto; display:block; background:#FFFDEE; padding:10px;}
+.table_msg .ins .ins_bottom{ width:100%; height:8px; overflow:hidden; display:block; background:url(http://img.shejiben.com/my/popularize_center/popularize_bottom.png) repeat-x;}
+.table_msg .ins_1{left:55px; top:75px;}
+.table_msg .ins_2{left:50px; top:300px;}
+.table_msg .ins_3{left:50px; top:320px;}
+.table_msg .ins_4{left:30px; top:710px;}
+.table_msg .ins_5{left:30px; top:700px;}
+.table_msg .ins_6{left:30px; top:815px;}
+.table_msg .ins_7{left:30px; top:865px;}
+.table_msg .ins_8{left:30px; top:830px;}
+.table_msg .ins_9{left:30px; top:880px;}
+.table_msg .ins_10{left:30px; top:1070px;}
+.table_msg .ins_11{left:30px; top:1140px;}
+.table_msg .ins_12{left:30px; top:1190px;}
+.table_msg .ins_13{left:30px; top:1270px;}
+
+.table_msg .img_01{ background:url(http://img.shejiben.com/my/popularize_center/popularize_img.png) no-repeat 0 0;}
+.table_msg .ins img{ margin:0 auto;}
+
+.table_cloumn_fixed{ position:fixed; top:0;}
+
+.question_content{width:990px; height:auto; margin:0 auto; margin-top:40px; margin-bottom:110px;}
+.question_content p{ height:auto; line-height:20px; color:#4d4d4d;}
+.question_content p.detail{ margin-bottom:25px; padding-left:15px;}
+.question_content .title { color:#333333; font-size:14px; padding-bottom:23px; font-weight:bold;}
+
+
+/*================账户中心--我的余额====================*/
+.account_balance{ width:auto; background:#FFF;  padding:20px; min-height:695px;padding-top: 15px;}
+.location { width:100%;  border-bottom:1px #eeeeee solid; height:15px; line-height:15px; padding-bottom:15px;} 
+.location p{color:#333333; font-size:14px; font-weight:bold; width:auto; float:left;}
+.location_left { width:auto; }
+.location_left em{ padding:0 5px 0 0;}
+.location p.location_right { width:auto; float:right; font-weight:normal;}
+.location p.location_right a{ color:#666;font-size: 12px;}
+.location p.location_right a:hover{color: #dd4f50;}
+.balance { margin-top:30px; height:35px;}
+.balance .money{ width:auto; float:left; line-height:35px; color: #333333;font-size: 14px; }
+.balance .money em{ color:#dd4f50; font-size:24px; line-height:34px; font-family: Arial;}
+.balance .btne{ width:auto; float:left; padding-left:20px;}
+.balance .account_right .btn_click{ width: 93px; height: 34px; line-height: 34px; text-align: center;}
+.account{ width:auto;}
+.account a{ float:left;}
+.account_right {width:auto; }
+.account_right input{margin-right:10px;}
+.account_right a{ float:left;}
+.account_right p.float_left{ float:left; width:240px;}
+
+.pay_notice{background-color:#FFFDEE; border:1px #FFE9D1 solid; padding: 10px; font-size: 12px; color: #999896; line-height: 25px; margin-top: 20px;}
+.pay_notice a{text-decoration: none;color: #DE504F;}
+.pay_notice p{ padding-left: 30px;}
+.pay_notice p.title{ padding-left:0; }
+.pay_notice .font_14 { font-size: 14px;}
+.pay_notice .title{ font-size: 14px;color: #676566;}
+.pay_notice .icon_delete { width: 22px; height: 22px; background-position: -177px -632px; display: inline-block; margin:0 5px -5px 0;}
+.pay_notice .icon_square { width: 4px; height: 4px; background-position:  -208px -641px; display: inline-block; margin:0 5px 2px 0;}
+
+/*=======选项卡===========*/
+.account_tab{ width:100%; margin-top:30px; height:auto;}
+.account_tab .title{ height:40px; background:#f8f8f8;}
+.account_tab .title ul { width:auto; padding-left:2px;}
+.account_tab .title ul li{ width:auto; float:left; line-height:40px; color:#666666; font-size:12px; padding:0 25px; cursor:pointer;}
+.account_tab .title ul li.cur{ background:#FFF; border-top:2px #ea7778 solid; line-height:38px;}
+.account_tab .tab_detail{ margin-top:20px;}
+.account_tab .tab_detail .column_name { width:100%; height:35px; line-height:35px; background:#fcfcfc; font-size:12px; color:#999;text-align: center;}
+.account_tab .tab_detail .column_name .column_01{text-align: left; height:35px; text-indent: 40px;}
+.account_tab .tab_detail .column_name .column_02{text-align: left; height: 35px; line-height: 35px;}
+.column_01 , .column_02 ,.column_03 , .column_04{ width:22%; float:left;}
+.column_05{ width:12%; float:left; text-indent:30px; overflow:hidden;text-align: center;}
+.account_tab .tab_detail .column_detail { width:100%; height:40px; line-height:40px; font-size:12px; color:#666666; border-bottom:1px #e6e6e6 dashed;}
+.column_detail .column_01{text-indent:10px;font-family: Arial;}
+.column_detail .column_03 {color: #dd4f50;}
+.column_detail .column_03 , .column_detail .column_04  { text-indent:65px;font-family: Arial;}
+.column_detail .column_05{text-indent:36px;}
+.column_detail .column_05 a{ width:100px; height:30px; color:#666666; display:block; line-height:30px;}
+.column_detail .column_05 a:hover{color:#dd4f50;}
+.column_detail .green{ color:#35a66a;}
+.column_detail .red{ color:#dd4f50;}
+
+.tab_detail_02 .column_01 { width:30%; float:left; height: 36px; overflow: hidden;}
+.tab_detail_02 .column_02 { width:50%; float:left; height: 41px; overflow: hidden;}
+.tab_detail_02 .column_03 { width:20%; float:left; height: 41px; overflow: hidden;}
+.column_detail_02 .column_01{text-indent:10px;}
+.tab_detail_02 .column_02 { text-indent: 40px;}
+.tab_detail_02 .column_03 { height:35px;/* text-align:center;*/}
+
+.account_tab  #money_list .column_02{ width: 15%;}
+.account_tab  #money_list .column_03{ width: 15%; text-align: right; text-indent: 0;}
+.account_tab  #money_list .column_04{ width: 22%; text-align: right;}
+.account_tab  #money_list .column_05{ width: 20%; text-align: right;}
+.account_tab  #money_list .column_05 a{ width:100%; text-align: right;}
+.account_tab  #money_list .column_detail .column_03 { width: 110px; padding-right: 8px;}
+.account_tab  #money_list .column_detail .column_04 { width: 164px; padding-right: 8px;}
+/*=======提现===========*/
+.enchashment_detail{ clear:both; margin-top:20px; color:#666;font-size: 14px;}
+.enchashment_detail .box{ width:100%; height:32px; line-height:32px; padding-bottom:10px;}
+.enchashment_detail .box label{ width:auto; float:left;}
+.enchashment_detail .box .new_txt { border:1px #DDDDDD solid; height:22px; width:220px; line-height:20px; padding:3px 5px; float: left;}
+.enchashment_detail .box .msg_tx{ width: 180px; height: 28px; line-height: 28px; color: #999; font-size: 12px; float: left; background: #FFFDEE; border: 1px #FFECD6 solid; margin-left: 10px; text-indent: 5px;}
+.enchashment_detail .box .msg_tx em{ width: 15px; height:15px; display: inline-block; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) -278px -149px; margin:0 2px -3px 0; }
+.enchashment_detail .box span{ width:auto; float:left;}
+.enchashment_detail .box .img{ width:25px; height:25px; float:left; position: relative; background:url(http://img.shejiben.com/my/popularize_center/small_img.png) -275px -145px; margin:5px 0 0 5px;}
+.enchashment_detail .box .img:hover .enchashment_ins{ display:block;}
+.enchashment_ins{ width:auto; height:auto; position:absolute; display:none; text-align:left;}
+.enchashment_ins .detail{width:auto; height:auto; display:block; padding:1px 5px; border:1px #ffe9d0 solid; background:#fffdee; overflow:hidden; color:#999;}
+.enchashment_ins .ins_bottom{ width:12px; height:8px; overflow:hidden; position: absolute; top:33px; left: 26px; display:block; background:url(http://img.shejiben.com/my/popularize_center/popularize_bottom.png) repeat-x -146px 0;}
+.enchashment_detail .ins_1{left:-21px; top:-40px; width: 460px;}
+.enchashment_detail .ins_2{ width:320px; left:-21px; top:-40px;}
+.enchashment_detail .btn{ margin-left:60px; margin-top:10px;}
+
+/*=====个人实名认证申请========*/
+.attestation_detail{ clear:both; margin-top:10px; position:relative; color:#666666;}
+.attestation_detail div label{font-size: 14px;float: left;width: 120px;text-align:right; display:block;}
+.attestation_detail .box{ width:100%; height:35px; line-height:35px; padding-bottom:10px; position: relative;}
+.attestation_detail .act_nm{padding-top: 5px;line-height: 20px;height: 20px;}
+.attestation_detail .assign_stage .y_t{ font-size: 14px; color: #666;}
+.attestation_detail .assign_stage .y_t a{ color: #dd4f50;}
+/*.attestation_detail .box label{ width:100px; float:left; height:32px; text-align:right; display:block;}    */
+.attestation_detail .box .new_txt { border:1px #DDDDDD solid; height:27px; width:300px; line-height:50%; padding:3px 5px;}
+.attestation_detail .box span{ width:auto; float:left;font-size: 14px;color: #333;}
+.attestation_detail .box_ins p{ margin: 0 120px; line-height:24px; color:#999999;font-size: 12px;}
+.attestation_detail .box_ins p a{ padding-left:10px; color:#dd4f50;}
+.attestation_detail .border_bottom { border-bottom:1px #e6e6e6 dotted; padding-top:10px; margin-bottom:5px;}
+.attestation_detail .box p{ line-height:20px; font-weight:bold;color: #999;margin: 0px auto; text-indent: 20px; font-size: 12px;}
+.attestation_detail .box select{ padding: 3px 0; height: 35px; width: 312px; border: 1px #ddd solid;}
+.attestation_detail .btn_attestation { margin: 10px 0 80px 120px;width:300px;*margin-left: 50px;}
+.attestation_detail .btn_attestation input{float:left;margin-right:5px;}
+.attestation_detail .upload{ background:url(http://img.shejiben.com/my/popularize_center/small_img.png) -192px -220px; border:none; width:70px; height:25px; margin:5px 0 0 5px; color:#666666;}
+.attestation_detail input[type=button]{border-radius: 2px;}
+.attestation_detail .box_ins {width:100%; height:auto; line-height:32px; padding-bottom:5px;}
+.attestation_detail .please{margin-top: -5px;}
+.attestation_detail .please p.type{padding-top: 7px;}
+.attestation_detail .acount{padding-bottom: 10px;line-height: 20px;height: 20px;}
+.attestation_detail .box .msg{ width: auto;padding: 0 10px;height: 32px;line-height: 32px;background: #ffeded;border: 1px solid #faafaf;text-align: center;color: #999;font-size: 12px;display: none;position: absolute; top: 1px; left: 446px; }
+
+.box_company_head {width:100%; height:100px; line-height:24px; padding-bottom:7px;}
+.box_company_head label{ width:100px; float:left; height:32px; text-align:right; display:block;}
+.box_company_head .company_head { width:100px; height:100px; float:left; position:relative;}
+.box_company_head .company_head  img{ width:100px; height:100px; border:1px #dadada solid;}
+.box_company_head .update_head { position:absolute; width:100px; height:24px; bottom:-1px; left:1px; z-index:2; background:#000; text-align:center; opacity:0.6; filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity: 0.6; opacity:0.6; color:#FFF; cursor:pointer;}
+
+.attestation_detail .box .code_img {border:1px #DDDDDD solid; height:24px; width:300px; line-height:20px; padding:3px 5px; float:left;}
+
+/*=====规则帮助========*/
+.rule_content{ width:auto; background:#FFF;  padding:20px; min-height:600px;padding-top: 10px;}
+.account_balance .rule_ins { width:auto; padding:15px 20px; background:#f8f8f8; color:#666; margin:30px 0; line-height:24px;margin-top: 20px;}
+.table_rule_01{width:780px; height:auto; margin:0 auto; clear:both; background:#FFF; border-left:1px #e4e4e4 solid; border-top:1px #e4e4e4 solid; position:relative; margin-bottom:30px;}
+.table_rule_01 tr{width:820;}
+.table_rule_01 th{ height:40px; background:#f2f2f2; color:#666; border-right:1px #e4e4e4 solid;font-weight: normal;}
+.table_rule_01 td { text-align:center; height:40px; border-right:1px #e4e4e4 solid; line-height:20px; border-bottom:1px #e5e5e5 solid; color:#4d4d4d; font-size:12px;}
+.table_rule_01 td.td_01{ background:#f8f8f8;}
+.table_rule_01 td.td_02{ text-align:left; padding:0 20px;}
+.table_rule_01 td.td_04{text-align:left;text-indent:20px;}
+.account_balance .add_rule{ font-size:14px; padding-bottom:15px; color:#333;}
+
+.enchashment_detail .user_input {border:1px #DDDDDD solid; height:24px; line-height:20px; padding:3px 5px; width:90px; margin-right:10px;}
+.enchashment_detail .border_bottom { border-bottom:1px #e6e6e6 dashed; padding-top:70px; margin-bottom:15px;}
+.enchashment_detail p{ color:#999;}
+.enchashment_detail em{ color:#dd4f50; padding:0 2px;}
+
+/*--============我的派单==============-*/
+.assign_stage { width:auto; padding:20px; height:auto; background:#fffdee; border:1px #ffe9d1 solid; margin:20px 0 20px 0;}
+.assign_stage p{ color:#333; font-weight:bold;} 
+.assign_stage em{ color:#dd4f50;}
+.assign_stage ul{}
+.assign_stage ul li { width:100%; margin-top:20px; color:#666;}
+.assign_stage ul li span{background: url("http://img.shejiben.com/my/popularize_center/small_img.png") -290px -432px;display: inline-block;width: 7px;height: 6px;}
+.assign_stage ul li em{ padding:0 5px;}
+.assign_stage .assign_btn{ width:100%; margin-top:20px;}
+.assign_stage .assign_btn .refuse_btn { background:none; color:#666; font-size:12px;}
+.assign_stage .assign_btn .refuse_btn:hover { color:#dd4f50;}
+
+/*=========业主信息=======*/
+.assign_content{width:auto; height:auto; border:1px #eaeaea solid; border-bottom:none;  margin-top:20px;  color:#666;}
+.assign_content .clumn_name { height:34px; line-height:33px; background:#fcfcfc; border-bottom:1px #eaeaea solid; text-indent:20px;}
+.assign_content .box { min-height:18px; line-height:16px; padding:11px 20px; border-bottom:1px #eaeaea solid;}
+.assign_content label{ width:auto; float:left;} 
+
+.assign_content span{border-right:1px #eaeaea solid; float:left;min-height: 15px; }
+.owner_msg .msg_left{ width:auto; padding-right:65px;}
+.owner_msg .msg_mid{ width:auto; padding:0 40px;}
+.owner_msg .msg_right{ width:auto; padding-left:40px;}
+.owner_msg .msg_right em{ width:240px; height:16px; display:inline-block;margin-left: 3px;}
+.owner_msg .msg_right em.undisable{ background:url(http://img.shejiben.com/my/popularize_center/small_img.png) 0 -296px;}
+.assign_content span.no_border { border: none;}
+.project_msg .box_02 span{ width:20%;}
+.project_msg .box_02 .msg_left{}
+.project_msg .msg_float_right { float:right;}
+.project_msg .box_02 .msg_mid ,.project_msg .box_02 .msg_right_01 , .project_msg .box_02 .msg_right_02 { padding-left:5%;}
+.account_balance .project_msg .box_02 .msg_right_02 { width: 180px; height: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.project_msg .box_yq{ height: 30px; overflow: hidden; text-overflow: ellipsis;}
+.assign_msg { margin-bottom:80px;}
+.assign_msg span{ width:25%;}
+.assign_msg .msg_mid , .assign_msg .msg_right { padding-left:4%;}
+.assign_msg span.no_border{padding-left: 8%;}
+/*==完整的业主信息==*/
+.owner_msg_all .msg_left { width:51.5%; float:left; position:relative;}
+.owner_msg_all .msg_left .user_id{ float:left; padding-left:70px;}
+.owner_msg_all .msg_mid {width:20%; float:left; padding-left:4%;}
+.owner_msg_all .msg_right {width:20%; float:left; padding-left:4%;} 
+.owner_msg_all .user_head { width:20px; height:20px; position:absolute; left:140px; top:-2px;border: 0;}
+
+/*我收到的派单  已接受*/
+.assign_follow_up{border:1px solid #ffe9d1;margin-top: 30px;border-top: 2px solid #dd4f50;background: #fff;}
+.assign_follow_up .assign_tab{height: 35px;line-height: 35px;padding-left: 20px;border-bottom: 1px solid #ddd;}
+.assign_follow_up .assign_tab label{font-size:14px;}
+.assign_follow_up .assign_tab span{float: right;margin-right: 20px;color: #999;cursor: pointer;}
+.assign_follow_up .assign_add{margin: 20px 20px 0px 20px; position: relative;}
+.assign_follow_up .assign_add .msg{ position: absolute; top:12px; left: 10px; color: #999;}
+.assign_follow_up .assign_add input{border:1px solid #ddd;outline:none;color:#999;}
+.assign_follow_up .assign_add input[type=text]{width:619px;height:34px;padding-left:5px;}
+.assign_follow_up .assign_add input[type=submit]{width:60px;height:36px;background:#fff;margin-left:10px;color:#333;}
+.assign_follow_up .assign_add input[type=submit]:hover{color:#dd4f50;}
+.assign_follow_up ._follow_up{padding: 20px;border-bottom: 1px dashed #e6e6e6;}
+.assign_follow_up ._follow_up p{color:#999;font-weight:normal;}
+.assign_follow_up ._follow_up p.np{color: #333;margin-top: 15px;}
+.assign_follow_up .end{border-bottom:0;}
+.operate .btn_03 .btn_order{background:url(http://img.shejiben.com/my/popularize_center/back.png) -78px -227px;color: #666 !important;}
+
+
+/* 我收到的预约*/
+.my_get_appointment .account_balance .assign_stage {overflow: hidden;color: #999999;height: 50px;line-height: 50px;padding: 0 20px;}
+.my_get_appointment .account_balance .assign_stage .y_t{float: left;}
+.my_get_appointment .account_balance .assign_stage .qq{float: right;margin-top: 13px;margin-right: 130px;}
+.my_get_appointment .account_balance .assign_stage a{background: url("http://img.shejiben.com/my/popularize_center/small_img.png") no-repeat -216px -76px;width: 82px;height: 27px;line-height: 25px;text-indent: 30px;margin-right: 10px;display: block;float: left;color: #999;}
+.my_get_appointment .project_msg .clumn_name label{float: right;color: #999;margin-right: 20px;}
+.my_get_appointment .project_msg .clumn_name label a{color: #dd4f50;}
+.my_get_appointment .box_02 .msg_left{width: 25%;}
+.my_get_appointment .box_02 .msg_mid{width: 25%;}
+.my_get_appointment .box_02 .msg_right_01{width: 25%;border-right: 0;}
+.my_get_appointment .box .pen_name{width: 25%;}
+.my_get_appointment .box .pen_phone{border-right: 0;padding-left: 45px;width: auto;}
+.my_get_appointment .box .pen_phone a{color: #dd4f50;display: inline-block;margin-left: 20px;}
+.my_get_appointment .box .pen_phone em.undisable{width: 240px;height: 16px;display: inline-block;background: url(http://img.shejiben.com/my/popularize_center/small_img.png) 0 -296px;float: left;}
+
+/*我收到的派单  非合作设计师*/
+.assign_stage_new { width:auto; padding:20px; height:auto; background:#fffdee; border:1px #ffe9d1 solid; margin-top:20px;}
+.assign_stage_new .no_cooperate{ width:655px; height: auto; margin: 0 auto; padding: 30px 0;}
+.assign_stage_new .no_cooperate p{ width: auto; float: left; color: #666; font-size: 14px; font-weight: normal; margin:5px 5px 0 0;}
+.assign_stage_new .no_cooperate a{width: auto; float: left; width: 82px; height: 26px; background: url(http://img.shejiben.com/my/popularize_center/small_img.png) -216px -76px; margin-left: 10px; line-height: 26px; text-indent: 30px; color: #999;}
+
+/* 公用 无数据页面的样式*/
+.assign_stage_new .no_date{ width: 100%;}
+.assign_stage_new .no_date p{ width: 100%; height: auto; color: #666; font-size: 14px; font-weight: normal; margin:5px 5px 0 0;}
+.assign_stage_new .no_date a{ width:125px; height:36px; display: block; margin-top: 20px; background: url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat 0 -260px; color: #fff; text-align:center; line-height: 36px; font-size: 14px; }
+.assign_stage_new .no_date a:hover{ background: url(http://img.shejiben.com/my/popularize_center/small_img.png) no-repeat -126px -260px;}
+
+/*缴纳保证金*/
+.assign_stage .deposit{ width: 100%;}
+.assign_stage .deposit label{ width: 100%; height: auto; color: #666; font-size: 14px; font-weight: normal; margin:5px 5px 0 0;}
+.assign_stage .deposit p{ width: auto; height: auto; color: #666; font-size: 14px; font-weight: normal; margin:10px 5px 0 0;float: left;}
+.assign_stage .deposit a{ width: auto;position: relative;top: 5px; float: left; width: 82px; height: 26px; background: url(http://img.shejiben.com/my/popularize_center/small_img.png) -216px -76px; margin-left: 10px; line-height: 26px; text-indent: 30px; color: #999; }
+/*.assign_stage .deposit a:hover{ background: url("http://img.shejiben.com/my/popularize_center/small_img.png") no-repeat -126px -260px; }*/
+.deposit .column_01 { width: 30%; float:left;}
+.deposit .column_02 { width:50%; float:left;}
+.deposit .column_03 { width:15%; float:left;}
+.deposit .column_01{text-indent:10px;}
+.deposit .column_02 { text-align: center;}
+.deposit .column_03 { text-align:right;}
+.account_tab .deposit .column_name .column_02 { text-align: center; text-indent: 0;}
+.deposit .column_detail .column_03 { color: #35a66a; }
+.deposit .column_detail .column_03 .rd{ color: #dd4f50; }
+.deposit_01 .submit_deposit{ width: 95px; height: 36px; display: block; line-height: 36px; text-align: center; background: url(http://img.shejiben.com/my/popularize_center/small_img.png) 0 -219px; color: #fff;}
+.deposit_01 .submit_deposit:hover{background:url(http://img.shejiben.com/my/popularize_center/qiandao_hover.png) no-repeat;}
+.deposit_01 em , .deposit_02 em { color: #666; }
+.deposit_01 .status , .deposit_01 em.red { color: #dd4f50;}
+.deposit_02 .btne{ margin-left: 0; width: auto;}
+.deposit_02 .btne input{ float: left;}
+.deposit_02 .btne .btn_cancel{ background: none; color: #666;}
+.deposit_02 .user_input{ float: left;}
+.deposit_02 img{ height: 32px; float: left;}
+.deposit_02{display: none;}
+ /*实名认证*/
+.name_auth .assign_stage{height: 50px;padding: 0;line-height: 50px;}
+.name_auth .assign_stage .y_t {color: #333;margin-left: 20px;font-size: 12px;}
+.name_auth .assign_stage .y_t a{color: #dd4f50;}
+.name_auth .real_name_pl{margin-top: 20px;}
+.name_auth .real_name_pl .peos_logo{background: url(http://img.shejiben.com/my/popularize_center/small_img.png) -1px -490px;width: 100px;height: 100px;float: left;}
+.name_auth .real_name_pl .peos_desc{float: left;width: 600px;margin-left: 15px;}
+.name_auth .real_name_pl .peos_desc p{width: 100%;text-align: left;font-size: 14px;color: #666;margin-top: 10px;}
+.name_auth .real_name_pl .peos_desc p.name{font-weight:bold;font-size: 14px;color: #666;margin-left: -5px;}
+.name_auth .real_name_pl .peos_desc a{background:#dd4f50;cursor: pointer;outline: none;width: 95px;height: 36px;line-height: 36px; display:block; border-radius:3px;text-align: center;color: #fff;margin-top: 10px;}
+.name_auth .real_name_pl .peos_desc a:hover{ background: #f77071; color: #fff;}
+ /*企业实名认证*/
+.name_auth .real_name_pl .peos_logo_con{background-position: -106px -490px;}
+/*我的关注 粉丝*/
+.my_vermicelli{background: #fff;padding: 15px 20px 80px; width: 780px; min-height: 604px;}
+.my_vermicelli .title ul{height: 50px;line-height: 50px;border-bottom: 1px #ddd solid;margin: 0 20px;}
+.my_vermicelli .title ul li{line-height: 47px;float: left;width: 102px; text-align: center;border-bottom: 3px #fff solid;cursor: pointer;}
+.my_vermicelli .title ul li.cur{border-bottom: 3px #E94C3D solid;}
+.my_vermicelli .title ul li:hover{border-bottom: 3px #E94C3D solid;}
+.my_vermicelli .vermicelli_cont{ width: 100%; height: auto; /*overflow: hidden;*/}
+.my_vermicelli .vermicelli_cont ul{ width: 104%; height: auto;}
+.my_vermicelli .vermicelli_cont ul li{ width: 112px; height: auto; float: left; float: left; margin:20px 20px 0 0; position: relative; border: 1px #eee solid; }
+.my_vermicelli .vermicelli_cont ul li a{ width: 112px; height: 112px; display: block; overflow: hidden;}
+.my_vermicelli .vermicelli_cont ul li img{ width: 112px; height: 112px;}
+.my_vermicelli .vermicelli_cont ul li .name { width:100%; height:14px; line-height:14px; color: #fff; padding-bottom: 6px; text-indent:10px; padding-top: 12px; position: absolute;top: 80px; left: 0;  background: url("http://img.shejiben.com/my/popularize_center/small_img.png") -1px -653px;  overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 110px;}
+.my_vermicelli .vermicelli_cont .follow_status { width: 100%; height: 28px; line-height: 28px; display: block; overflow: hidden; color: #666;}
+.my_vermicelli .vermicelli_cont .follow_status .followico{ width:14px; height:14px; display:block; float: left; background: url("http://img.shejiben.com/my/popularize_center/small_img.png");}
+.my_vermicelli .vermicelli_cont .follow_status .following{margin:6px 10px 0 25px; background-position: -172px -606px;}
+.my_vermicelli .vermicelli_cont .follow_status .follow{margin:6px 10px 0 25px; background-position: -232px -605px;}
+.my_vermicelli .vermicelli_cont .follow_status .unfollow{margin:6px 10px 0 20px; background-position: -190px -605px;}
+.my_vermicelli .vermicelli_cont .follow_status .followinfo_gz:hover{color: #dd4f50;}
+.my_vermicelli .vermicelli_cont ul li .status_add em{margin:6px 10px 0 25px; background-position: -232px -605px;}
+.my_vermicelli .vermicelli_cont ul li .status_each em{margin:6px 10px 0 20px; background-position: -211px -605px;}
+
+/*赚金币*/
+.a_coin_actives .selectActive_status{height: 40px;line-height: 40px;margin-top:20px;background: #f8f8f8;color: #666;}
+.a_coin_actives .selectActive_status span{}
+.a_coin_actives .selectActive_status span.bor{padding-left: 10px;padding-right: 10px;}
+.a_coin_actives .selectActive_status span.cur{color: #dd4f50;padding-left: 20px;}
+.coin_actives .a_coin{overflow: hidden;padding: 24px 0px 20px;border-bottom: 1px #eee dashed;}
+.coin_actives .a_coin .active_logo{background: #f8f8f8;width: 60px;height:48px; line-height: 60px;text-align: center;float: left;padding-top: 12px;}
+.coin_actives .a_coin .active_logo div{background: url("http://img.shejiben.com/my/popularize_center/small_img.png?20150504") no-repeat;margin: 0 auto;height: 33px;}
+.coin_actives .a_coin .active_logo div._01{background-position:  -192px -448px;width: 23px;}
+.coin_actives .a_coin .active_logo div._02{background-position:  -220px -447px;width: 35px;}
+.coin_actives .a_coin .active_logo div._03{background-position:  -266px -444px;width: 30px;}
+.coin_actives .a_coin .active_logo div._04{background-position:  -219px -485px;width: 35px;}
+.coin_actives .a_coin .active_logo div._05{background-position:  -263px -482px;width: 35px;}
+.coin_actives .a_coin .active_logo div._06{background-position:  -220px -527px;width: 33px;}
+.coin_actives .a_coin .active_logo div._07{background-position:  -257px -525px;width: 42px;}
+.coin_actives .a_coin .active_logo div._08{background-position:  -216px -564px;width: 39px;}
+.coin_actives .a_coin .active_logo div._09{background-position:  -261px -564px;width: 34px;}
+.coin_actives .a_coin .active_logo div._10{background-position:  0 -687px;width: 34px; height: 40px;}
+.coin_actives .a_coin .active_logo div._11{background-position: -38px -687px;width: 34px;}
+.coin_actives .a_coin .desc{float: left;margin-left: 10px;}
+.coin_actives .a_coin .desc label{font-size: 14px;color: #333;font-weight: bold;}
+.coin_actives .a_coin .desc p{font-size: 14px;color: #999;line-height: 22px;}
+.coin_actives .a_coin .desc p em{color: #dd4f50;}
+.coin_actives .a_coin .desc p.mar{margin-top: 5px; margin-right: 10px;}
+.coin_actives .a_coin .coin_btn{float: right;margin-top: 15px;}
+.coin_actives .a_coin .coin_btn a{width: 81px;height: 35px; display: block; line-height: 35px; text-align: center; border-radius: 3px; outline: none;border: 0; background: #dd4f50; font-size: 14px; }
+.coin_actives .a_coin .coin_btn .coin_go{ width:80px; height:34px; color: #fff;}
+.coin_actives .a_coin .coin_btn .coin_go:hover{ background: #F77071; border-radius: 3px;}
+
+.coin_actives .a_coin .coin_btn .coin_end{ width:80px; height:34px; color: #666; background: #e3e3e3; cursor:default;}
+.coin_actives .a_coin .coin_btn .coin_end:hover{ background: #e3e3e3;}
+
+
+/*个人中心 接单申请 1*/
+.content_right{width: 822px;float: right;background: #fff;min-height: 600px;font-family: Arial;}
+
+/*我收到的派单*/
+.distr_my .proj_msg{margin-top:20px;}
+.distr_my .proj_msg select{width: 100px;height: 26px;padding-left: 10px;float: left; border: 1px #DCDCDC solid; outline: none;}
+.distr_my .proj_msg .distr_msg {overflow: hidden;height: 26px;line-height: 26px;}
+.distr_my .proj_msg span{margin-left: 20px;float: left;}
+.distr_my .proj_msg span span{margin-left:10px;}
+.distr_my .proj_msg span em{ color: #dd4f50;}
+.distr_my .proj_msg span a{color:#dd4f50;margin-left: 10px;}
+.distr_my .list_info ._info .jc_info {margin-top: 10px; height: 12px; width: 100%;}
+.distr_my .list_info ._info .jc_info span{padding:0 10px; color: #999; margin-left:0px; height: 12px; line-height: 12px; border-right:1px #DADADA solid; font-family: '宋体';}
+.distr_my .list_info ._info .jc_info .city{ width: 30px; padding:0 10px 0 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.distr_my .list_info ._info .jc_info .no_border{ border: none;}
+.distr_my .list_info ._info .order_titie{color: #333;}
+.distr_my .list_info ._info .order_titie:hover{color: #dd4f50;}
+.distr_my .list_info .stats a{color: #dd4f50;}
+.distr_my .proj_label{height:35px;line-height:35px;color:#666; background: #F8F8F8; margin-top: 20px;}
+.distr_my .proj_label span{display:inline-block;}
+.proj_label span.tab_01{width:322px;padding-left:20px;}
+.proj_label span.tab_02{margin-left:0px;width:100px;}
+.proj_label span.tab_03{margin-left:0px;width:100px; text-align: center;}
+.proj_label span.tab_04{margin-left:0px;width:120px; text-align: center;}
+.proj_label span.tab_05{margin-left:0px; width: 100px; text-align: center;}
+.distr_my .list_info{padding-top:20px;padding-bottom:20px;color: #333; height: auto; border-bottom:1px #ECECEC dashed; }
+.distr_my ._info {width:362px; float: left;}
+.distr_my ._info b{font-weight:normal;font-size:12px;color: #333;}
+.distr_my .reser{width:100px;float:left;}
+.distr_my .time{float: left;width: 100px;text-align: center; font-family: '宋体';}
+.distr_my .time p{padding-top: 10px;}
+.distr_my .stats{float:left;width: 120px;text-align: center;}
+.distr_my .stats p{padding-top: 10px;}
+.distr_my .operate a{color:#dd4f50;}
+.distr_my .operate{width: 100px;float: left;text-align: right;color: #999;}
+.distr_my .operate .btn_03{margin-right: 18px;}
+.distr_my .operate span{display:inline-block;width:14px;height:15px;background:url(http://img.shejiben.com/my/popularize_center/small_img.png) -275px -201px;margin-bottom: -5px;}
+
+/*分页重置*/
+.page_item{ margin-top: 30px;}
+.page{margin-top:20px;margin-top: 42px;margin-bottom: 38px;}
+.page_num{background:#fff;height:30px;font-family: Arial;}
+.page_num a, .more_page_num a{padding:8px 12px;border-radius:5px;color:#666;border:none;margin-right:5px;}
+.page_num .on{background:#ce1d23;color:#fff;}
+.page_num a:hover{background:#f2f2f2; color: #666;}
+.page_num .on:hover{background:#e94c3d;color:#fff;}
+.page_num .next{background:none;color:#666;}
+
+
+/*设计师中心引导页*/
+/*.popup_mask_guide{ width: 100%; height: 100%; position: fixed; background: #000; filter:alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity: 0.7; opacity:0.7; display:none; top:0; left:0; z-index: 1010;}
+.user_guide{ width: 1180px; height: 100%; position:absolute; top:0; left:50%; margin-left: -560px; z-index: 1020; display: none;}
+.user_guide .guide_index{ width:431px; height: 431px; background:url(http://img.shejiben.com/my/popularize_center/guide_index.png) no-repeat center; position: relative; margin-left: 375px; margin-top:100px;}
+.user_guide .guide_index .btn_next{ width: 120px; height: 40px; line-height: 40px; display: block; text-align: center; font-size: 20px; color: #fff; font-family: '微软雅黑'; position: absolute; top:317px; left: 157px; background: #dd4f50; border-radius: 3px;}
+.user_guide .guide_index .btn_next:hover{ background: #f77071;}
+.user_guide .guide_index .btn_close{width: 66px; height: 20px; line-height: 20px; text-align: center; display: block; position: absolute; top:365px; left: 180px;}
+
+.user_guide .btn_close{ width: 42px; height: 43px; display: block; position: absolute;}
+.user_guide .btn_next{ width: 110px; height: 40px; line-height: 40px; display: block; text-align: center; font-size: 20px; color: #fff; font-family: '微软雅黑'; position: absolute; background: #dd4f50; border-radius: 3px;}
+.user_guide .btn_next:hover{ background: #f77071;}
+
+.user_guide .guide_order{ width:700px; height: 700px; background:url(http://img.shejiben.com/my/popularize_center/guide_order.png) no-repeat center; position: relative; margin-left: 184px; margin-top: -91px;}
+.user_guide .guide_order .btn_close{ top:335px; left: 375px;}
+.user_guide .guide_order .btn_next{ top:505px; left: 225px; background: #dd4f50;}
+.user_guide .guide_order .btn_next:hover{ background: #f77071;}
+
+.user_guide .guide_social{ width:700px; height: 600px; background:url(http://img.shejiben.com/my/popularize_center/guide_social.png) no-repeat center; position: relative; margin-left: 270px; margin-top: -91px;}
+.user_guide .guide_social .btn_close{ top:311px; left: 367px;}
+.user_guide .guide_social .btn_next{top:505px; left: 225px;}
+
+.user_guide .guide_column{ width:1120px; height: 700px; background:url(http://img.shejiben.com/my/popularize_center/guide_column.png) no-repeat center; position: relative; margin-left: 60px; margin-top: 0;}
+.user_guide .guide_column .btn_close{ width: 200px; height: 40px; line-height: 40px; display: block; text-align: center; font-size: 20px; color: #fff; font-family: '微软雅黑'; position: absolute; top:500px; left: 414px; background: #dd4f50; border-radius: 3px;}
+.user_guide .guide_column .btn_close:hover{ background: #f77071;}
+.user_guide .guide_column .btn_repeat{width: 60px; height: 20px; line-height: 20px; text-align: center; display: block; top:560px; left: 486px; color: #999; position:absolute;}
+*/
+

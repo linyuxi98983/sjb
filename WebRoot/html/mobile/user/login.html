@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>用户登录 - 百爪鱼</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <link href="../css/main.css" rel="stylesheet" />
+        <link href="../css/dsn.css" rel="stylesheet" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/decorate_pics.css" rel="stylesheet" />
+        <script src="../js/jquery-1.9.0.min.js"></script>
+        <script src="../js/jquery.lazyload.min.js"></script>
+        <script src="../js/dsn.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="headerTop">
+                <span onclick="location.href='../index.html'">百爪鱼</span>
+                <i>登录</i>
+                <a href="#" class="dsn-icon" id="show-pop-menus"></a>
+            </div>
+        </header>
+        <div class="pop-menus">
+        	<a href="" class="login-info">设计师</a>
+       		<a href="javascript:void(0)" class="login-exit" onclick="logout()">[退出]</a>
+       		<h1><a href="#" class="dsn-icon" id="hide-pop-menus"></a></h1>
+            <ul class="clearfix">
+            	<li><a href="../index.html" class="dsn-icon"></a><span>首页</span></li> 
+			    <li><a href="../decorate/decorate-pics.html" class="dsn-icon"></a><span>装修图库</span></li> 
+			    <li><a href="../case/case.html" class="dsn-icon"></a><span>设计案例</span></li> 
+			    <li><a href="../designer/designer.html" class="dsn-icon"></a><span>找设计师</span></li> 
+			    <li><a href="../demand/demand.html" class="dsn-icon"></a><span>提交需求</span></li> 
+            </ul>
+        </div>
+        <section class="login_form no_app_push">
+            <form action="#" method="post" autocomplete="off">
+                <label class="login_msg">请填写正确的手机号码</label>
+                <div class="login_box">
+                    <label class="icon user_icon"></label>
+                    <input type="text" name="loginuser" id="loginuser" autocomplete="off" placeholder="手机/邮箱/用户名" />
+                </div>
+                <div class="login_box">
+                    <label class="icon psw_icon"></label>
+                    <input type="password" name="loginpsw" id="loginpsw" autocomplete="off" placeholder="登录密码"/>
+                </div>
+                <input type="button" value="登录" class="red_btn login_btn"/>
+                <input type="hidden" name="http_referer" id="http_referer" value=""/>
+                <input type="hidden" name="referer" id="referer" value=""/>
+                <input type="hidden" name="login" id="login" value="" />
+            </form>
+            <a class="reg" href="register.html">暂无帐号，立即注册</a>
+        </section>
+        <input type='hidden' id='pagename' value='login' />
+        <input type='hidden' id='page_value' pagename="login" value='user' />
+        <script src="../js/login.js"></script>
+    </body>
+</html>

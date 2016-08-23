@@ -1,0 +1,202 @@
+.header-wrap, .header-wrap .w {
+    height: 140px;
+    background: #fff;
+}
+.header-wrap .header {
+    font-family: \5b8b\4f53;
+}
+.w {
+    width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-wrap .logo {
+    width: 145px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    margin: 38px 0 0 35px;
+}
+h1 {
+    font-size: 36px;
+}
+.header-wrap .search-wrap {
+    margin: 52px 0 0 150px;
+    width: 590px;
+    height: 34px;
+    line-height: 34px;
+    z-index: 6;
+    _margin-left: 120px;
+}
+.ld {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.ld {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.header-wrap .search {
+    height: 34px;
+}
+.header-wrap .search-txt {
+    float: left;
+    width: 480px;
+    background: #fff;
+    border: 2px solid #e83537;
+    padding-left: 12px;
+}
+label, input, button, select, textarea {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.header-wrap .search-btn {
+    float: left;
+    width: 84px;
+    height: 38px;
+    background: #e83537;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.header-wrap .search-wrap .key-word {
+	float:left;
+    color: #666;
+}
+.header-wrap .search-wrap .key-word a {
+    color: #666;
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.nav-wrap, .nav-wrap .w {
+    background: #e83537;
+}
+.nav-wrap .nav {
+    font-size: 16px;
+    color: #fff;
+    font-family: "microsoft yahei";
+    overflow: hidden;
+}
+.nav-wrap .nav ul {
+    padding-left: 240px;
+    height: 40px;
+    float: left;
+}
+.nav-wrap .nav li {
+    float: left;
+}
+.nav-wrap .nav a {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.nav-wrap .nav li.on a, .nav li a:hover {
+    background: #a92325;
+    color: #fff;
+}
+/*图片轮播*/
+.top-slider{position: relative;}
+.turn{width:100%;position:relative;overflow:hidden;}
+.turn #slider{width:100%;overflow:hidden;position:relative;}
+.turn #slider li{display:block;float:left;}
+.turn #slider li img{width:100%;height:343.25px;}
+.turn .dot{position:absolute;bottom:.25rem;left:0;text-align:center;width:100%;z-index:2;}
+.turn .dot ul{display:inline-block;overflow:hidden;padding-left:.25rem;}
+.turn .dot li{display:inline;float:left;margin:.075rem .25rem .075rem 0;width:.3rem;height:.3rem;background-color:#ccc;-webkit-border-radius:.15rem;border-radius:.15rem;font-size:0;line-height:0;text-align:-999em;}
+.turn .dot li.on{background-color:#ff463c;}
+.slidesjs-container{margin:0 auto}
+/*全部分类*/
+.nav>li.all{
+   	width: 200px;
+   	height:40px;
+   	line-height:40px;
+	_display: inline;
+	text-align: center;
+	background: #ff2832;
+	position: relative;
+	color:#fff;
+	font-size:16px;
+	letter-spacing:2px;
+}
+/*小分类*/
+.in-top-b{ height:40px;width:100%;line-height:40px; }
+/**sub-menu**/
+.in-top-b .top-nav:hover .sub-nav{ display:block;height:330px!important; overflow:visible!important;}
+.sub-nav{ position:absolute; height:330px; display:block; background:
+#fff; width:200px; z-index:5; background:#CB302E; color:#fff; left:0px; top:40px; overflow:hidden; z-index:99 }
+.sub-nav li{ height:26px; padding:4px 0 0px 13px; *padding-top:2px; transition:all .3s ease; position:relative;}
+.sub-nav li a{ color:#fff; text-decoration:none;}
+.sub-nav li a:hover{ text-decoration:underline}
+.sub-nav li h3{ font-size:14px;margin:0px; line-height:200%;}
+.sub-nav li .xl{ height:18px; overflow:hidden;}
+.sub-nav li .xl a{ float:left; margin-right:6px; width:auto; font-size:12px; white-space:nowrap; line-height:18px;}
+.sub-nav .menus1{ background-position:left 15px;}
+.sub-nav .menus1:hover{ background-position:left -66px;}
+.sub-nav .menus1:hover .sub-menu1{ display:block}
+.sub-nav .menus2{ background-position:-196px 15px;}
+.sub-nav .menus2:hover{ background-position:-196px -66px;}
+.sub-nav .menus2:hover .sub-menu2{ display:block}
+.sub-nav .menus3{ background-position:-396px 15px;}
+.sub-nav .menus3:hover{ background-position:-396px -66px;}
+.sub-nav .menus3:hover .sub-menu3{ display:block}
+.sub-nav .menus4{ background-position:-596px 15px;}
+.sub-nav .menus4:hover{ background-position:-596px -66px;}
+.sub-nav .menus4:hover .sub-menu4{ display:block}
+.sub-nav .menus5{ background-position:-796px 15px;}
+.sub-nav .menus5:hover{ background-position:-796px -66px;}
+.sub-nav .menus5:hover .sub-menu5{ display:block}
+.sub-nav .menus6{ background-position:-996px 15px;}
+.sub-nav .menus6:hover{ background-position:-996px -66px;}
+.sub-nav .menus6:hover .sub-menu6{ display:block}
+.sub-nav .menus7{ background-position:-1196px 15px;}
+.sub-nav .menus7:hover{ background-position:-1196px -66px;}
+.sub-nav .menus7:hover .sub-menu7{ display:block}
+.sub-nav .menus8{ background-position:-1396px 15px;}
+.sub-nav .menus8:hover{ background-position:-1396px -66px;}
+.sub-nav .menus8:hover .sub-menu8{ display:block}
+.sub-nav .menus9{ background-position:-1595px 15px;}
+.sub-nav .menus9:hover{ background-position:-1595px -66px;}
+.sub-nav .menus9:hover .sub-menu9{ display:block; height:504px !important; background: none}
+.dorpmenu{ position:absolute; margin:2px;left:200px; top:0; width:750px; height:330px; background:none; display:none; color:#000; line-height:200%; cursor:default;}
+.dorpmenubj{ background:#fff;background:rgba(255, 255, 255, 0.9)!important;filter:Alpha(opacity=90); height:100%;}
+.dorpmenu-left { float:left; width:553px;margin-top:20px;}
+.dorpmenu-left dl{ padding-top:10px; width:553px; clear:left;}
+.dorpmenu-left dd{ float:left; margin:0 5px; line-height:20px; height:20px; padding:0; text-align:center;}
+.dorpmenu-left dd a{color:#666}
+.dorpmenu-left dt{float:left; width:80px; text-align:right; font-weight:bold; color:#333; margin-right:5px; margin-top:-2px;}
+.dorpmenu-left dt a{color:#333;}
+.dorpmenu-right{ float:right; width:180px; height:448px; overflow:hidden;}
+.sub-menu1{top:0;}
+.sub-menu2{top:-30px;}
+.sub-menu3{top:-60px;}
+.sub-menu4{top:-90px;}
+.sub-menu5{top:-120px;}
+.sub-menu6{top:-150px;}
+.sub-menu7{top:-310px;}
+.sub-menu8{top:-366px;}
+.sub-menu9{top:-422px;}
+
+.in-top-b .top-menu{ float:left; width:1000px; position:relative }
+.in-top-b .top-menu li{ width:100px; text-align:center; float:left; line-height:44px;/*  padding:0 25px;*/transition: all 0.2s ease-in 0s;}
+.in-top-b .top-menu li a{ line-height:44px; display:block; font-size:15px; font-weight:bold; text-decoration:none; color:#333}
+.in-top-b .top-menu li:hover{ background:#CB2F2E; }
+.in-top-b .top-menu li:hover a{color:#fff}

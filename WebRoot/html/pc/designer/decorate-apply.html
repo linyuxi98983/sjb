@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" class="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="renderer" content="webkit"/>
+    <title>装修申请</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="mobile-agent" content=""/>
+    <link rel="canonical" href=""/>
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/publish_demand.css"/>
+    <script type="text/javascript">
+    	var pathName = window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script src="../js/GlobalProvincesNoqu.js" type="text/javascript"></script>
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script>var jq = jQuery.noConflict();</script>
+    <script type="text/javascript">
+      var dateFormat = 'yyyy-mm-dd';
+      var sShen = '';
+      var sTown = '';
+      var sCity = '';
+      var gpm = new GlobalProvincesModule; //城市类
+      gpm.def_province = ["省/市", ""];
+      gpm.def_city1 = ["市/地区", ""];
+      gpm.def_city2 = ["县/市", ""];
+    </script>
+  </head>
+  <body class="narrow_980">
+    <div class="global_wrap" id="gloWrap">
+      <!--头部 开始-->
+      <div class="container demand_head">
+        <div class="logo">
+          <span class="logo_left">
+            <a href=""></a>
+          </span>
+          <span class="logo_right">
+            <p class="p_top">土巴兔旗下室內设计交易平台</p>
+            <p class="p_bottom">
+              <em>美国知名风投注资</em>
+              <em>汇集全国90万设计师</em>
+              <em>服务百万业主七年零纠纷</em>
+            </p>
+          </span>
+        </div>
+        <div class="tel_400">
+          <span class="tel_left">
+          </span>
+          <span class="tel_right">
+            <p class="p_top">4006-808-509 转 9999</p>
+            <p class="p_bottom"> 周一至周六&nbsp;&nbsp;&nbsp;9:00&nbsp;-&nbsp;18:00</p>
+          </span>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--头部 结束-->
+      <!--主体 开始-->
+      <div class="demand_form_wrap">
+        <!--提交需求表单-->
+        <div class="form_content">
+          <form action="#" id="zb_form" method="post">
+            <div class="input_form">
+              <p class="total">已有
+                <em>119,555</em>
+                位业主提交设计需求
+              </p>
+              <div class="box">
+                <label class="default_value">您的称呼</label>
+                <input class="input_txt" name="chenghu" type="text">
+                <label class="msg">
+                  <em></em>
+                  <p></p>
+                </label>
+              </div>
+              <div class="box" id="userMobileDom">
+                <label class="default_value">手机号码</label>
+                <input class="input_txt" name="phone" type="text">
+                <label class="msg">
+                  <em></em>
+                  <p></p>
+                </label>
+              </div>
+              <div class="box">
+                <script type="text/javascript">
+                  if (sCity == '' || GP == '省/市') City = '';
+                  else City = GC1[sShen];
+                  if (sTown == '' || sCity == '市/地区') Town = '';
+                  else Town = GC2[sShen][sCity];
+                  jsSelectItem(GP, sShen, 'V-V', 'User_Shen', 'onchange=\'changeProvince("User_Shen","User_City","User_Town")\'', true, '省/市');
+                  jsSelectItem(City, sCity, 'V-V', 'User_City', 'onchange=\'changeTown("User_Shen","User_City","User_Town")\'', true, '市/地区');
+                  jsSelectItem(Town, sTown, 'V-V', 'User_Town', '', true, '县/市');
+                </script>
+                <div class="clear"></div>
+                <label class="msg">
+                  <em></em>
+                  <p></p>
+                </label>
+              </div>
+              <div class="box">
+                <select class="select_l" name="hometype">
+                  <option value="">
+                    项目类型
+                  </option>
+                  <option value="1">
+                    住宅空间
+                  </option>
+                  <option value="2">
+                    餐饮空间
+                  </option>
+                  <option value="3">
+                    办公空间
+                  </option>
+                  <option value="4">
+                    酒店空间
+                  </option>
+                  <option value="5">
+                    商业展示
+                  </option>
+                  <option value="6">
+                    娱乐空间
+                  </option>
+                  <option value="7">
+                    休闲场所
+                  </option>
+                  <option value="8">
+                    文化空间
+                  </option>
+                  <option value="9">
+                    医疗机构
+                  </option>
+                  <option value="10">
+                                    售楼中心
+                  </option>
+                  <option value="11">
+                    金融机构
+                  </option>
+                  <option value="12">
+                    运动场所
+                  </option>
+                  <option value="13">
+                    教育机构
+                  </option>
+                  <option value="14">
+                                    其他
+                  </option>
+                </select>
+                <label class="default_value value_area">
+                  项目面积
+                </label>
+                <input class="input_txt input_txt_area" name="oarea" type="text">
+                <em class="unit">
+                                 ㎡
+                </em>
+                <div class="clear">
+                </div>
+                <label class="msg">
+                  <em></em>
+                  <p></p>
+                </label>
+              </div>
+              <div class="box">
+                <select class="select_all" name="yusuan">
+                  <option value="">
+                    设计预算
+                  </option>
+                  <option value="1">
+                    3000元以下
+                  </option>
+                  <option value="2">
+                    3000-6000元
+                  </option>
+                  <option value="3">
+                    6000-10000元
+                  </option>
+                  <option value="4">
+                    10000-50000元
+                  </option>
+                  <option value="5">
+                    50000-100000元
+                  </option>
+                  <option value="6">
+                    100000元以上
+                  </option>
+                </select>
+                <label class="msg">
+                  <em></em>
+                  <p></p>
+                </label>
+              </div>
+              <div class="box">
+                <label class="default_value">
+                  备注（选填）
+                </label>
+                <input class="input_txt" name="demo" type="text">
+              </div>
+              <div class="box">
+                <input type="button" class="smbmit_btn" id="baidu_hmt" value="立即提交">
+              </div>
+              <p class="bottom">
+                * 百爪鱼将严格保护您的隐私，请放心填写
+              </p>
+              <label id="erro_msg">
+                <em></em>
+                <p></p>
+              </label>
+            </div>
+            <input type="hidden" value="1" name="fromZb">
+            <input type="hidden" value="1" name="ajax">
+            <input type="hidden" value="0" name="biao">
+            <input id="zbtype" type="hidden" value="0" name="zbtype">
+            <input type="hidden" value="5" name="sourceid">
+            <input type="hidden" value="21" name="s_sourceid">
+            <input type="hidden" value="0" name="source_referer">
+            <input type="hidden" name="project_type" value="住宅">
+            <input type="hidden" name="pro_sourceid" value="1">
+          </form>
+        </div>
+      </div>
+      <!--无设计 不装修 -->
+      <div class="container_wrap guide_wrap">
+        <div class="container guide">
+          <p class="title">
+            <img src="http://www.shejiben.com/img/fbxq/column_name_01.png">
+          </p>
+          <p class="msg">
+            <img src="http://www.shejiben.com/img/fbxq/title_01.png">
+          </p>
+          <ul>
+            <li class="li_01">
+              <div class="tab_01">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_01.png">
+                </span>
+                <span class="detail">沟通设计需求；选择设计网咖风格；确认设计费用</span>
+              </div>
+              <span class="arrow"></span>
+            </li>
+            <li class="li_02">
+              <div class="tab_01">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_02.png">
+                </span>
+                <span class="detail">设计师根据房屋地段尺寸，设计绘画平面布局图</span>
+              </div>
+              <div class="tab_02">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_06.png">
+                </span>
+                <a href="javascript:void(0)" class="detail">查看详情</a>
+              </div>
+              <span class="arrow"></span>
+            </li>
+            <li class="li_03">
+              <div class="tab_01" style="display: block;">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_03.png">
+                </span>
+                <span class="detail">设计师就网咖风格、材质与业主进行沟通，制作3D效果图</span>
+              </div>
+              <div class="tab_02" style="display: none;">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_07.png">
+                </span>
+                <a href="javascript:void(0)" class="detail">查看详情</a>
+              </div>
+              <span class="arrow"></span>
+            </li>
+            <li class="li_04">
+              <div class="tab_01">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_04.png">
+                </span>
+                <span class="detail">设计师根据已确定的效果图，制作全套施工图纸</span>
+              </div>
+              <div class="tab_02">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_08.png">
+                </span>
+                <a href="javascript:void(0)" class="detail">查看详情</a>
+              </div>
+              <span class="arrow"></span>
+            </li>
+            <li class="li_05">
+              <div class="tab_01">
+                <span class="step_bg"></span>
+                <span class="img">
+                  <img src="http://www.shejiben.com/img/fbxq/guide_05.png">
+                </span>
+                <span class="detail">指导软装搭配，提供家具、配饰购买建议</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--找设计师上百爪鱼-->
+      <div class="container search_designer">
+        <p class="title">
+          <img src="http://www.shejiben.com/img/fbxq/column_name_02.png">
+        </p>
+        <p class="msg">
+          <img src="http://www.shejiben.com/img/fbxq/title_02.png">
+        </p>
+        <ul>
+          <li class="li_01">
+            <span class="img"></span>
+            <p class="column_name">80万专业设计师</p>
+            <p class="detail">身份认证和原创案例助您轻松 找到满意的设计师</p>
+          </li>
+          <li class="li_02">
+            <span class="img"></span>
+            <p class="column_name">100%真实评价</p>
+            <p class="detail">所有设计师的评价都由完成 在线交易的业主自主提交</p>
+          </li>
+          <li class="li_03">
+            <span class="img"></span>
+            <p class="column_name">在线担保交易</p>
+            <p class="detail">权威资金托管，满意后再付款 不满意可无条件退款</p>
+          </li>
+          <li class="li_04">
+            <span class="img"></span>
+            <p class="column_name">专属客服服务</p>
+            <p class="detail">一对一客服服务，全程跟进 解决设计装修疑惑</p>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+      <!--百爪鱼担保交易-->
+      <div class="container_wrap transaction_wrap">
+        <div class="container transaction">
+          <div class="time_line"></div>
+          <p class="title">
+            <img src="http://www.shejiben.com/img/fbxq/column_name_03.png">
+          </p>
+          <p class="msg">
+            <img src="http://www.shejiben.com/img/fbxq/title_03.png">
+          </p>
+          <ul class="trans_left">
+            <li>
+              <span class="arrow"></span>
+              <p class="column_name">在线签订合同</p>
+              <p class="detail">查看并确认设计师发起的在线合同,开始享受百爪鱼的担保交易服务</p>
+            </li>
+            <li>
+              <span class="arrow"></span>
+              <p class="column_name">满意后打款</p>
+              <p class="detail">每阶段设计满意后再将款项支付给设计师，如不满意可申请退款</p>
+            </li>
+          </ul>
+          <ul class="trans_right">
+            <li>
+              <span class="arrow"></span>
+              <p class="column_name">分阶段托管费用</p>
+              <p class="detail">分阶段将款项托管到百爪鱼，而不是直接打款给设计师，保障资金安全</p>
+            </li>
+            <li>
+              <span class="arrow"></span>
+              <p class="column_name">提交真实评价</p>
+              <p class="detail">交易完成后，根据设计师的工作情况给与真实评价，帮助其他业主决策</p>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!--在线交易，项目需求列表-->
+      <div class="container news_list">
+        <div class="list_content list_left" id="list_content_01">
+          <p class="name">最新在线交易</p>
+          <ul class="column_name">
+            <li class="designer">设计师</li>
+            <li class="user">业主</li>
+            <li class="area">项目面积</li>
+            <li class="project">交易项目</li>
+          </ul>
+          <div class="list_wrap" id="list_wrap_01">
+            <div class="scroll_content" id="scroll_content_01">
+              <ul class="detail" id="list_01">
+                <li>
+                  <span class="designer">
+                    <a href="" target="_blank">ZDMsheji</a>
+                  </span>
+                  <span class="user">陈***1&nbsp;</span>
+                  <span class="area">18㎡</span>
+                  <span class="project">北京西城区16平美甲店设计</span>
+                </li>
+                <li>
+                  <span class="designer">
+                    <a href="" target="_blank">森琢室内设计-姜鑫</a>
+                  </span>
+                  <span class="user">阳***光&nbsp;</span>
+                  <span class="area">106㎡</span>
+                  <span class="project">青岛中海国际办公设计</span>
+                </li>
+              </ul>
+              <ul class="detail" id="list_clone_01"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="list_content list_right">
+          <p class="name">最新提交的需求</p>
+          <div class="select_new project_type">
+            <div class="value">
+              <label>更多项目类型</label>
+              <em></em>
+            </div>
+            <ul>
+              <li>
+                <a href="" target="_blank">住宅空间</a>
+              </li>
+              <li>
+                <a href="" target="_blank">餐饮空间</a>
+              </li>
+              <li>
+                <a href="" target="_blank">办公空间</a>
+              </li>
+              <li>
+                <a href="" target="_blank">酒店空间</a>
+              </li>
+              <li>
+                <a href="" target="_blank">商业展示</a>
+              </li>
+              <li>
+                <a href="" target="_blank">娱乐空间</a>
+              </li>
+              <li>
+                <a href="" target="_blank">休闲场所</a>
+              </li>
+              <li>
+                <a href="" target="_blank">文化空间</a>
+              </li>
+              <li>
+                <a href="" target="_blank">医疗机构</a>
+              </li>
+              <li>
+                <a href="" target="_blank">售楼中心</a>
+              </li>
+              <li>
+                <a href="" target="_blank">金融机构</a>
+              </li>
+              <li>
+                <a href="" target="_blank">运动场所</a>
+              </li>
+              <li>
+                <a href="" target="_blank">教育机构</a>
+              </li>
+              <li>
+                <a href="" target="_blank">其他</a>
+              </li>
+            </ul>
+          </div>
+          <div class="select_new city">
+            <div class="value">
+              <label>更多项目城市</label>
+              <em></em>
+            </div>
+            <ul>
+              <li>
+                <a href="" target="_blank">北京</a>
+              </li>
+              <li>
+                <a href="" target="_blank">上海</a>
+              </li>
+              <li>
+                <a href="" target="_blank">广州</a>
+              </li>
+              <li>
+                <a href="" target="_blank">深圳</a>
+              </li>
+              <li>
+                <a href="" target="_blank">南京</a>
+              </li>
+              <li>
+                <a href="" target="_blank">天津</a>
+              </li>
+              <li>
+                <a href="" target="_blank">西安</a>
+              </li>
+              <li>
+                <a href="" target="_blank">杭州</a>
+              </li>
+              <li>
+                <a href="" target="_blank">成都</a>
+              </li>
+              <li>
+                <a href="" target="_blank">重庆</a>
+              </li>
+              <li>
+                <a href="" target="_blank"> 其他</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="column_name">
+            <li class="designer">项目地点</li>
+            <li class="user">项目类型</li>
+            <li class="area">设计预算</li>
+            <li class="project">设计要求</li>
+          </ul>
+          <div class="list_wrap" id="list_wrap_02">
+            <div class="scroll_content" id="scroll_content_02">
+              <ul class="detail" id="list_02">
+                <li>
+                  <span class="designer">重庆/重庆</span>
+                  <span class="user">住宅空间</span>
+                  <span class="area">￥10000-50000</span>
+                  <span class="project">
+                    <a href="" target="_blank">重庆开县120平住宅设计</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="designer">甘肃/兰州</span>
+                  <span class="user">酒店空间</span>
+                  <span class="area">￥10000-50000</span>
+                  <span class="project">
+                    <a href="" target="_blank">甘肃兰州800平青年旅舍设计</a>
+                  </span>
+                </li>
+              </ul>
+              <ul class="detail" id="list_clone_02"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--主体 结束-->
+      <!--尾部 开始-->
+      <div class="wrap wrap_cppyright">
+        <div class="string"></div>
+        <div class="cppyright_content">
+          <ul>
+            <li>
+              <a href="" rel="nofollow" target="_blank">关于我们</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">联系我们</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">意见建议</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">帮助中心</a>
+            </li>
+            <li class="no_border">
+              <a href="" rel="nofollow" target="_blank">使用条款</a>
+            </li>
+          </ul>
+          <p class="statement">
+            免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。
+          </p>
+          <p class="bottom_bah">
+            ©2012shejiben.com,All Rights Reserved.(
+            <a hidefocus="" href="" rel="nofollow">
+              粤ICP备0812558号-2
+            </a>
+            )
+          </p>
+          <div class="bottom_icon">
+            <a href="" target="_blank" title="" alt="">
+              <label class="icon_gongan"></label>
+            </a>
+            <a href="" target="_blank">
+              <label class="icon_falv"></label>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--尾部 结束-->
+    </div>
+    <!--发布需求表单 底部-->
+    <div class="container_wrap form_bottom_wrap" style="display: none; top: 252px;">
+      <form action="#" method="post" id="zb_form2">
+        <div class="container form_bottom  ">
+          <div class="box">
+            <select id="User_Shen2" name="User_Shen2" onchange="changeProvince(&quot;User_Shen2&quot;,&quot;User_City2&quot;,&quot;User_Town2&quot;)">
+              <option>省/市</option>
+              <option value="安徽"> 安徽</option>
+              <option value="北京">北京</option>
+              <option value="重庆">重庆</option>
+              <option value="福建">福建</option>
+              <option value="广西">广西</option>
+              <option value="贵州">贵州</option>
+              <option value="广东">广东</option>
+              <option value="甘肃">甘肃</option>
+              <option value="海南">海南</option>
+              <option value="湖北">湖北</option>
+              <option value="黑龙江">黑龙江</option>
+              <option value="河南">河南</option>
+              <option value="河北"> 河北</option>
+              <option value="湖南">湖南</option>
+              <option value="江苏">江苏</option>
+              <option value="吉林">吉林</option>
+              <option value="江西">江西</option>
+              <option value="辽宁">辽宁</option>
+              <option value="内蒙古">内蒙古</option>
+              <option value="宁夏">宁夏</option>
+              <option value="澳门">澳门</option>
+              <option value="青海">青海</option>
+              <option value="四川">四川</option>
+              <option value="陕西">陕西</option>
+              <option value="上海">上海</option>
+              <option value="山东">山东</option>
+              <option value="山西">山西</option>
+              <option value="台湾">台湾</option>
+              <option value="天津">天津</option>
+              <option value="西藏">西藏</option>
+              <option value="香港">香港</option>
+              <option value="新疆">新疆</option>
+              <option value="云南">云南</option>
+              <option value="浙江">浙江</option>
+            </select>
+            <div class="msg">
+              <em class="error"></em>
+              <p></p>
+              <em class="arrow"></em>
+            </div>
+          </div>
+          <div class="box">
+            <select id="User_City2" name="User_City2" onchange="changeTown(&quot;User_Shen2&quot;,&quot;User_City2&quot;,&quot;User_Town2&quot;)">
+              <option>市/地区</option>
+            </select>
+            <select id="User_Town2" name="User_Town2">
+              <option>县/市</option>
+            </select>
+            <div class="msg">
+              <em class="error">
+              </em>
+              <p>
+              </p>
+              <em class="arrow">
+              </em>
+            </div>
+          </div>
+          <div class="box">
+            <select class="select_l" name="hometype">
+              <option value="">
+                项目类型
+              </option>
+              <option value="1">
+                住宅空间
+              </option>
+              <option value="2">
+                餐饮空间
+              </option>
+              <option value="3">
+                办公空间
+              </option>
+              <option value="4">
+                酒店空间
+              </option>
+              <option value="5">
+                商业展示
+              </option>
+              <option value="6">
+                娱乐空间
+              </option>
+              <option value="7">
+                休闲场所
+              </option>
+              <option value="8">
+                文化空间
+              </option>
+              <option value="9">
+                医疗机构
+              </option>
+              <option value="10">
+                            售楼中心
+              </option>
+              <option value="11">
+                金融机构
+              </option>
+              <option value="12">
+                运动场所
+              </option>
+              <option value="13">
+                教育机构
+              </option>
+              <option value="14">
+                           其他
+              </option>
+            </select>
+            <div class="msg">
+              <em class="error"></em>
+              <p></p>
+              <em class="arrow"></em>
+            </div>
+          </div>
+          <div class="box">
+            <label class="default_value">
+              项目面积
+            </label>
+            <input class="input_txt input_txt_area" name="oarea" type="text">
+            <em class="unit">㎡</em>
+            <div class="msg">
+              <em class="error"></em>
+              <p></p>
+              <em class="arrow"></em>
+            </div>
+          </div>
+          <div class="box">
+            <label class="default_value">您的称呼</label>
+            <input class="input_txt" name="chenghu" type="text">
+            <div class="msg">
+              <em class="error"></em>
+              <p></p>
+              <em class="arrow"></em>
+            </div>
+          </div>
+          <div class="box tel" id="userMobileDom2">
+            <label class="default_value">
+              手机号码
+            </label>
+            <input type="text" class="input_txt" name="phone">
+            <div class="msg">
+              <em class="error">
+              </em>
+              <p>
+              </p>
+              <em class="arrow">
+              </em>
+            </div>
+          </div>
+          <input type="button" value="立即找设计师" class="btn_submit" id="baidu_hmt2">
+        </div>
+        <input type="hidden" value="1" name="fromZb">
+        <input type="hidden" value="1" name="ajax">
+        <input type="hidden" value="0" name="biao">
+        <input id="zbtype" type="hidden" value="0" name="zbtype">
+        <input id="sj_biao_id" type="hidden" value="5" name="sourceid">
+        <input id="sj_biao_sid" type="hidden" value="21" name="s_sourceid">
+        <input type="hidden" value="0" name="source_referer">
+        <input type="hidden" name="project_type" value="住宅">
+        <input type="hidden" name="pro_sourceid" value="1">
+      </form>
+    </div>
+    <!--==弹窗==-->
+    <div class="popupMask"></div>
+    <div class="popupContent" style="left: 229.5px; top: -89px;">
+      <span class="arrow prev">
+      </span>
+      <div class="img_list">
+        <ul>
+          <li>
+            <div class="title">平面布局设计</div>
+            <div class="msg">房屋寸土寸金，通过空间美学改造、功能布局优化、家具合理尺寸摆放最大化利用好每一平方米。</div>
+            <div class="img">
+              <img src="http://www.shejiben.com/img/fbxq/popup_img_01.png">
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              效果图制作
+            </div>
+            <div class="msg">
+              效果图将空间效果具象表现出来，让您对未来家居网咖风格有个直观的认识。
+            </div>
+            <div class="img">
+              <img src="http://www.shejiben.com/img/fbxq/popup_img_02.png">
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              施工图细化
+            </div>
+            <div class="msg">
+              施工图是指导工人施工的全套图纸，施工工人拿着施工图就可以进行标准化施工。
+            </div>
+            <div class="img">
+              <img src="http://www.shejiben.com/img/fbxq/popup_img_03.png">
+            </div>
+          </li>
+        </ul>
+        <span class="btn_close"></span>
+      </div>
+      <span class="arrow next"></span>
+    </div>
+    <script type="text/javascript" src="../js/jquery.colorbox.min.js"></script>
+    <script type="text/javascript" src="../js/publish_demand.js"></script>
+    <script type="text/javascript" src="../js/check_form.js"></script>
+    <p style="display:none">
+      <script type="text/javascript">
+        jq(function() {
+          browserType();
+          guide_tab();
+          select_new();
+          fixBottom();
+          showPopup();
+          checkCookie();
+        });
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://": " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fff9f2264b4da35f5adbd4b34ccb9756b' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <a href="" target="_blank">
+        <img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20">
+      </a>
+    </p>
+    <form action="" method="POST" target="frm_dealer" id="frm_dealer_form">
+      <input type="hidden" id="clickValId" name="key" value=""/>
+    </form>
+    <iframe frameborder="0" height="0" name="frm_dealer" id="clsIframe"></iframe>
+  </body>
+
+</html>

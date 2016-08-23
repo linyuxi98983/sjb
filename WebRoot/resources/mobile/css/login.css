@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* page css */
+.page_lr{margin:auto 1.25rem;}
+.header .menu{text-indent:-999rem;overflow:hidden;}
+.content{margin-top:0;-webkit-box-sizing:border-box;box-sizing:border-box;min-height:100%;position:relative;}
+
+/* 第三方帐号登录 */
+.another{margin-top:1.5rem;}
+.another .title{display:block;overflow:hidden;position:relative;text-align:center;font-size:0;}
+.another .title::before,.another .title::after{position:absolute;top:.3rem;font-size:0;content:"";width:50%;height:1px;line-height:0;}
+.another .title::before{left:0;background:-moz-linear-gradient(left,transparent 0%,#eee 100%) 0% 100%;background:-webkit-gradient(linear, left top, right top, color-stop(0%,transparent),color-stop(100%,#eee));background:-webkit-linear-gradient(left,transparent 0%,#eee 100%) 0% 100%;background:-o-linear-gradient(left,transparent 0%,#eee 100%) 0% 100%;background:linear-gradient(left,transparent 0%,#eee 100%) 0 100%;}
+.another .title::after{right:0;background:-moz-linear-gradient(left,#eee 0%,transparent 100%) 0% 100%;background:-webkit-gradient(linear, left top, right top, color-stop(0%,#eee),color-stop(100%,transparent));background:-webkit-linear-gradient(left,#eee 0%,transparent 100%) 0% 100%;background:-o-linear-gradient(left,#eee 0%,transparent 100%) 0% 100%;background:linear-gradient(left,#eee 0%,transparent 100%) 0 100%;}
+.another .title em{font-size:.6rem;display:inline-block;line-height:.75rem;color:#969696;position:relative;z-index:2;background-color:white;padding:0 .5rem;}
+.another ul{clear:both;overflow:hidden;}
+.another ul li{float:left;width:33.3333%;}
+.another ul li a{display:block;padding-top:1.5rem;color:#646464;}
+.another ul li a em{display:block;text-indent:-999rem;height:2.075rem;background-repeat:no-repeat;background-position:center center;background-size:contain;}
+.another ul li.qq a em{background-image:url(../images/qq_icon.png);}
+.another ul li.alipay a em{background-image:url(../images/alipay_icon.png);}
+.another ul li.sina a em{background-image:url(../images/sina_icon.png);}
+.another ul li a i{display:block;padding-top:.25rem;text-align:center;font-size:.55rem;}
+
+/* 保证 */
+.support_space{width:100%;height:5.1rem;}
+.support{overflow:hidden;padding-top:3.25rem;padding-bottom:1.2rem;text-align:center;position:absolute;bottom:0;left:0;width:100%;}
+.support li{display:inline-block;margin-right:.25rem;font-size:.55rem;text-align:center;line-height:.65rem;color:#969696;}
+.support li:last-child{margin-right:0;}
+.support li i{display:inline-block;width:.65rem;height:.65rem;font-size:0;line-height:0;background:url(../images/check_icon.png) center center no-repeat;background-size:contain;margin-right:.175rem;vertical-align:middle;margin-top:-0.1rem;}
+
+/* 登录 */
+.main{padding-top:1.2rem;}
+.main .bg{background-color:#fafafa;border-width:1px;border-style:solid;border-color:#fafafa;}
+.main .bg.err{border-color:#ff463c;}
+.main .user,.main .pw,.main .graphics{overflow:hidden;height:2.25rem;border-radius:.25rem;position:relative;}
+.main span{display:block;height:100%;}
+.main .icon{float:left;width:1.8rem;position:absolute;top:0;left:0;background:url(../images/user_icon.png) .75rem center no-repeat;background-size:.775rem auto;}
+.main .input{float:left;width:62.3%;margin-left:1.8rem;}
+.main .input input{width:100%;font-size:.75rem;line-height:normal;height:2.25rem;background-color:transparent;color:#323232;}
+.main .clear{float:right;width:1.55rem;background:url(../images/clear_icon.png) center center no-repeat;background-size:1rem;display:none;}
+.main .more{float:right;width:1.65rem;background:url(../images/arrowdown_icon.png) .2rem center no-repeat;background-size:.7rem auto;display:none;}
+.main .more.up{background-image:url(../images/arrowup_icon.png);}
+.main .change{float:right;width:1.65rem;background:url(../images/pw_hide_icon.png) left center no-repeat;background-size:1.15rem auto;}
+.main .change.show{background-image:url(../images/pw_show_icon.png);}
+.main .pw{margin-top:.875rem;}
+.main .pw .icon{background-image:url(../images/pw_icon.png);}
+.main .nomar{margin:0;}
+/* 历史记录 */
+.main .detail{overflow:hidden;display:none;}
+.main .detail li{border-bottom:1px solid #ccc;color:#323232;line-height:2.25rem;font-size:.75rem;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:relative;}
+.main .detail li:last-child{border-bottom:0 none;}
+.main .detail li em{padding-left:13.5%;margin-right:12.4%;line-height:2.25rem;display:block;}
+.main .detail li i{display:block;position:absolute;top:0;right:0;width:12.4%;height:2.25rem;background:url(../images/clear_icon.png) center center no-repeat;background-size:1rem;}
+/* 登录按钮 */
+.main .btn{background-color:#b9b9b9;color:white;font-size:.9rem;text-align:center;display:block;width:100%;border-radius:.25rem;margin-top:1.75rem;line-height:2.25rem;}
+.main .btn.ok{background-color:#ff463c;}
+/* 防诈骗 */
+.defend{margin-top:1.5rem;line-height:.8rem;font-size:.6rem;color:#717171;}
+.defend a{color:#ff463c;display:inline-block;border-bottom:1px solid #ff463c;}
+.defend span{color:#ff463c;}
+/* 功能区 */
+.main .func{margin-top:.625rem;overflow:hidden;}
+.main .func dt,.main .func dd{display:block;font-size:.6rem;}
+.main .func dt{float:left;border-bottom:1px solid #a3a3a3;}
+.main .func dd{float:right;}
+.main .func dd a{display:block;padding-right:.875rem;background:url(../images/arrow_r_icon.png) right center no-repeat;background-size:.575rem auto;}
+
+/* 错误提示 */
+.error{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:98;}
+.error div{display:table;color:white;font-size:.7rem;width:100%;height:100%;}
+.error div p{display:table-cell;text-align:center;vertical-align:middle;}
+.error div p span{display:inline-block;padding:.625rem .5rem;margin:0 1rem;border-radius:.25rem;background-color:rgba(0,0,0,.8);}
+
+/* 注册 */
+.main .short .input{width:74.1%;}
+.main .tips{color:#323232;font-size:.6rem;margin:.75rem -1.25rem 0 -1.25rem;text-align:center;}
+.main .tips a{border-bottom:1px solid #797979;}
+
+/* 输入验证码 */
+.main .title{color:#323232;font-size:.75rem;overflow:hidden;width:100%;text-overflow:ellipsis;white-space:nowrap;margin-bottom:.625rem;}
+.main .contain{overflow:hidden;}
+.main .small{float:left;width:66%;}
+.main .small .input{width:77%;margin-left:5%;}
+.main .small .clear{width:18%;}
+.main .contain button{height:2.25rem;line-height:2.25rem;text-align:center;width:30%;color:white;font-size:.6rem;float:right;border-radius:.25rem;background-color:#b9b9b9;}
+.main .contain button.new{background-color:#ff463c;}
+
+/* 找回密码 */
+.main .pw_contain{overflow:hidden;margin-top:.875rem;position:relative;display:none;}
+.main .pw_contain .small{margin-right:5.75rem;float:none;width:auto;}
+.main .pw_contain .small .clear{width:19.5%;}
+.main .pw_contain .small .input{margin-left:5.5%;width:75%;}
+.main .pw_contain .identify{position:absolute;right:0;top:0;width:5.5rem;overflow:hidden;}
+.main .pw_contain .refresh{height:2.25rem;width:1.5rem;overflow:hidden;background:url(../images/refresh_icon.png) right center no-repeat;background-size:.875rem .875rem;text-indent:-999rem;float:right;}
+.main .pw_contain .repic{float:right;height:2.25rem;width:3.75rem;border:1px solid #fafafa;border-radius:.25rem;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+/* 验证码 */
+.main .anyway{font-size:.6rem;color:black;float:right;margin-top:.75rem;border-bottom:1px solid #a3a3a3;}
+
+/*  */
+.main.notop{padding-top:0;}
+.main .way li{padding-top:2rem;text-align:center;}
+.main .way li dl{color:#323232;}
+.main .way li dl dt{display:inline-block;font-size:.7rem;}
+.main .way li dl dt::before{position:relative;top:.1rem;;content:"";display:inline-block;width:.15rem;background-color:#ff463c;font-size:.7rem;line-height:.7rem;height:.7rem;overflow:hidden;margin-right:.25rem;}
+.main .way li dl dd{padding:.75rem 0;border-bottom:1px solid #ccc;font-size:.75rem;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.main .way li dl dd input{margin-right:.5rem;vertical-align:middle;}
+
+/* 条款 */
+.item h1{font-size:.7rem;}
+.item p{font-size:.6rem;margin:.25rem auto;}
+
+/* 安全防诈骗 */
+.security{font-size:.75rem;line-height:1rem;color:#333;margin:0 .5rem;}
+.security h2{font-size:.8rem;margin-top:.5rem;}
+.security p{word-break:normal;}
+.security p a{color:blue;text-decoration:underline;}
+.security img{width:100%;height:auto;display:block;margin:.25rem auto;}

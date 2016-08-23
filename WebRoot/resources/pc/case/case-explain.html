@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>作品精选</title>
+    <meta name="description" content=""/>
+    <meta name="mobile-agent" content=""/>
+    <link rel="canonical" href=""/>
+    <link href="../css/new_global.css" rel="stylesheet" type="text/css" />
+    <link href="../css/works.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/header_menu.css"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+  		var pathName =  window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/sea.js"></script>
+    <script type="text/javascript">
+      seajs.config({
+        alias: {
+          'jquery': path+'/html/pc/js/jquery_module.js',
+          'common': path+'/html/pc/js/main.js',
+          'form': path+'/html/pc/js/module.form.js',
+          'ui': path+'/html/pc/js/module.ui.js',
+          'colorbox': path+'/html/pc/js/jquery.colorbox.min.js',
+          'newHeader': path+'/html/pc/js/userCenter.js'
+        },
+        preload: ['jquery', 'common'] //预加载jquery和main.js
+     });
+    </script>
+    <style type="text/css">
+      /*内页是窄版*/ .index_logo,.top_menu{width:990px;} .index_logo #search_case{margin-left:
+      100px !important;}
+    </style>
+  </head>
+  
+  <body>
+    <div class="sjbNewTop" id="sjbNewTop">
+      <div class="newTopBg">
+        <div class="head1">
+          <div class="hea_top_right">
+            <ul class="tp_node">
+              <li style="width:90px;" id="nav_login" class="">
+                <span id="userName" class="name">
+                  <a href="" class="bg1" id="bg" onblur="if(this.rel==1) {this.className='bg1'; $('caozuo').style.display='none'}"
+                  rel="1" hidefocus="">
+                    <span class="nick">业主</span>
+                    <em class="downAdrrow"></em>
+                  </a>
+                  <div class="caozuo" id="caozuo" style="display: none;" onmouseover="$('bg').rel=2;" onmouseout="$('bg').rel=1;">
+                    <div class="redArrow"></div>
+                    <ul class="cz">
+                      <li>
+                        <a href="" class="my">个人中心</a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的收藏
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的问答
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="jy">
+                          	我的交易
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的金币
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的余额
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	账号设置
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="tc">
+                          	退出
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!-- 申请定制设计 -->
+              <li class="dzsj">
+                <a href="" target="_blank" rel="nofollow">申请定制设计</a>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--客服服务 -->
+              <li class="cur" style="width:80px;">
+                <a href="javascript:;">
+                     客服服务
+                  <span class="jt"></span>
+                </a>
+                <div class="kf_server" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);" class="kflive800" lim_company="235802" lim_skill="3012" rel="nofollow">在线客服</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow" target="_blank">意见反馈</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">帮助中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--设计师中心 -->
+              <li class="cur" style="width:92px;">
+                <a href="javascript:;">
+                	设计师中心
+                  <span class="jt"></span>
+                </a>
+                <div class="sj_center" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="" rel="nofollow">接单大厅</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">社交广场</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">模型下载</a>
+                    </li>
+                    <li>
+                      <a href="" rel="nofollow">推广中心</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="newMessage" class="newMessage">
+            <div class="closeNewMessage" id="closeNewMessage"></div>
+            <div class="messageItem" id="messageItem"></div>
+            <p class="clear"></p>
+          </div>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航-->
+      <div class="index_logo">
+        <a href="" title="">
+          <div class="logo"></div>
+        </a>
+        <div id="search_case">
+          <form id="quicksearch" method="get" action="" target="_blank">
+            <input type="hidden" name="searchType" value="1" id="searchType"/>
+            <span id="search_span">
+              <div id="search_title">找图片</div>
+              <em class="arrow"></em>
+              <label id="s_zsj" style="display: none;">
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="2">找图集</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="10"> 找案例</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="7">找设计师</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="9">找问答</a>
+                <a class="search_tags clickToSearch" href="javascript:;" data-id="3">找模型</a>
+              </label>
+            </span>
+            <input type="text" value="请输入搜索关键词" class="key" name="q" id="search_val"/>
+            <em class="icon_search"></em>
+            <input type="submit" value="搜索" class="submit"/>
+          </form>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航 end-->
+    </div>
+    <p class="clear"></p>
+    <!--主导航-->
+    <div class="wrap wrap_top_menu">
+      <div class="top_menu">
+        <!--整站主导航-->
+        <ul>
+          <li>
+            <a href="../index.html">首页</a>
+          </li>
+          <li class="cur">
+            <a href="">设计案例</a>
+            <div class="inner_menu">
+              <a href="case.html">网咖案例</a>
+              <a href="case.html">电竞案例</a>
+              <a href="case-explain.html">案例解析</a>
+            </div>
+          </li>
+          <li>
+            <a href="../pics/pics-case.html">装修图库</a>
+            <div class="inner_menu">
+              <a href="../pics/pics-case.html">网咖图库</a>
+              <a href="../pics/pics-case.html">电竞图库</a>
+              <a href="../pics/pics-topic.html">图库专题</a>
+            </div>
+          </li>
+          <li>
+            <a href="">有问必答</a>
+          </li>
+          <li>
+            <a href="">找设计师</a>
+          </li>
+          <li>
+            <a href="">逛商品</a>
+          </li>
+          <li class="last">
+            <a href="javascript:;">设计师专区</a>
+            <div class="inner_menu">
+              <a href="">3DMAX模型下载</a>
+              <a href="">设计资讯</a>
+              <a href="">人物专访</a>
+              <a href="">人脉广场</a>
+              <a href="">空间谈</a>
+            </div>
+          </li>
+        </ul>
+        <!--整站主导航 End-->
+        <!--首页面包屑导航-->
+        <!--首页面包屑导航 end-->
+      </div>
+    </div>
+    <!--主导航-->
+    <div class="dmato"></div>
+    <div class="content_width">
+      <div class="content_width ">
+        <script type="text/javascript">
+          var token = "0";
+          var appid = "0";
+          var openid = "0";
+          var token_weibo = "0";
+          seajs.use(['newHeader', 'common'],
+          function(Header, common) {
+            $(document).ready(function() {
+              Header.init();
+              common.initHeader();
+              $('#quicksearch .submit').click(function() {
+                return common.checkSearchForm();
+
+              });
+            });
+
+            var searchType = "2";
+            var arr = new Array("1", "2", '10', '7', '9', '3');
+            var urlArr = new Array({
+              '1': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索图片的关键词，如：儿童房",
+                3 : "找图片　　"
+              }],
+              '2': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索灵感图集",
+                3 : "找图集"
+              }],
+              '10': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索案例",
+                3 : "找案例"
+              }],
+              '7': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索设计师",
+                3 : "找设计师"
+              }],
+              '9': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索问答",
+                3 : "找问答"
+              }],
+              '3': [{
+                0 : "",
+                1 : "q",
+                2 : "搜索模型",
+                3 : "找模型　"
+              }]
+            });
+            common.searchFun(searchType, arr, urlArr);
+            common.searchBannerEvent(arr, urlArr);
+          });
+        </script>
+        <style type="text/css">
+          /*内页是窄版*/ .index_logo,.top_menu{width:990px;} .index_logo #search_case{margin-left:
+          100px !important;}
+        </style>
+        <style type="text/css">
+          /*改为宽版*/ .sjbNewTop .newTopBg .head1 , .index_logo, .top_menu{width:1180px;}
+          .content_width_index{padding-top: 0px !important;z-index: 100 !important;}
+          .content_width { width: 1180px;} .thumb_list {height: 415px;} .index_logo
+          #search_case {margin-left: 130px !important;} .ask_links{ width: 1180px;}
+          .ask_links .itemModule .itemTips{ width: 1065px;}
+        </style>
+        <div id="content">
+          <div class="clear"></div>
+          <div class="classify">
+            <div class="classify_nav">
+              <strong class="type">分类：</strong>
+              <a href="" class="topic_link ">网咖专题</a>
+              <a href="" class="topic_link ">电竞专题</a>
+              <a href="" class="topic_link on_topic_link">案例解析</a>
+              <p class="clear"></p>
+            </div>
+            <div class="add_img">
+              <a href="" target="_blank" id="add_img">申请设计</a>
+            </div>
+            <div class="order_list">
+              <strong>排序：</strong>
+              <a href="" class="order_link " data="remen">热门</a>
+              <a href="" class="order_link on_order" data="leveltime">最新</a>
+              <a href="" class="order_link " data="jinghua">精华</a>
+              <p class="clear"></p>
+            </div>
+            <p class="clear"></p>
+          </div>
+          <div class="thumb_list 21 1524441">
+            <div class="thumb_intro">
+              <div class="float_l thumb_ti">
+                <h4>
+                  <div class="float_r">
+                    <span class="visits">19</span>
+                    <span class="collections">21</span>
+                  </div>
+                  <a href="case-detail.html" class="thumb_name" target="_blank"> 【第233期】绅士春天——127㎡北欧风缤纷彩色三...</a>
+                  <p class="clear"></p>
+                </h4>
+                <div class="summary">
+                  设计师：之境内建筑设计 作品名称：绅士春天 项目地址：成都建发金沙里 软装设计：奇妙旅程软装陈设 项目面积：127平米 主要材料：马赛克、硬包、木地板、瓷砖、乳胶漆......
+                  拍摄时间：...
+                </div>
+              </div>
+              <div class="float_r author">
+                <div class="float_l">
+                  <a href="">
+                    <img src="http://pic.shejiben.com/user/22/headphoto_10522_d.jpg?1378092196" width="50" height="50"/>
+                  </a>
+                </div>
+                <div class="float_r w170">
+                  <ul>
+                    <li><a href="">之境设计廖志强</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="clear"></p>
+              <!-- image list -->
+              <div class="image_list">
+                <span>
+                  <a href="case-detail.html" target="_blank">
+                    <img width="270" height="270" src="http://img.shejiben.com/front_new/bg/layout.gif"
+                    data-src="http://pic.shejiben.com/i/upload/2016/04/05/20160405151834-cbae3473-la.jpg"
+                    data-original="http://pic.shejiben.com/i/upload/2016/04/05/20160405151834-cbae3473-la.jpg"
+                    alt="" title=""/>
+                  </a>
+                </span>
+                <span>
+                  <a href="case-detail.html" target="_blank">
+                    <img width="270" height="270" src="http://img.shejiben.com/front_new/bg/layout.gif"
+                    data-src="http://pic.shejiben.com/i/upload/2016/04/05/20160405151825-3d603d75-la.jpg"
+                    data-original="http://pic.shejiben.com/i/upload/2016/04/05/20160405151825-3d603d75-la.jpg"
+                    alt="" title=""/>
+                  </a>
+                </span>
+                <span class="justify_fix"></span>
+              </div>
+              <!-- image list end -->
+            </div>
+          </div>
+          <div class="thumb_list 38 1523041">
+            <div class="thumb_intro">
+              <div class="float_l thumb_ti">
+                <h4>
+                  <div class="float_r">
+                    <span class="visits">277</span>
+                    <span class="collections">38</span>
+                  </div>
+                  <a href="case-detail.html" class="thumb_name" target="_blank">
+                    	【第232期】幸福.塞纳湾——420㎡奢华美式别墅
+                  </a>
+                  <p class="clear">
+                  </p>
+                </h4>
+                <div class="summary">
+                  设计师:赖小丽 设计主题：幸福.塞纳湾 项目网咖风格：美式网咖风格 项目地址：广东河源 设计面积：420㎡ 设计说明：地下室分为影视区、钢琴区和休闲酒吧区；一楼阳台封闭作为储物间，并设计楼梯方便...
+                </div>
+              </div>
+              <div class="float_r author">
+                <div class="float_l">
+                  <a href="">
+                    <img src="http://pic.shejiben.com/user/62/sjb_headphoto_79162_d.jpg?1429847772" width="50" height="50"/>
+                  </a>
+                </div>
+                <div class="float_r w170">
+                  <ul>
+                    <li>
+                      <a href="">胭脂设计</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="clear">
+              </p>
+              <!-- image list -->
+              <div class="image_list">
+                <span>
+                  <a href="case-detail.html" target="_blank">
+                    <img width="270" height="270" src="http://img.shejiben.com/front_new/bg/layout.gif"
+                    data-src="http://pic1.shejiben.com/i/upload/2016/04/01/20160401112147-3ab6f873-la.jpg"
+                    data-original="http://pic1.shejiben.com/i/upload/2016/04/01/20160401112147-3ab6f873-la.jpg"
+                    alt="" title=""/>
+                  </a>
+                </span>
+                <span>
+                  <a href="case-detail.html" target="_blank">
+                    <img width="270" height="270" src="http://img.shejiben.com/front_new/bg/layout.gif"
+                    data-src="http://pic1.shejiben.com/i/upload/2016/04/01/20160401112149-3f764561-la.jpg"
+                    data-original="http://pic1.shejiben.com/i/upload/2016/04/01/20160401112149-3f764561-la.jpg"
+                    alt="" title=""/>
+                  </a>
+                </span>
+                <span>
+                  <a href="" target="_blank">
+                    <img width="270" height="270" src="http://img.shejiben.com/front_new/bg/layout.gif"
+                    data-src="http://pic1.shejiben.com/i/upload/2016/04/01/20160401112152-b214e7e0-la.jpg"
+                    data-original="http://pic1.shejiben.com/i/upload/2016/04/01/20160401112152-b214e7e0-la.jpg"
+                    alt="" title=""/>
+                  </a>
+                </span>
+                <span class="justify_fix"></span>
+              </div>
+              <!-- image list end -->
+            </div>
+          </div>
+          <div class="page">
+            <p class="page_num">
+              <a class="on">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="">5</a>
+              <a href="">6</a>
+              <a href="">7</a>
+              <a href="">8</a>
+              <a href="">9</a>
+              <a href="javascript:;">···</a>
+              <a href="">24</a>
+              <a href="" class="next" id=nextpageid>下一页&gt;</a>
+            </p>
+          </div>
+        </div>
+        <script type="text/javascript">
+          seajs.use(['common', path+'/html/pc/js/picks.js'],
+          function(SJB, PICKS) {
+            PICKS.picksInit();
+          });
+          seajs.use('common',
+           function(SJB) {
+             SJB.commonSubToolBar.init();
+           })
+        </script>
+      </div>
+    </div>
+    <p class="clear"></p>
+    <bgsound src="" autostart=true loop=2 id='bgmusic'></bgsound>
+      <div id='messagebox'></div>
+      <div id="small_window">
+      </div>
+      <div style="display: none" id="bd_statistics">
+        <script type="text/javascript">
+          seajs.use('common',
+          function(SJB) {
+            SJB.initFooter();
+            SJB.updateNavigate();
+            SJB.placeHolder();
+            SJB.commonSubToolBar.init();
+            $('.kflive800').live('click',
+            function() {
+              window.open('http://dzt.twos.net.cn/LR/Chatpre.aspx?id=DZT58706561&lng=cn', '_blank', "height=450,width=630");
+            }) $('.link_04').live('click',
+            function() {
+              SJB.backToTop();
+            });
+            var noChange = $('#stopChangeNavi');
+
+            if (!noChange.length) {
+              $(document).scroll(function() {
+                SJB.updateNavigateOnScroll();
+              });
+            }
+          });
+        </script>
+      </div>
+      <p class="cl">
+      </p>
+      <!--版权等-->
+      <div class="wrap wrap_cppyright">
+        <div class="cppyright_content">
+          <div class="string clear"></div>
+          <ul>
+            <li>
+              <a href="" rel="nofollow" target="_blank">关于我们</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">联系我们</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">意见建议</a>
+            </li>
+            <li>
+              <a href="" rel="nofollow" target="_blank">帮助中心</a>
+            </li>
+            <li class="no_border">
+              <a href="" rel="nofollow" target="_blank">使用条款</a>
+            </li>
+          </ul>
+          <p class="statement">
+            免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。
+          </p>
+          <p class="bottom_bah">
+            ©2012shejiben.com,All Rights Reserved.(
+            <a hidefocus="" href="http://www.miitbeian.gov.cn" rel="nofollow">粤ICP备0812558号-2</a>
+            )
+          </p>
+          <div class="bottom_icon">
+            <a href="http://szcert.ebs.org.cn/d6c3aa01-b00f-4d32-aef4-70ad63021bab"
+            target="_blank" rel="nofollow" title="" alt="">
+              <label class="icon_gongan"></label>
+            </a>
+            <a rel="nofollow" href="" target="_blank">
+              <label class="icon_falv"></label>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--版权等 End-->
+  </body>
+</html>

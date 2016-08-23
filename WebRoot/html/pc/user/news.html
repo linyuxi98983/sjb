@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>百爪鱼--行业咨询</title>
+<meta name="description" content=""/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="/sjb/resources/pc/css/sjb_hy.css" rel="stylesheet" type="text/css"/>
+<link href="/sjb/resources/pc/css/header_menu.css" rel="stylesheet" type="text/css"/>
+<link href="/sjb/resources/pc/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="/sjb/resources/pc/css/logo.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/sjb/resources/pc/js/sea.js"></script>
+<script type="text/javascript">
+  	var pathName = window.document.location.pathname;
+ 	var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+</script>
+<script type="text/javascript">
+     seajs.config({
+        alias : {
+            'jquery': path+'/html/pc/js/jquery_module.js',  //jquery version must be 1.7x
+            'common': path+'/html/pc/js/main.js',
+            'form': path+'/html/pc/js/module.form.js',
+            'ui': path+'/html/pc/js/module.ui.js',
+            'colorbox': path+'/html/pc/js/jquery.colorbox.min.js',
+            'newHeader': path+'/html/pc/js/userCenter.js'
+        },
+        preload : ['jquery', 'common']  //预加载jquery和main.js
+    });
+</script>
+<style type="text/css">
+    /*内页是窄版*/
+    .index_logo,.top_menu{width:990px;}
+    .index_logo #search_case{margin-left: 100px !important;}
+</style>
+<body style="position: relative;">
+	<div class="sjbNewTop" id="sjbNewTop">
+      <div class="newTopBg">
+        <div class="head1">
+          <div class="hea_top_right">
+            <ul class="tp_node">
+              <li style="width:90px;" id="nav_login" class="">
+                <span id="userName" class="name">
+                    <a href="/sjb/pc/login/login.action">登录</a>&nbsp;&nbsp;<a href="/sjb/pc/register/register.action">注册</a>   
+                  <div class="caozuo" id="caozuo" style="display: none;" onmouseover="$('bg').rel=2;" onmouseout="$('bg').rel=1;">
+                    <div class="redArrow"></div>
+                    <ul class="cz">
+                      <li>
+                        <a href="" class="my">个人中心</a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的收藏
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="bj">
+                          	我的问答
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="jy">
+                          	我的交易
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的金币
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	我的余额
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="up">
+                          	账号设置
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="tc">
+                          	退出
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!-- 申请定制设计 -->
+              <li class="dzsj">
+                <a href="/sjb/pc/designer/designer!apply.action" target="_blank" rel="nofollow">申请定制设计</a>
+              </li>
+              <li class="po" style="color: rgb(221, 221, 221);">|</li>
+              <!--设计师中心 -->
+              <li class="cur" style="width:92px;">
+                <a href="javascript:;">
+                	设计师中心
+                  <span class="jt"></span>
+                </a>
+                <div class="sj_center" style="display: none;">
+                  <ul>
+                    <li>
+                      <a href="/sjb/pc/designer/designer!home.action" rel="nofollow">接单大厅</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="newMessage" class="newMessage">
+            <div class="closeNewMessage" id="closeNewMessage"></div>
+            <div class="messageItem" id="messageItem"></div>
+            <p class="clear"></p>
+          </div>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航-->
+      <div class="index_logo">
+        <a href="" title="美国知名风险投资机构投资的设计交易平台 - 百爪鱼">
+          <div class="web-logo"></div>
+        </a>
+        <div id="search_case">
+          <form id="quicksearch" method="get" action="" target="_blank">
+            <input type="hidden" name="searchType" value="7" id="searchType"/>
+            <span id="search_span">
+              <div id="search_title">找设计师</div>
+              <em class="arrow"></em>
+              <label id="s_zsj" style="display: none;">
+	              <a class="search_tags clickToSearch" href="javascript:;" data-id="2">找图集</a>
+	              <a class="search_tags clickToSearch" href="javascript:;" data-id="10">找案例</a>
+	              <a class="search_tags clickToSearch" href="javascript:;" data-id="7">找设计师</a>
+              </label>
+            </span>
+            <input type="text" value="请输入搜索关键词" class="key" name="q" id="search_val"/>
+            <em class="icon_search"></em>
+            <input type="submit" value="搜索" class="submit"/>
+          </form>
+        </div>
+      </div>
+      <!--头部搜索 及 主导航 end-->
+    </div>
+	<p class="clear"></p>
+	<!--主导航-->
+	<div class="wrap wrap_top_menu">
+      <div class="top_menu">
+        <!--整站主导航-->
+        <ul>
+          <li>
+            <a href="/sjb/pc/index.action">
+              首页
+            </a>
+          </li>
+          <li>
+            <a href="/sjb/pc/case/case!list.action">
+              设计案例
+            </a>
+            <div class="inner_menu">
+             <a href="/sjb/pc/case/case!list.action">网咖案例</a>
+              <a href="/sjb/pc/case/case!list.action?type=1">电竞案例</a>
+              
+            </div>
+          </li>
+          <li>
+            <a href="/sjb/pc/case/case!pics.action">
+              装修图库
+            </a>
+            <div class="inner_menu">
+              <a href="/sjb/pc/case/case!pics.action">网咖图库</a>
+              <a href="/sjb/pc/case/case!pics.action?type=1">电竞图库</a>
+             
+            </div>
+          </li>
+          <li>
+            <a href="/sjb/pc/designer/designer!index.action">
+              找设计师
+            </a>
+          </li>
+          <li class="cur">
+            <a href="">行业咨询</a>
+          </li>
+        </ul>
+        <!--整站主导航 End-->
+        <!--首页面包屑导航-->
+        <!--首页面包屑导航 end-->
+      </div>
+    </div>
+	<!--主导航-->
+<div class="dmato"></div><div class="content_width" id="content">
+<div class="content_width ">
+<script type="text/javascript">
+var token = "0";
+var appid = "0";
+var openid = "0";
+var token_weibo = "0";
+seajs.use(['newHeader','common'], function( Header,common) {
+    $(document).ready(function() {
+        Header.init();
+        common.initHeader();
+        $('#quicksearch .submit').click(function(){
+          return common.checkSearchForm();
+        });
+    });
+    var searchType = "";
+    var arr=new Array("1","2",'10','7','9','3');
+    var urlArr=new Array({'1':[{0:"http://www.shejiben.com/search.php",1:"q",2:"搜索图片的关键词，如：儿童房",3:"找图片　　"}],'2':[{0:"http://www.shejiben.com/search.php",1:"q",2:"搜索灵感图集",3:"找图集"}],'10':[{0:"http://www.shejiben.com/search.php",1:"q",2:"搜索案例",3:"找案例"}],'7':[{0:"http://www.shejiben.com/search.php",1:"q",2:"搜索设计师",3:"找设计师"}],'9':[{0:"http://www.shejiben.com/search.php",1:"q",2:"搜索问答",3:"找问答"}],'3':[{0:"http://www.shejiben.com/search.php",1:"q",2:"搜索模型",3:"找模型　"}]});
+    common.searchFun(searchType, arr, urlArr);
+    common.searchBannerEvent(arr, urlArr);
+});
+</script>
+<style type="text/css">
+/*内页是窄版*/
+.index_logo,.top_menu{width:990px;}
+.index_logo #search_case{margin-left: 100px !important;}
+</style>
+<link href="/sjb/resources/pc/css/sj_style_new.css" rel="stylesheet" type="text/css"/>
+<div class="clear"></div>
+<div class="destoleft">
+	<div class="descon">
+		<ul>
+			<li>
+				<p class="ptitle"><span class="pspan">2016-06-20 </span><label><strong><a href="http://www.shejiben.com/n2770.html">家里最脏的原来是这些东西，第一个就意想不到</a></strong></label></p>
+				<p class="dmsg">无孔不入的细菌是您家居健康的天地，与我们生活息息相关的地方也是家居藏污垢最多的地方。今天我们就来说说家中的哪些地方是你所想不到的细菌之王吧。1、浴室喷头 有研究表明，每3个喷头中就有一个被分支杆菌污染，能渗入...</p>
+			</li> 
+			<li>
+				<p class="ptitle"><span class="pspan">2016-06-20 </span><label><strong><a href="http://www.shejiben.com/n2769.html">过道设计不好会影响家居生活？8个要领完美解决</a></strong></label></p>
+				<p class="dmsg">家居装修中过道装修也是非常有讲究的，室内的过道不可太多，最好是以客厅为中心，能直通到各房间，而不要拐来绕去或穿过一间房进入另一间房。下面就和小编一起来了解一下过道装修的注意事项。1、过道不宜太长如果根据居住者...</p>
+			</li> 
+			<li>
+				<p class="ptitle"><span class="pspan">2016-06-20 </span><label><strong><a href="http://www.shejiben.com/n2768.html">装修前，这几项一定不能改，改了保准后悔</a></strong></label></p>
+				<p class="dmsg">家是港湾，每一个业主在装修的时候，都希望可以尽善尽美，打造一个温馨且完美的家，但是有些时候并不是房子每个地方都可以随自己心思随便改的，今天我们就来看看装修中哪些地方是装修的不能动的秘密吧。第一、户型结构别轻易拆...</p>
+			</li> 
+			<li>
+				<p class="ptitle"><span class="pspan">2016-06-20 </span><label><strong><a href="http://www.shejiben.com/n2767.html">这些隐蔽工程做不好危害竟如此大，看完后心都要碎了</a></strong></label></p>
+				<p class="dmsg">装修时施工中会出现很多的隐蔽工程，这些工程没有处理好的话，会给您带来很多的不便。那么，装修当中到底有哪些隐蔽工程是比较难察觉的呢？该如何是避免呢？一起喝小编来看看吧。装修隐患一：电线安装插座发热电工在安装插座、开...</p>
+			</li> 
+			<li>
+				<p class="ptitle"><span class="pspan">2016-06-20 </span><label><strong><a href="http://www.shejiben.com/n2766.html">家居清洁一瓶白醋就搞定！老公，家里没醋了赶紧买</a></strong></label></p>
+				<p class="dmsg">家居清洁小窍门，有的是一些“偏方”，有的是一些清洁小细节，也许看起来微不足道，有人也不屑了解、学习，但是这些小窍门却可以有效的帮家庭主妇省时省力的做家庭保洁。下面随小编一起看看这些清洁小窍门。1.天花板容易累积灰...</p>
+			</li> 
+		</ul> 
+	</div> 
+	<div class="page">
+		<p class="page_num">
+			<a class="on">1</a>
+			<a href="http://www.shejiben.com/news-t0p2">2</a>
+			<a href="http://www.shejiben.com/news-t0p3">3</a>
+			<a href="http://www.shejiben.com/news-t0p4">4</a>
+			<a href="http://www.shejiben.com/news-t0p5">5</a>
+			<a href="http://www.shejiben.com/news-t0p6">6</a>
+			<a href="http://www.shejiben.com/news-t0p7">7</a>
+			<a href="http://www.shejiben.com/news-t0p8">8</a>
+			<a href="http://www.shejiben.com/news-t0p9">9</a>
+			<a href="javascript:;">···</a>
+			<a href="http://www.shejiben.com/news-t0p126">126</a>
+			<a href="http://www.shejiben.com/news-t0p2" class="next" id="nextpageid">下一页&gt;</a>
+		</p>
+	</div>
+</div>
+<div class="destoright">
+	<form action="#" id="newsForm" name="newsForm" method="post" class="sub_zb_form">
+		<div class="input_form">
+			<p class="input_form_header">申请定制设计</p>
+			<p class="total">快速发布需求&nbsp;找到专属设计</p>
+			<div class="box">
+				<label class="default_value">您的称呼</label>
+				<input class="input_txt" name="chenghu" id="sChenghu" type="text">
+				<label class="msg"><em></em><p></p></label>
+			</div>
+			<div class="box">
+				<label class="default_value">手机号码</label>
+				<input class="input_txt" name="phone" id="sPhone" type="text">
+				<label class="msg"><em></em><p></p></label>
+			</div>
+			<div class="box box_l">
+				<select class="select_l" name="User_Shen" id="User_Shen"><option value="">省/市</option><option value="安徽">安徽</option><option value="北京">北京</option><option value="重庆">重庆</option><option value="福建">福建</option><option value="广西">广西</option><option value="贵州">贵州</option><option value="广东">广东</option><option value="甘肃">甘肃</option><option value="海南">海南</option><option value="湖北">湖北</option><option value="黑龙江">黑龙江</option><option value="河南">河南</option><option value="河北">河北</option><option value="湖南">湖南</option><option value="江苏">江苏</option><option value="吉林">吉林</option><option value="江西">江西</option><option value="辽宁">辽宁</option><option value="内蒙古">内蒙古</option><option value="宁夏">宁夏</option><option value="澳门">澳门</option><option value="青海">青海</option><option value="四川">四川</option><option value="陕西">陕西</option><option value="上海">上海</option><option value="山东">山东</option><option value="山西">山西</option><option value="台湾">台湾</option><option value="天津">天津</option><option value="西藏">西藏</option><option value="香港">香港</option><option value="新疆">新疆</option><option value="云南">云南</option><option value="浙江">浙江</option></select>
+				<label class="msg"><em></em><p></p></label>
+			</div> 
+			<div class="box box_r">   
+				<select class="select_r" name="User_City" id="User_City"><option value="">市/地区</option></select>
+				<label class="msg"><em></em><p></p></label>
+				<input type="hidden" id="User_Town" name="User_Town" value="">
+			</div>
+			<div class="clear"></div>
+			<div class="box">
+				<input type="button" class="smbmit_btn" id="newsBtn" name="subs" value="立即提交">
+			</div>
+			<label id="erro_msg"><em></em><p></p></label>
+		</div>
+	</form>
+</div>
+	<script type="text/javascript">
+	seajs.use('http://stc.shejiben.com/gb_js/zt/check_form.js?20160427');
+	seajs.use(['common','http://stc.shejiben.com/gb_js/GlobalProvinces_module.js?20150911'],function(SJB,province){
+	    province({
+	        elems : ['#User_Shen' , '#User_City' ],
+	        placeHolders: ['省/市', '市/地区']
+	    });
+	    SJB.subZbForm.init($('#newsBtn'),119);
+	
+	    $('#newsBtn').click(function() {   //资讯页
+		    //百度统计函数
+		    try{
+		        _hmt && _hmt.push(['_trackEvent', 'newstj', 'newstj1', '7_3']);
+		    }catch(e){
+	
+		    }
+		}); 
+	}); 
+	</script>
+</div>
+</div>
+	<p class="clear"></p>  
+	<bgsound src="" autostart="true" loop="2" id="bgmusic"></bgsound>
+	<div id="messagebox"></div>
+		<script type="text/javascript">
+		//短信提示使用(asilas添加) 
+		var divTop,divLeft,divWidth,divHeight,docHeight,docWidth,objTimer,i = 0;
+		//鼠标悬浮在用户头像或者名称上面时显示用户信息
+		</script>
+	<div id="small_window"></div>
+		<script type="text/javascript">
+		seajs.use( 'common', function( SJB ) {
+			SJB.initFooter();
+			SJB.updateNavigate();
+			SJB.placeHolder();	
+		    var noChange = $('#stopChangeNavi');
+		    if ( !noChange.length ) {
+		        $( document ).scroll( function() {
+		            SJB.updateNavigateOnScroll();
+		        } );
+		    }
+		} );
+		</script>
+	</div>
+	<p class="cl"></p>
+	<div class="wrap wrap_cppyright">
+      <div class="cppyright_content">
+        <div class="string clear"></div>
+        <ul>
+          <li>
+            <a href="/sjb/resources/html/common/about_us.html" rel="nofollow" target="_blank">关于我们</a>
+          </li>
+          <li>
+            <a href="/sjb/resources/html/common/contact_us.html" rel="nofollow" target="_blank">联系我们</a>
+          </li>
+          <li>
+            <a href="" rel="nofollow" target="_blank">意见建议</a>
+          </li>
+          <li>
+            <a href="" rel="nofollow" target="_blank">帮助中心</a>
+          </li>
+          <li class="no_border">
+            <a href="" rel="nofollow" target="_blank">使用条款</a>
+          </li>
+        </ul>
+        <p class="statement">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。</p>
+        <p class="bottom_bah">
+          百爪鱼 COPYRIGHT © 2015-2016 广州揽冠信息科技有限公司 版权所有(
+          <a hidefocus="" href="" rel="nofollow">粤ICP备16059512号</a>
+          )
+        </p>
+        <div class="bottom_icon">
+          <a href="" target="_blank" rel="nofollow" title="" alt="">
+            <label class="icon_gongan"></label>
+          </a>
+          <a rel="nofollow" href="" target="_blank">
+            <label class="icon_falv"></label>
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

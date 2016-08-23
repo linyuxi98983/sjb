@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>预约申请</title>
+    <link href="../css/designer.css" rel="stylesheet" type="text/css">
+    <link href="../css/new_global.css" rel="stylesheet" type="text/css">
+    <link href="../css/safe.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+  		var pathName =  window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script type="text/javascript" src="/sjb/resources/pc/js/jquery.min.js"></script>  
+    <script src="/sjb/resources/pc/js/sea.js" type="text/javascript"></script>
+    <script>var jq = jQuery.noConflict();</script>
+    <script type="text/javascript">
+      seajs.config({
+        alias: {
+          'jquery': path+'/resources/pc/js/jquery_module.js',
+          'list':path+'/resources/pc/js/list.js',
+          //jquery version must be 1.7x
+          'common': path+'/resources/pc/js/main.js',
+          'form': path+'/resources/pc/js/module.form.js',
+          'ui': path+'/resources/pc/js/module.ui.js',
+          'colorbox': path+'/resources/pc/js/jquery.colorbox.min.js',
+          'newHeader': path+'/resources/pc/js/userCenter.js'
+        },
+        preload: ['jquery','list', 'common'] //预加载jquery和main.js
+      });
+      seajs.use([path+'/resources/pc/js/GlobalProvinces_module.js', path+'/resources/pc/js/zsj.js'],
+	    function(province, zsj) {
+	      province({
+	        elems: ['#User_Shen', '#User_City'],
+	        placeHolders: ['省/市', '市/地区']
+	      });
+	    });
+	  function Request(name){ //获取页面ID参数
+        var reg = new RegExp("(^|\\?|&)" + name + "=([^&]*)(\\s|&|$)", "i");
+        if (reg.test(location.href)) return unescape(RegExp.$2.replace(/\+/g, " "));
+        return "";
+      }
+      function clickFun(){
+      	var id = Request("id");//设计师ID
+      	jq("#designMemberId").val(id);
+	  	var User_Shen = jq("#User_Shen").val();
+	    var User_City = jq("#User_City").val();
+	    jq("#entity_area").val(User_Shen + " " + User_City);
+	    jq.ajax({
+        	type: "POST",
+            url: path+"/pc/demand/demand!save.action?result=json",
+            data: jq("#zsjForm").serialize(),
+            dataType: "json",
+            success: function(data){
+            	if(data.success){
+             		alert("需求提交成功");
+             		window.parent.document.getElementById("dialogBoxBG").style.display="none";
+             		window.parent.document.getElementById("dialogBox").style.display="none";
+             	}
+            }
+         });
+	   }
+    </script>
+    <style type="text/css">body , html{ min-width: 0; background: #fff;}</style>
+  </head>
+  <body style="overflow:hidden">
+  		<div class="doubt">
+            <!-- 申请设计列表 -->
+            <form action="#" id="zsjForm" name="zsjForm" method="post" style="top: 15px;">
+              <div class="input_form">
+                <p class="input_form_header">
+                  申请定制设计
+                </p>
+                <div class="total">
+                  <span>
+                    快速发布需求
+                  </span>
+                  <span>
+                    找到专属设计
+                  </span>
+                </div>
+                <div class="box">
+                  <input class="input_txt" name="entity.nickname" id="nickname" type="text" placeholder="您的称呼"/>
+                  <label class="msg">
+                    <em>
+                    </em>
+                    <p>
+                    </p>
+                  </label>
+                </div>
+                <div class="box">
+                  <input class="input_txt" name="entity.phoneNo" id="phoneNo" type="text" placeholder="手机号码"/>
+                  <label class="msg">
+                    <em>
+                    </em>
+                    <p>
+                    </p>
+                  </label>
+                </div>
+                <div class="box box_l">
+                  <select class="select_l" name="User_Shen" id="User_Shen" style="visibility: visible;"><option value="">省/市</option><option value="安徽">安徽</option><option value="北京">北京</option><option value="重庆">重庆</option><option value="福建">福建</option><option value="广西">广西</option><option value="贵州">贵州</option><option value="广东">广东</option><option value="甘肃">甘肃</option><option value="海南">海南</option><option value="湖北">湖北</option><option value="黑龙江">黑龙江</option><option value="河南">河南</option><option value="河北">河北</option><option value="湖南">湖南</option><option value="江苏">江苏</option><option value="吉林">吉林</option><option value="江西">江西</option><option value="辽宁">辽宁</option><option value="内蒙古">内蒙古</option><option value="宁夏">宁夏</option><option value="澳门">澳门</option><option value="青海">青海</option><option value="四川">四川</option><option value="陕西">陕西</option><option value="上海">上海</option><option value="山东">山东</option><option value="山西">山西</option><option value="台湾">台湾</option><option value="天津">天津</option><option value="西藏">西藏</option><option value="香港">香港</option><option value="新疆">新疆</option><option value="云南">云南</option><option value="浙江">浙江</option></select>
+                  <label class="msg">
+                    <em>
+                    </em>
+                    <p>
+                    </p>
+                  </label>
+                </div>
+                <div class="box box_r">
+                  <select class="select_r" name="User_City" id="User_City" style="visibility: visible;"><option value="">市/地区</option></select>
+                  <label class="msg">
+                    <em>
+                    </em>
+                    <p>
+                    </p>
+                  </label>
+                  <input type="hidden" id="entity_area" name="entity.areaZone" value=""/>
+                  <input type="hidden" id="state" name="entity.state" value="1"/>
+                  <input type="hidden" id="designMemberId" name="entity.designMemberId" value="2222"/>
+                </div>
+                <div class="clear">
+                </div>
+                
+                <div class="box">
+                  <input type="button" class="smbmit_btn" id="zsjBtnbbbb" onclick="clickFun()" name="subs" value="立即提交">
+                </div>
+              </div>
+            </form>
+          </div>
+  </body>
+</html>

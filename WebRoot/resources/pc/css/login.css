@@ -1,0 +1,259 @@
+login Ê×Ò³*/
+ul,li,ol,dl,dt	{ list-style:none;}
+*{padding: 0px;margin: 0px;}
+body{background-color: #ffffff; font-size:12px;color: #767676;}
+a{ color: #666; text-decoration:none;outline:none;}
+a.hover:hover{text-decoration: underline;}
+input{outline:none;}
+input[type='submit']{ cursor: pointer; outline: none;}
+.header{padding-top: 40px;height: 50px;border: 0px solid red;}
+.header .ico-logo{background: url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat;}
+.header .header-logo{width:309px;height:65px;border-right: 1px solid #eeeeee;float: left;}
+.header .header-text{width: 90px;float: left;height: 50px;line-height: 50px;margin-left: 20px;font-size: 20px;color: #333;font-family: 'Î¢ÈíÑÅºÚ';}
+.header_login{width: 990px;margin: auto;}
+.center .center_login{width: 990px;height: 560px;background-color: #ffffff;margin:auto;margin:auto;font-family:"ËÎÌå", Arial, sans-serif; margin-top: 40px;}
+.center_content{padding: 110px 110px;width: 770px;}
+.center_photo{background:url(../images/login_ad.png) no-repeat;width: 390px;height: 310px;float: left;margin-top: 20px;}
+.center_form{float: right;border: 2px solid #eee;width:330px;height: 338px; }
+
+.center_form .tab_name{padding: 20px 0 0;height: 38px; border-bottom: 1px #eee solid; margin: 0 40px 0; }
+.center_form .tab_name ul{ width: auto;height: 38px; display: block; margin: 0 auto; }
+.center_form .tab_name ul li{ width: 83px; float: left; text-align: center; line-height: 38px; font-size: 16px; font-family: 'Î¢ÈíÑÅºÚ'; cursor: pointer; margin:0 20px 0; color: #333;}
+.center_form .tab_name ul li.on{color: #B28850; border-bottom: 2px #B28850 solid;}
+.center_form .tab_content_account ul{padding-left: 40px;}
+.center_form p{margin-top:40px;}
+.inputText{width: 230px;height:32px; line-height:32px; padding:0px 10px 0px; margin-top:20px;outline: none;border: 1px solid #ccc;}
+.inputText:focus {	border: 1px solid #68a666;}
+.submit_button{background-color:#B28850;display:block;width: 250px;height:34px;margin-top:15px;float:left;color: #ffffff !important;text-align: center;font-size: 15px;line-height: 34px;margin-left: 40px;border: 0px;}
+.submit_button:hover{background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -398px;cursor: pointer;}
+
+/* µÚÈý·½µÇÂ¼£¬Î¢²©/qq */
+.tab_content_account .login_dsf{margin-left: 40px;margin-top: 10px;height: 26px; line-height: 26px;color: #999;float: left; width: 250px;}
+.tab_content_account .login_dsf p{ width:auto; float:left; margin:0;}
+.tab_content_account .login_dsf a{color:#666; width:auto; float:left; margin-right:10px; }
+.tab_content_account .login_dsf a em{line-height:26px; float:left; color: #666;}
+.tab_content_account .login_dsf .ico span{ background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat; width: 26px; height: 26px;display: inline-block; float:left;}
+.tab_content_account .login_dsf .ico-qq span{ background-position: -2px -45px; }
+.tab_content_account .login_dsf .ico-wb span{ background-position: -38px -45px; }
+.tab_content_account .login_dsf .ico-qq:hover span{background-position: -2px -77px;}
+.tab_content_account .login_dsf .ico-wb:hover span{ background-position: -38px -77px; }
+.tab_content_account .login_dsf .register{ float: right; margin-right: 0;}
+.tab_content_account .login_dsf a:hover{ color: #B28850;}
+/* ×Ô¶¯µÇÂ¼£¬Íü¼ÇÃÜÂë */
+.input-pass{margin-top: 20px;height: 18px;}
+.input-pass input{vertical-align: -2px;outline: none;border: none;height: 13px;line-height: 13px;}
+.input-pass label{color: #999;}
+.input-pass a{margin-left: 100px;color: #666;font-size: 12px;}
+.input-pass a:hover{color: #B28850;}
+
+.input-pass-top p{font-size: 16px;font-weight: bold;}
+.input-pass-top span{font-size: 12px;margin-left: 102px;font-weight: initial;}
+.input-pass-top a{font-size: 12px; color: #e94c3d;font-weight: initial;}
+.input-pass-top a:hover{color: #B28850;}
+
+#sjb_footer_new{margin-top: 100px;}
+
+/*Î¢ÐÅµÇÂ¼*/
+.tab_content_weixin{ width: 250px; height:auto; margin: 0 auto;}
+.tab_content_weixin .weixin_login_code{ width: 180px; height: 180px; margin: 0 auto; margin-top: 20px;border: 1px #EFEFEF solid;}
+.tab_content_weixin .weixin_login_code .icon_loading{width: 20px;height: 20px;margin: 0 auto; display: block; padding-top: 70px;}
+.tab_content_weixin .weixin_login_code .icon_loading img{width:20px; height: 20px;}
+.tab_content_weixin .weixin_login_code .icon_code{ position: relative; width: 180px;height: 180px; display: block;}
+.tab_content_weixin .weixin_login_code .icon_code img{width:160px; height: 160px; padding: 10px;  margin:0 auto;}
+.tab_content_weixin .weixin_login_code .icon_code .icon_logo{width: 30px; height: 30px;background:url(http://img.shejiben.com/front_new/logo/logo.jpg) no-repeat; background-size: 100% 100%; position: absolute;top: 75px;left: 75px; border-radius: 3px;}
+.tab_content_weixin .weixin_login_bottom {position: relative;}
+.tab_content_weixin .weixin_login_bottom .tishi{ text-align: center; width: 100%; display: block; font-size: 14px; font-family: 'Î¢ÈíÑÅºÚ';color: #666; margin-top: 10px;}
+.tab_content_weixin .weixin_login_bottom .help{ width: 50px; display:block; margin: 0 auto; margin-top: 8px;}
+.tab_content_weixin .weixin_login_bottom .help a{ text-align: center; width: 100%; color: #999; font-family: 'Î¢ÈíÑÅºÚ';}
+.tab_content_weixin .weixin_login_bottom .help a:hover{ color: #B28850;}
+.tab_content_weixin .weixin_login_bottom .help:hover .weixin_login_help{ display: block;}
+.tab_content_weixin .weixin_login_bottom .help .weixin_login_help{ width: 232px; height: 206px;border:1px #EFEFEF solid; position: absolute; top: -192px; left: 8px; background: #fff; display:none;}
+.tab_content_weixin .weixin_login_bottom .help .weixin_login_help img{ margin:10px 0 0 8px;}
+.tab_content_weixin .weixin_login_msg{width: 170px; margin: 15px auto 0;}
+.tab_content_weixin .weixin_login_msg .icon{width: 30px;height: 30px; margin-left: 10px; display: block; float: left; background:url(http://img.shejiben.com/global.png) no-repeat; }
+.tab_content_weixin .weixin_login_msg .icon_error{ background-position: -189px -285px;}
+.tab_content_weixin .weixin_login_msg .icon_success{ background-position: -156px -285px;}
+.tab_content_weixin .weixin_login_msg .status{ line-height: 16px; margin-left: 10px; float: left; width: 120px;color: #333; font-size: 12px; font-family: 'Î¢ÈíÑÅºÚ';}
+.tab_content_weixin .weixin_login_msg .status p{ margin-top: 0; float: left; width: 120px; font-size: 14px; }
+.tab_content_weixin .weixin_login_msg .status a{ color: #B28850;}
+/*login Ê×Ò³ end*/
+
+/* °ó¶¨ÕËºÅ */
+.login_user_type{ width: 300px; margin: 0 auto; margin-top: 65px;}
+.login_user_type .user_head{ width: 120px; height: 120x; margin: 0 auto;}
+.login_user_type .user_head img{ width: 120px; height: 120px; border-radius: 60px;}
+.login_user_type .user_name{font-size: 18px;color: #333;font-family: 'Î¢ÈíÑÅºÚ';text-align: center;margin-top: 20px;}
+.login_user_type .login_type_msg{margin-top: 40px;text-align: center;font-size: 16px;color: #666; font-family: 'Î¢ÈíÑÅºÚ';}
+.login_user_type .bing_account{width: 250px;height: 34px; border-radius: 3px; display: block;background: #fff;text-align: center;border: 1px #B28850 solid;line-height: 34px;color: #B28850;font-size: 14px;margin: 0 auto;margin-top: 20px; font-family: 'Î¢ÈíÑÅºÚ';}
+.login_user_type .bing_account:hover{background: #B28850; color: #fff;}
+/*login ×¢²á·µ»Ø*/
+.center{margin-top: 40px;}
+.center .center_register{width: 990px;height: 580px;background-color: #ffffff;margin:auto;font-family:"ËÎÌå", Arial, sans-serif;}
+.center .center_register .register_success{width: 522px;height: 65px;padding-top:168px;padding-left: 168px; margin-left: 132px;}
+.register_success  .ico-success{width:55px;height: 50px; background: url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -132px -253px;float: left;margin-top: 5px;}
+.register_success_text{margin-left: 75px;}
+.register_success_text .top{font-size: 26px;font-family: 'Î¢ÈíÑÅºÚ';}
+.register_success_text .bottom{font-size: 12px;font-family: "ËÎÌå";margin-top: 8px;}
+.register_success_text .bottom a{color: #e94c3d;}
+/*login ×¢²á·µ»Ø end*/
+
+.register_mail{width: 300px;height: 40px;border: 0px solid red;padding-top: 40px;margin: auto;}
+.register_mail .register_success_button{width:115px;height:35px;background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -318px;line-height: 35px;color: #fff;text-align: center;float: left;margin-left: 30px;}
+.register_mail a{margin-left: 20px;line-height: 35px;font-family: "ËÎÌå";color: #e94c3d;}
+.register_mail_center{border-top: 1px solid #eee;width: 910px;margin: 120px auto;padding-top: 20px;}
+.register_mail_center .p_1{font-size: 14px;color: #666;margin-bottom: 8px;}
+.register_mail_center .p_2{font-size: 12px;color: #999;line-height: 20px;}
+.register_mail_center .p_2 a{font-size: 12px;color: #e94c3d;}
+
+/*login ÒµÖ÷×¢²á*/
+.login_dsf_yz{margin-left: 70px;margin-top: 20px;height: 26px; line-height: 26px;color: #999;float: left;}
+.login_dsf_yz p{ width:auto; float:left; margin:0;}
+.login_dsf_yz a{color:#999; width:auto; float:left; margin-right:10px; }
+.login_dsf_yz a em{line-height:26px; float:left;}
+.login_dsf_yz .ico span{ background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat; width: 26px; height: 26px;display: inline-block; float:left;}
+.login_dsf_yz .ico-qq span{ background-position: -2px -45px; }
+.login_dsf_yz .ico-wb span{ background-position: -38px -44px; }
+.login_dsf_yz .ico-qq:hover span{background-position: -2px -77px;}
+.login_dsf_yz .ico-wb:hover span{ background-position: -38px -76px; }
+.login_dsf_yz a:hover{ color:#666;}
+
+.register_yz{width: 910px;margin: auto;border: 0px solid red;border-bottom: 1px solid #eee;padding-top: 40px;height: 31px;}
+.register_yz_left{width: 155px;float: left;height: 30px;border-bottom: 3px solid #e94c3d;font-weight: bold;font-size: 16px;padding-left: 20px;}
+.register_yz_left a{color: #e94c3d;}
+.register_yz_right{width: 173px;float: left;height: 30px;font-weight: bold;font-size: 16px;padding-left: 20px;}
+.register_title{height: 36px; border-bottom: 1px #E3E3E3 solid; padding-top: 30px; margin-left: 35px;}
+.register_title span{font-size: 18px; color: #333; font-family: 'Î¢ÈíÑÅºÚ'; line-height: 18px; float: left;display: block;height: 35px;border-bottom: 2px #B28850 solid;}
+.register_title a{float: right; display: block;font-size: 14px;color: #B28850; line-height: 20px;}
+
+.center_register .register_yz p{float: right;margin-right: 20px;font-size: 14px;}
+.center_register .register_yz .yzlogin{color: #e94c3d;}
+.register_from{margin-left: 40px;padding-top: 40px;}
+.box{clear: both;height: 36px;margin-bottom: 20px; position: relative;}
+.item{font-size: 14px;color: #666;float: left;height: 36px;line-height: 32px; width: 70px; text-align: right;}
+.register_from .box .new_txt{line-height: 18px;font-size: 14px;height: 18px;width: 250px;padding: 8px;float: left;outline: none;border: 1px solid #ccc;}
+.register_from .box .new_txt:focus{border: 1px solid #68a666;}
+.new_txt_pass{width:120px !important;}
+.new_txt_passport{ width: 120px; height: 36px; text-align: center; line-height: 36px;color: #666;text-align: center;background-color: #eee;margin-left: 10px;float: left;border:none; cursor: font-size: 14px; display: inline; outline: none;}
+.submit_button_yz{ background: #B28850; display:block;width: 268px;height:34px;color: #fff !important;text-align: center;font-weight: 14px;font-size: 16px;line-height: 34px;margin-left: 70px;border: none;}
+.submit_button_yz:hover{ background: #f77071;} 
+.messge{min-width: 112px;margin: 5px 10px;height: 25px;line-height: 25px;border-radius: 4px;float: left;margin-top: 5px;padding: 0px 3px;}
+.messge span{background: url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat; width: 17px;height: 16px;display: block;float: left;margin-top: 5px;margin-left: 5px;}
+.msg_error{border: 1px solid #faafaf; background:#ffeded; }
+.msg_error span{background-position: -114px -51px;}
+.msg_info{border: 1px solid #eee ;background-color: #f8f8f8;}
+.msg_info span{background-position: -85px -51px;}
+.msg_success{border: 1px solid #ffffff;}
+.msg_success span{background-position: -140px -51px;float: left;}
+.register_bottom_text{margin-left: 70px;}
+.register_bottom_text input{vertical-align: -7px;float: left;border: none;height: 15px;}
+.register_bottom_text p{height: 16px;line-height: 16px; margin-left: 6px;width: 250px;float: left;}
+.register_bottom_text a{color:#B28850;}
+.register_from .box .new_txt_select{line-height: 34px;font-size: 14px;height: 34px; width: 268px; float: left;}
+.messge em{ color:#0C9; cursor:pointer;}
+/*Í¼Æ¬ÑéÖ¤Âë*/
+.auth_code{position: absolute; width: 164px; height: 67px; background: #f6fff9; border:1px solid #d6ded9; display: none; top:-80px; left: 172px; z-index: 100;}
+.auth_code label{ width: 145px; margin:6px 0 6px 12px; display: block; clear: both; overflow: hidden}
+.auth_code label img{float: left; display: inline}
+.auth_code label a{float: left; margin-left:12px; display: inline ; color: #00ad4d;}
+.auth_code label input.authCodeText{float: left; width: 93px; text-indent: 5px;}
+.auth_code label input.autoCodeButton{float: right; width: 45px; height: 24px; border: 1px solid #f36f20; background: #B28850; color: #fff; padding:0;}
+.auth_code em{ position: absolute;width:0;height:0;overflow:hidden;font-size:0;display:inline-block;border-width:10px;border-color:#f6fff9 transparent transparent transparent;border-style:solid dashed dashed dashed; z-index: 2; bottom:-19px; left:75px;} 
+.auth_code em.arrow_background{border-color: #d8e0db transparent transparent transparent; z-index: 1; bottom:-20px;}
+/*==============µÚÈý·½µÇÂ¼==================*/
+.register_from .type_{ line-height:34px;width:auto; margin:12px 10px 0; height: auto;}
+.register_from .type_ input{}
+.indentradio{float: left;}
+.measge{ width:252px; height:34px; margin-top:5px; border: 1px solid #faafaf; background:#ffeded; border-radius:3px;}
+.measge .err_msg{}
+.thirdlogintext{padding-bottom: 30px;
+font-size: 14px;
+color: #999;}
+/*login ÒµÖ÷×¢²á end*/
+
+/*login ÕËºÅÑéÖ¤ */
+.center .center_verify{width: 990px;height: 500px;background-color: #ffffff;margin:auto;margin-top: 40px;font-family:"ËÎÌå", Arial, sans-serif;}
+.verify_text_top{width: 850px; margin: auto;height: 45px;padding-top: 72px;}
+.verify_text_top .loginline em{font-size: 16px;font-family: 'Î¢ÈíÑÅºÚ';}
+.verify_text_top ul{padding-left: 16px;}
+ul li{list-style-type:none;float:left}
+.loginline li{ text-align: center;position: relative;}
+.loginline .login-line{background-color: #eee;width:207px;height:3px; line-height: 20px;margin:10px 18px;position: relative;}
+.loginline li em{background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -38px -170px;height: 25px;width: 25px;text-align: center;display: inline-block;line-height: 25px;color: #fff;}
+.loginline li em.on{background-position: -2px -170px;}
+.login-line-success{background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -80px -170px;height: 25px;width: 25px;text-align: center;display: inline-block;line-height: 25px;color: #fff;}
+.loginline li span{line-height: 25px;font-size: 14px;position: absolute;width: 80px;left: -27px;top: 30px;}
+.loginline li span:hover{color: #333;}
+.verify-from{width: 340px;margin:80px auto;height: 145px;}
+.verify-from label{font-size: 14px;color: #333;letter-spacing: 1px;float: left;line-height: 34px;height: 34px;}
+.verify-from .from-line{margin-bottom: 20px;height: 34px;}
+.from-line-input{width: 260px;height: 34px;line-height: 34px;margin-left: 10px;font-size: 14px;padding-left: 10px;}
+.from-line-input.passport{width: 105px;float: left;}
+.from-line .passport-img{height: 34px;width: 104px;float: left;}
+.from-line .clickCode a{width: 56px;display: block;float: right;font-size: 14px;}
+.from-line .from-line-sub{width: 101px;height: 33px;background: url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -207px;line-height: 33px;border: none;margin-left: 60px;color: #fff;}
+/*login ÕËºÅÑéÖ¤ end */
+
+/*login ÕÊºÅ¹ÜÀí */
+.account-manage{ width: 823px; min-height: 730px;background-color: #fff;float: right;}
+.manage-content{padding: 25px 15px;height: 590px;}
+.manage-content .content-title{margin: 0px 0px 13px 25px;font-size: 14px;color: #333;font-weight: bold;height: 24px;}
+.manage-content .content-fjx{width: 100%; border-top: 1px solid #cdcdcd;margin: 5px auto;height: 0px;}
+.manage-content .content-text{height: 115px;margin: 30px 0px 100px 25px;}
+.manage-content .content-text .content-line{height: 15px;margin-bottom: 18px;}
+.manage-content .content-text .content-line p{width: 180px;display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.manage-content .content-text label{float: left;font-size: 14px; color: #666;letter-spacing: 6px;}
+.manage-content .content-text p{float: left;font-size: 14px; color: #333;}
+.manage-content .content-text p span{font-size: 14px; color: #999;}
+.manage-content .content-text a{float: right;font-size: 14px; color: #e94c3d;margin-right: 425px;}
+.third-conf{margin-top: 28px;margin-left: 25px;}
+.third-bottom{margin: 34px 25px;}
+.third-bottom-qq{height: 20px;margin-bottom: 18px;font-size: 14px;}
+.third-bottom-qq span{background: url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat;width: 25px;height: 16px;display: block;float: left;}
+.third-bottom-qq span.QQ{background-position: -7px -369px;}
+.third-bottom-qq span.WB{background-position: -41px -368px;}
+.third-bottom-qq a{float: right;margin-right: 560px;color: #e94c3d;}
+/*login ÕÊºÅ¹ÜÀí end*/
+
+/*login ÕÒ»ØÃÜÂë */
+.verify-status{width: 664px;margin: 50px auto;height: 265px;}
+.verify-status .status-text{font-size: 16px;font-weight: bold;color: #666;}
+.verify-status .status-type{border: 1px solid #ccc;width: 664px;margin-top: 20px;height: 100px;}
+.verify-status .status-type:hover{background-color: #f8f8f8;}
+.verify-status .status-type .status-photo-sj{margin: 28px 24px 28px 30px;background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -149px -342px;width: 24px; height: 43px;float: left;}
+.verify-status .status-type .status-photo-yx{margin: 36px 15px 31px 22px;background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -189px -349px;width: 42px; height: 30px;float: left;}
+.status-content-center{height: 40px;width: 390px;float: left;margin: 30px 0px;}
+.status-content-center .top{font-size: 14px;color: #333;margin-bottom: 10px;height: 15px;line-height: 15px;}
+.status-content-center span{color: #e94c3d;}
+.status-type .status-botton{width: 101px; height: 33px;margin: 32px 30px;background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -207px;float: right;line-height: 33px;text-align: center;}
+.status-type .status-botton a{color: #fff;}
+.verify-type-phone{ width:370px; margin:0 auto; height: 265px; padding-top:80px;}
+.verify-type-phone .check_type{ font-size:14px; height:20px; line-height:20px;}
+.verify-type-phone .check_type em{ color:#e94c3d;}
+.verify-type-phone .user_input{ height:36px; margin-top:20px; font-size:14px;}
+.verify-type-phone .user_input label{ width:auto; float:left; line-height:36px;}
+.verify-type-phone .user_input .input_txt{ height:20px; width:80px; padding:7px 15px; line-height:14px; float:left;}
+.verify-type-phone .user_input .input_txt_send{height: 36px;line-height: 36px;color: #666;text-align: center;background-color: #eee;margin-left: 10px;float: left; padding:0 17.5px;}
+.verify-type-phone .btn{height:50px; margin-top:20px; font-size:14px; }
+.verify-type-phone .btn .submit_button_check{ background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -207px;display:block; float: left; width: 110px; padding:0 10px; height:34px; color: #fff; text-align: center;font-weight: 14px;font-size: 14px;line-height: 34px; border: none; margin-left:85px;}
+.verify-type-mail{ width:850px; margin: 0px auto; height: 300px; padding-top:80px;}
+.verify-type-mail .check_type{ font-size:14px; height:20px; line-height:20px; text-align: center; margin:0 auto;}
+.verify-type-mail .check_type em{ color:#e94c3d;}
+.verify-type-mail .btn{height:36px; font-size:14px; width:620px; margin:0 auto; margin-top:40px;}
+.verify-type-mail .btn .submit_button_check{ background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -317px;display:block; width: 116px; height:34px;margin-top:15px;color: #fff; text-align: center;font-weight: 14px;font-size: 14px;line-height: 34px; border: none; margin-left:260px;}
+.mail-question { margin-top:103px; border-top:1px #eeeeee solid;}
+.mail-question p{ margin-top:5px; color:#999999;}
+.mail-question p.tip{ margin-top:20px; margin-bottom:12px; color:#666666; font-size:14px;}
+.mail-question p a{ color:#e44849;}
+.verify-passwd{width:400px; margin: 0px auto;height: 265px; padding-top:80px; position:relative;}
+.verify-passwd .user_input{height:auto; font-size:14px; padding-bottom:47px; min-height:36px; clear:both;}
+.verify-passwd .user_input label{ width:auto; float:left; line-height:36px; color:#333333;}
+.verify-passwd .user_input .input_txt{ height:20px; width:250px; padding:7px 10px; line-height:14px; float:left; margin-left:15px;}
+.verify-passwd .btn{height:50px; font-size:14px; clear:both; }
+.verify-passwd .btn .submit_button_check{ background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -2px -207px;display:block; width: 110px; padding:0 10px; height:34px;color: #fff; text-align: center;font-weight: 14px; font-size: 14px;line-height: 34px; border: none; margin-left:100px;cursor: pointer;}
+.verify-passwd .left{ width:30%; float:left;}
+.verify-passwd .left span{ width:60px; height:55px; float:right; background:url(http://img.shejiben.com/front_new/bg/login_conf.gif) no-repeat -125px -250px; margin-right:20px;}
+.verify-passwd .right{ width:65%; float:left;}
+.verify-passwd .right h1{ color:#666666;font-family: 'Î¢ÈíÑÅºÚ';}
+.verify-passwd .right p{ margin-top:5px; font-size:14px;}
+.verify-passwd .right p a{color: #e94c3d;}
+/*login ÕÒ»ØÃÜÂë  end

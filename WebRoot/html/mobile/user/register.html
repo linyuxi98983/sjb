@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>用户注册 - 百爪鱼</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+		<link href="../css/main.css" rel="stylesheet"/>
+		<link href="../css/dsn.css" rel="stylesheet"/>
+		<link href="../css/reset.css" rel="stylesheet"/>
+		<link href="../css/decorate-pics.css" rel="stylesheet"/>
+		<script src="../js/jquery-1.9.0.min.js"></script>
+		<script src="../js/jquery.lazyload.min.js"></script>
+		<script src="../js/dsn.js"></script>
+	</head>
+	<body>
+		<header>
+		    <div class="headerTop">
+		        <span onclick="location.href='../index.html'">百爪鱼</span>
+		        <i>注册</i>
+		        <a href="#" class="dsn-icon" id="show-pop-menus" ></a>
+		    </div>
+	    </header>
+		<div class="pop-menus">
+	        <a href="" class="login-info">设计师</a>
+	     	<a href="javascript:void(0)" class="login-exit" onclick="logout()">[退出]</a>
+	     	<h1><a href="#" class="dsn-icon" id="hide-pop-menus"></a></h1>
+	        <ul class="clearfix">
+	          	<li><a href="../index.html" class="dsn-icon"></a><span>首页</span></li> 
+			    <li><a href="../decorate/decorate-pics.html" class="dsn-icon"></a><span>装修图库</span></li> 
+			    <li><a href="../case/case.html" class="dsn-icon"></a><span>设计案例</span></li> 
+			    <li><a href="../designer/designer.html" class="dsn-icon"></a><span>找设计师</span></li> 
+			    <li><a href="../demand/demand.html" class="dsn-icon"></a><span>提交需求</span></li> 
+	        </ul>
+	    </div>
+		<section class="login_form reg_form no_app_push">
+		     <form  action="#" method="post" autocomplete="off">
+		          <label class="login_msg">请填写正确的手机号码</label>
+		          <input type="text" name="username" id="username" autocomplete="off" placeholder="请输入手机号码"></input>
+		          <div class="code_box clearfix">
+		              <input type="text" name="code" id="code" autocomplete="off" placeholder="请输入短信验证码" class="ver_code"></input>
+		              <input type="button" class="red_btn get_code" id="getmobilecode" value="获取验证码">
+		          </div>          
+		          <input type="password" name="psw" id="psw" autocomplete="off" placeholder="帐户密码"></input>
+		          <input  type="button" value="立即注册" class="red_btn reg_btn">   
+		          <input type='hidden' name='reg' value= 'sjbregster' />
+		          <input type='hidden' name='ident' id='ident' value= '1'/>
+		     </form>
+		     <a class="reg" href="login.html">已有帐号，直接登录</a>
+		</section>
+		<input type='hidden' id='pagename' value= 'regindex'/>
+		<input type='hidden' id='page_value' pagename="regindex" value= 'user'/>
+		<script src="../js/login.js"></script>
+	</body>
+</html>

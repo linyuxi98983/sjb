@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>
+     	
+    </title>
+    <link href="../css/new_global.css" rel="stylesheet"
+    type="text/css">
+    <link href="../css/safe.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../pc/js/jquery.js"></script>
+    <script language="JavaScript">
+      var pathName =  window.document.location.pathname;
+	  var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+      var jq = jQuery.noConflict();
+      window.onload = function() {
+        document.loginForm.val.focus();
+        var n = Request('id') * 1;
+        var newlogin = Request('new') * 1;
+        if (n) {
+          document.loginForm.n.value = n;
+        }
+        if (newlogin) {
+        	// document.loginForm.action = path+"/pc/login/login!login.action";
+        }
+        if (n == 2) {
+          document.domain = "shejiben.com";
+        }
+      }
+      function Request(name){ //获取页面ID参数
+        var reg = new RegExp("(^|\\?|&)" + name + "=([^&]*)(\\s|&|$)", "i");
+        if (reg.test(location.href)) return unescape(RegExp.$2.replace(/\+/g, " "));
+        return "";
+      }
+    </script>
+    <style type="text/css">body , html{ min-width: 0; background: #fff;}</style>
+  </head>
+  
+  <body style="width:379px">
+    <div class="popup_container popup_login">
+      <!-- <div class="title"><p>登录</p><em class="ico_popup_close"></em></div> -->
+      <form method="POST" action="javascript:;" name="loginForm" id="loginForm">
+       
+        
+        <div class="content">
+          
+          <div class="box">
+		  
+			<input type="hidden" id="designMemberID" style="display:none">
+            <textarea rows="3" cols="20" id="requirement" name="entity.requirement" class="user_txt" type="textarea" name="requirement" placeholder="咨询内容"
+            style="border: 1px solid rgb(204, 204, 204);resize: none;height:100px"></textarea>
+            <div class="message" style="display: none;">
+              <em class="icon">
+              </em>
+            </div>
+          </div>
+          
+          <input type="button" class="btn_submit" id="popLogin" value="提交">
+          <input type="hidden" name="n">
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="http://www.shejiben.com/gb_js/md5.js">
+    </script>
+    <script>
+      jq(document).ready(function() {
+        resizeDialog();
+      });
+      var usernameObj = jq('input[name="username"]');
+      var passwordObj = jq('input[name="password"]');
+      var submitObj = jq('#popLogin');
+      var formObj = jq('#loginForm');
+     
+     
+      var input_textObj = jq("input[type='text'] ,input[type='password']"); //文本框
+      input_textObj.focus(function() {
+
+        jq(this).css("border", "1px #00b34b solid").nextAll(".message").removeClass(".msg_error").hide(); //默认文本(密码)框获得焦点时边框变绿色
+      }).blur(function() {
+
+        jq(this).css("border", "1px #ccc solid"); //失去焦点变为默认的灰色
+      });
+
+      jq('form').keydown(function(event) {
+        if (event.keyCode == 13) {
+          submitObj.click();
+        }
+      });
+
+	  jq("#designMemberID").val(parent.getDsMemberId());
+      submitObj.click(function() {
+		
+        if (check_accountNm(usernameObj) ) {
+          setundisabled(submitObj, true, '提交中...');
+          var username = jq('#requirement').val();
+        
+          jq.ajax({
+            type: "POST",
+            dataType: 'JSON',
+            url: path+"/pc/appointment/appointment!save.action",
+            data: {
+				"result":"json",				
+				"entity.ltSpMemberId":jQuery("#memberId").val(),
+				"entity.designMemberID":parent.getDsMemberId(),
+				"entity.requirement":jQuery("#requirement").val()
+			},
+            //data: {password:password,username:username},
+            success: function(data) {
+              //console.log(msg);
+              if (!data.success) {
+                //console.log(msg.msg); //登录失败情况
+                //q('#passwd').nextAll('.message').addClass('msg_error').show().html('<em class="icon"></em>' + msg.msg);
+
+                setundisabled(submitObj, false, '提交');
+              } else {
+              	parent.layer.alert("提交咨询预约成功！");              	
+                parent.location.href= parent.reloadFun(); 
+              }
+
+            },
+            error: function(a, b, c) {}
+          });
+        } else {
+          return false;
+        }
+
+      });
+
+      //用户账号
+      function check_accountNm(obj) {
+        if (obj.length <= 0) {
+          return true;
+        } //不存在的节点直接返回true
+        var value = jq.trim(obj.val());
+        var errorObj = obj.nextAll(".message");
+
+        if (value == "") {
+          var infoMsg = "请输入用户名/邮箱/手机号码";
+          showMsg(errorObj, infoMsg, 1);
+          return false;
+        } else {
+          return true;
+        }
+
+      }
+      //验证密码
+      function check_passwd(obj) {
+        if (obj.length <= 0) {
+          return true;
+        } //不存在的节点直接返回true
+        var value = jq.trim(obj.val());
+        var errorObj = obj.nextAll(".message");
+        if (value == "") {
+          var infoMsg = "请填写密码";
+          showMsg(errorObj, infoMsg, 1);
+          return false;
+        } else if (value.length < 6) {
+          var infoMsg = "密码太弱，请重新设定";
+          showMsg(errorObj, infoMsg, 1);
+          return false;
+        } else if (value.length > 20) {
+          var infoMsg = "密码过长，6-20位字符";
+          showMsg(errorObj, infoMsg, 1);
+          return false;
+        } else {
+          var infoMsg = "所填信息正确";
+          showMsg(errorObj, infoMsg, 2);
+          return true;
+        }
+
+      }
+      //默认的信息
+      function showMsg(obj, msg, error) {
+        var c = 'msg_info';
+
+        switch (error) {
+          //正确消息
+        case 0:
+          c = 'msg_success';
+          obj.removeClass("msg_error").hide();
+          break;
+          //错误消息
+        case 1:
+          c = 'msg_error';
+          obj.prev('input').css('border', '1px #f77071 solid');
+          obj.addClass('msg_error').show();
+          obj.html('<em class="icon"></em>' + msg);
+          break;
+          //默认是普通消息
+        default:
+          c = 'msg_info';
+          break;
+        }
+
+        obj.addClass(c);
+      }
+
+      //设置状态
+      function setundisabled(obj, torf, value) {
+        obj.attr('disabled', torf).val(value);
+      }
+      //重置弹框的大小
+      function resizeDialog() {
+
+        //colorbox弹窗插件时候重置窗口样式
+        try {
+          resize2(false);
+        } catch(e) {
+
+          //域的指定比较混乱，为了防止调用的时候错误的指定了域，发生异常时候再强制指定一次域
+          try {
+            document.domain = "shejiben.com";
+            resize2(true);
+          } catch(e) {
+
+}
+        }
+      }
+      function resize2(isDomain) {
+        //重置colorbox样式
+        var boxwidth = jQuery('body').width();
+        var boxheight = jQuery('body').height();
+        if (isDomain) {
+          document.domain = "shejiben.com";
+        }
+        parent.jQuery("#cboxContent").css({
+          "marginTop": "32spx"
+        });
+      }
+    </script>
+    <!--新版登录 End-->
+  </body>
+</html>

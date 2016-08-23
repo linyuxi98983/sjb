@@ -1,0 +1,32 @@
+﻿.fullScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+.full_swipe{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.autohide .pt_d .pt_note{padding-bottom:53px;}
+.autohide .pt_d .pt_note p{padding-top:53px;text-align:center}
+.noBg{background-color: rgba(0, 0, 0, 0);}
+.autohide .pt_d{
+	margin: 0 auto;
+    background-color: #f8f8f8;
+    width: 90%;
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    margin-top: -60px;
+    border-radius: 6px;
+}
+.autohide .pt_d .pt_note{
+	padding: 0px 20px 30px;
+    font-size: 13px;
+    color: #787878;
+}

@@ -1,0 +1,8 @@
+.web-logo{
+	width: 309px;
+ 	height: 65px;
+ 	float: left;
+ 	display: block;
+ 	margin:-15px;
+ 	background:url(../images/web-logo.png) no-repeat;
+}

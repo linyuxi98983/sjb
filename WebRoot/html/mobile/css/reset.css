@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video ,input,select{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-shadow:none;
+  text-decoration:none;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+body {
+  -moz-user-select: none;
+  font-family: "Microsoft Yahei", Tahoma, Arial, sans-serif;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #f7f7f7; position: relative;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.app_push_bottom{ width: 100%; height: 60px; position: fixed; bottom: 0;  overflow: hidden; z-index: 1000;}
+.app_push_bottom .content{ width: 100%; height: 60px; position:relative; overflow: hidden;}
+.app_push_bottom .content .overlay_bottom{ width:100%; height: 60px; position: absolute; top: 0; left: 0; background: #000; opacity: 0.7;}
+.app_push_bottom .content .close{ background: #2B2B2B; width: 84px; height: 84px; position: absolute; z-index: 10; display: block; left: -60px; top: -50px; -webkit-transform: rotate(45deg);}
+.app_push_bottom .content .close:after{ width: 16px; height: 16px; display: block; content: ''; margin: 28px 0 0 66px; background: url(../images/close_white.png) no-repeat; background-size: 100% auto;-webkit-transform: rotate(-45deg); }
+.app_push_bottom .content .logo{ width: auto; height: 45px; position: absolute; left: 32px; top: 8px; z-index: 10; }
+.app_push_bottom .content .logo .img_logo{ width: 45px; height: 45px; float: left; margin-right: 6px;}
+.app_push_bottom .content .logo .img_tips{ width:auto; height: 40px; float: left; margin-top: 4px;}
+.app_push_bottom .content .btn_download{ height: 30px;position: absolute;right: 10px; top:15px; width: 70px;background: none; font-size: 14px; line-height: 28px; margin: 0; text-align: center; color: #fff; padding: 0; border-radius: 4px; border: 1px #fff solid; display: block;}

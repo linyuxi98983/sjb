@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title>帐号管理中心—会员帐号登陆注册中心</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/login.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+  		var pathName = window.document.location.pathname;
+  		var path = pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    </script>
+    <script>
+      var indentity = 0;
+      var regmode = 0;
+      var request_url = "";
+      var url = ';
+      var third = false;
+    </script>
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/comm.js" type="text/javascript"></script>
+    <script src="../js/md5.js" type="text/javascript"></script>
+    <script src="../js/user_check.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_login">
+        <a href="../index.html">
+          <div class="ico-logo header-logo"></div>
+        </a>
+        <div class="header-text">欢迎注册</div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="center_register">
+        <!--第三方注册完善资料-->
+        <!--普通注册-->
+        <div class="register_yz">
+          <p>已有帐号？<a href="" class="yzlogin"> 直接登录</a></p>
+          <ul>
+            <li>注册</li>
+          </ul>
+        </div>
+        <p class="clear"></p>
+        <!--还没有帐户-->
+        <!--注册 Begin-->
+        <div class="register_from">
+          <form action="" method="post" onsubmit="" autocomplete="off">
+            <!--手机注册-->
+            <div class="box box_1">
+              <label class="item">手机号码：</label>
+              <input class="new_txt" type="text" value="" name="mobile" autocomplete="off"/>
+              <div class="messge"></div>
+            </div>
+            <div class="box box_2">
+              <label class="item">验 证 码：</label>
+              <input class="new_txt new_txt_pass" type="text" name="mobileCode" autocomplete="off"
+              disabled="disabled"/>
+              <button class="new_txt_passport" id="getmobilecode" tabindex="-1" style="background: rgb(238, 238, 238);">获取验证码</button>
+              <div class="messge"></div>
+              <div class="auth_code">
+                <label>
+                  <img src="" width="93" height="24" id="passport" class="passport" onclick=""/>
+                  <span class="clickCode">
+                    <a href="javascript:void(0)" onclick="">换一张</a>
+                  </span>
+                </label>
+                <label>
+                  <input type="text" value="" class="authCodeText" id="txt_mathcode" name="txt_mathcode"/>
+                  <input type="button" class="autoCodeButton" value="确认" id="btn_mathcode"/>
+                </label>
+                <em class="arrow_front"></em>
+                <em class="arrow_background"></em>
+              </div>
+            </div>
+            <div class="box box_3">
+              <label class="item">登录密码：</label>
+              <input class="new_txt" type="password" name="password" autocomplete="off"/>
+              <div class="messge"></div>
+            </div>
+            <!--业主/设计师/机构注册-->
+            <div class="box box_5">
+              <label class="item">身份类型：</label>
+              <select class="new_txt_select" name="ident" style="border: 1px solid rgb(203, 203, 203);">
+                <option value="-1">请选择身份类型</option>
+                <option value="2">业主</option>
+                <option value="0">设计师</option>
+                <option value="1">设计机构</option>
+              </select>
+              <div class="messge msg_error" style="display: none;">
+                <span></span>
+              </div>
+            </div>
+            <div class="box box_4">
+              <label class="item">机构名称：</label>
+              <input class="new_txt" type="text" value="" name="nick" indentity="true"
+              autocomplete="off" style="border: 1px solid rgb(203, 203, 203);"/>
+              <div class="messge msg_error" style="display: none;">
+                <span>
+                </span>
+              </div>
+            </div>
+            <div>
+              <div class="register_bottom_text">
+                <input type="checkbox" name="agree" checked="checked"/>
+                <p>我已阅读并同意<a href="" target="_blank">《网服务协议》</a></p>
+                <div class="messge"></div>
+              </div>
+              <p class="clear"></p>
+              <div>
+                <input type="hidden" value="0" name="regindentity"/>
+                <input type="submit" class="submit_button_yz" value="立即注册"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--注册 End-->
+      </div>
+    </div>
+    <div id="small_window">
+    </div>
+    <p class="cl"></p>
+    <div id="sjb_footer_new">
+      <div class="sjb_footer_new">
+        <div class="sjb-link">
+          <p class="our-links">
+            <a href="" target="_blank" rel="nofollow">关于我们</a>
+            <span class="link-devide">|</span>
+            <a href="" target="_blank" rel="nofollow">联系我们</a>
+            <span class="link-devide">|</span>
+            <a href="" target="_blank" rel="nofollow">意见建议</a>
+            <span class="link-devide">|</span>
+            <a href="" target="_blank" rel="nofollow">帮助中心</a>
+            <span class="link-devide">|</span>
+            <a href="" target="_blank" rel="nofollow">使用条款</a>
+          </p>
+          <p class="statement">免责声明：本网站部分内容由用户自行上传，如权利人发现存在误传其作品情形，请及时与本站联系。</p>
+          <p class="sjs-icp">
+            ©2012 百爪鱼-定制化装修设计服务平台, All Rights Reserved. (
+            <a hidefocus="" href="" rel="nofollow">粤ICP备08125558号-2</a>
+            )
+          </p>
+          <div class="auth-icons">
+            <a href="" target="_blank" rel="nofollow" title="" alt="">
+              <span class="gaj">
+              </span>
+            </a>
+            <a href="" target="_blank" rel="nofollow">
+              <span class="gad"></span>
+            </a>
+            <p class="clear"></p>
+          </div>
+        </div>
+      </div>
+      <p class="cl"></p>
+    </div>
+    <form action="" method="post" target="frm_dealer" id="frm_dealer_form">
+      <input type="hidden" id="clickValId" name="key" value=""/>
+    </form>
+    <iframe frameborder="0" height="0" name="frm_dealer" id="clsIframe">
+    </iframe>
+  </body>
+</html>

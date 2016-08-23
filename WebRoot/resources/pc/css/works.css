@@ -1,0 +1,879 @@
+/*2014.02.21装修图片新样式*/
+body{background:#f2f2f2;}
+
+/*   二级导航 start  */
+.nav_new_add{float: left;margin: -20px 0 15px 0;}
+.nav_new_add ul{float: left;}
+.nav_new_add ul li{float: left;list-style:none;width: 100px;height: 30px;line-height: 30px;text-align: center;background-color: #000;margin-left: 10px;position: relative;}
+.nav_new_add ul li.on {background:#3e8803;}
+.nav_new_add ul li em{position: absolute;background: url(http://img.shejiben.com/front_new/bg/zbfbbtn.gif?20131111) no-repeat -10px -150px;width: 10px;height: 9px;top:30px;left: 13px;}
+.nav_new_add ul li a{color: #fff;font-size: 14px;text-decoration: none;display: inline-block;width: 100px;height: 30px;}
+.nav_new_add ul li span.new {position:absolute;display: inline-block;position: absolute;width: 20px;height: 8px;top: 1px;right: 4px;z-index: 100;background: url(http://img.shejiben.com/front_new/bg/sjb_index_bg.gif?20131011) no-repeat -234px -709px;}
+/*   二级导航  end  */
+
+/* 装修图片左侧导航start*/
+.tags_content_left{ width: 175px; float: left;}
+#menubar-left{float: left;width: 175px; padding:5px 0px 0px 0px; position: relative; height:auto;}
+#menubar {float: left;display: inline;width: 175px; overflow:hidden;background:#fff;padding:5px 0px 0px 0px;}
+#menubar  h4{font-size:12px;position:relative;width:160px;height:30px;padding-left:18px;line-height:30px;font-weight:100;color:#000;margin-top:3px;}
+#menubar  h4 a{color:#000;display:inline-block;height:15px;width:130px;line-height:15px;}
+#menubar  h4 .add{background-position:5px -106px;}
+#menubar  h4.on{background:#d6d6d6;}
+#menubar  h4 .plus{background-position:-60px -106px;}
+#menubar  h4 .typeTitle{*margin-top:10px;_margin-top:10px;font-size:12px;margin-top:7px;float:left;color:#646464;font-weight:bold;display: inline-block;height: 15px;width: 130px;line-height: 15px;}
+/*#menubar  h4 .typeTitle:hover{text-decoration:underline;}*/
+#menubar  h4 .newtypeTitle:hover{text-decoration:none;}
+#menubar .w_icon{float:left;width:15px;height:15px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif?20140426);margin-top:7px;margin-right:7px;}
+#menubar .hot-search{background-position:0px -129px;}
+#menubar .search-style{background-position:-55px -128px;}
+#menubar .price{background-position:-39px -128px;}
+#menubar .home{background-position:-17px -127px;}
+#menubar .public{background-position:-109px -126px;}
+#menubar  .spaceList{padding:0px 10px 16px 18px;background:#fff;}
+#menubar  .spaceList a{color:#9b9b9b;white-space:nowrap;float:left;width:49px;height:26px;line-height:26px;text-align:left;}
+#menubar  .spaceList a:hover{color:#de0004;}
+#menubar  .spaceList .on{color:#de0004;}
+#menubar  .spaceList .ggkj{width:62px;margin-right:10px;}
+#menubar  .spaceList .hottags{margin-right:10px;width:auto;display:block;float:none;}
+#menubar  .define-tag-list{padding:0px 10px 16px 18px;background:#fff;}
+#menubar  .define-tag-list a{float:left;max-width: 130px;margin-right:10px;color:#9b9b9b;height:26px;line-height:26px;overflow: hidden;*max-width: 133px;}
+#menubar  .define-tag-list a:hover{color:#de0004;}
+#menubar .define-tag-list .hot-search li{float:left;margin-right:10px;color:#9b9b9b;height:26px;line-height:26px;}
+#menubar .define-tag-list .hot-search li:hover{color:#de0004;}
+#menubar .define-tag-list .hot-search li span{float:left;}
+#menubar .define-tag-list .hot-search li a{margin-right:0px;}
+
+
+/* 装修图片左侧导航end*/
+
+/**装修图片右边图片列表start*/
+.works_right_new {width:980px;float:right;margin-top:5px;min-height: 1200px;}
+.works_right_new .works_new_top{background:#fff;padding:20px 0px 10px 0px;margin-bottom:20px;overflow:hidden;zoom:1;}
+.works_new_top h1{font-size:16px;color: #555555;width:100%;float:left;padding:0px 20px;}
+.number_scroll_c{margin-top:15px;float:left;width:100%;overflow:hidden;}
+.number_scroll_c .texts{padding-top:2px;}
+.number_scroll_c div{margin-right:20px;}
+span.picNum {border:1px solid #c7c9c6;padding:1px 0px;display: inline-block;width:12px;height:12px;background: url(http://img.shejiben.com/front_new/bg/txtnum.png?21031113) no-repeat -4px 0px;margin:0px 2px;}
+span.next{margin-left:10px;}
+.styleList{border:1px solid #e7e7e9;margin-top:10px;padding:15px;_padding-bottom:0px;background:#fff;float:left;}
+.styleList a{float:left;}
+.styleList span{float:left;}
+.styleList span{color:#3e8701;font-weight:bold;}
+.styleList a{width:71px;text-align:center;border-left:1px solid #cccccc;}
+.styleList a:hover{text-decoration:underline;}
+.styleList .first{border:none;}
+.styleList .onstyle{color: #3e8701;font-weight: bold;}
+.case_see_type{ width:100%; float:left; margin:15px 0 5px 0px;}
+.case_see_type a{color:#333; background:#fff; height:16px; line-height:16px; float:left;}
+.case_see_type a.img-size{border-left:0px;width:65px;height:16px;text-align:center;padding:0px;font-family:'微软雅黑';border-right:1px solid #d2d2d2;}
+.case_see_type a.on{color:#de0004;}
+.case_see_type a.radius-l{border-radius:3px 0px 0px 3px;}
+.case_see_type a.radius-r{position:relative;padding:0px;border-right:none;}
+.case_see_type .slide{left:20px;top:-2px;position:absolute;width:29px;height:19px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif?2014042602) no-repeat -73px -123px !important;}
+.float_r{ float:right;}
+label.float_r a {cursor:pointer;display:inline-block;}
+label.float_r .img-order {width:55px;height:16px;line-height: 16px;background:#fff;text-align:center;}
+label.float_r .on-order {color:#e71812;}
+.works_right_new .works_new_top .case_see_type .order-menu{height:16px;padding-top:5px;float:right;}
+.works_right_new .works_new_top .case_see_type .order-menu a{padding:0px 15px;border-right:1px solid #c9c9c9;}
+.works_right_new .works_new_top .case_see_type .order-menu .on-order{color:#e71812;}
+.works_right_new .works_new_top .case_see_type .order-menu .nobd{border-right:0px;}
+label.float_r .my-follow {position:relative;width: 100px;}
+label.float_r .my-follow em {position:absolute;width:22px;height:20px;background:url(http://img.shejiben.com/front_new/bg/circle.png?20131211) no-repeat;font-style: normal;right:-10px;top:-13px;line-height: 20px;font-weight: bold;color:#fff;display:none;}
+label.float_r .my-follow {position:relative;width: 100px;border-right:none !important;}
+label.float_r .my-follow em {position:absolute;width:22px;height:20px;background:url(http://img.shejiben.com/front_new/bg/circle.png?20131211) no-repeat;font-style: normal;right:-10px;top:-13px;line-height: 20px;font-weight: bold;color:#fff;display:none;}
+.new-bg{background:#333;border-radius:8px;border:none;height:33px;line-height:35px;font-size:14px;
+                                            padding:0px 20px;float:right;margin-right:15px;color: #fff;}
+.new-bg:hover{background:#B28850;}
+.new-bg em{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?20130325) no-repeat;display:inline-block;margin-right: 10px;width:12px;height:12px;}
+/*图片样式start*/
+.works_list {float:left; width:980px;overflow:hidden; text-align: left;}
+.case_list{ width:992px;}
+.case_list li{float:left; border:1px solid #ddd; padding:8px; line-height:16px; position:relative; margin:0 8px 8px 0;}
+.case_list_s li{width:142px; height:196px;}
+.case_list_s li img{width:142px; height:142px;}
+.case_list li a{color:#333;}
+.case_list li a.sjsname{float:left;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 90px;}
+.case_list .showUserInfo{float:left;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 90px;margin-left:5px}
+.case_list .case_labal{ float: left;}
+.case_list li a:hover{ text-decoration:underline;}
+.case_list li .c_icon{ background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat 0 -168px; width:6px; height:5px; font-size:0; line-height:5px; position:absolute; bottom:16px; right:8px;float:right;}
+.case_list li .c_icon2 {float:right;position:static;margin-top:5px;}
+.case_list li .added_author {float:left;}
+.case_list li .img_f_p {float:left;width:100%;text-align:center;color:#8d8b8c !important;margin-bottom:10px;}
+.case_list li .img_f_p a {color:#8d8b8c !important;}
+.case_list li .img_f_p1 {height:20px;margin-bottom:6px;text-align:center;overflow:hidden;}
+.case_list li .img_f_p1 a {color:#333 !important;}
+.works_list .case_list li .img_f_p1{height:34px;margin-bottom:0px;}
+.case_list li .img_f_p span.imgTimeStyle {color:gray;position:absolute;bottom:6px; right:8px;}
+.case_list label{ float:left; position: relative;display:block;vertical-align:middle;/*设置水平居中*/ text-align:center;*display: block;*font-size:175px;/*约为高度的0.873，200*0.873 约为175*/*font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/ background:#000; margin-bottom:5px;}
+.case_list label.label_img_142 {width:142px;}
+.case_list label.label_img_254 {width:237px; height: 237px;}
+.case_list label.label_img_394 {width:322px;}
+.case_list label.label_img_550 {width:660px;}
+.case_list li .img_f_p span.recTagStyle {color:#999;}
+.case_list_s li label{font-size:123px;}
+.case_list .byname{ font-size:12px;}
+.case_list img,.atlas_pic_list img{ cursor:url("http://img.shejiben.com/front_new/bg/magnify.cur"), pointer; +cursor:url("http://img.shejiben.com/front_new/bg/magnify.png"), pointer;vertical-align:middle;}
+.case_list .workSearchTag img,.atlas_pic_list .workSearchTag img {cursor:pointer;}
+.case_list li .c_icon:hover{ background-position:-10px -168px;}
+.case_list_m li{width:237px; height:309px;}
+.case_list_m li img{ width:237px; height:237px;}
+.case_list_l li{width:322px; height:445px;}
+.case_list_l li img{ width:322px; height:322px;}
+.case_list_xl li{width:814px;  line-height:18px;}
+.case_list_xl li img{  display:inline;}
+.case_list_xl .description{ float:left; width:284px; margin-left:16px; padding-bottom:20px;}
+.case_list_xl .name{ border-bottom:1px dashed #ccc;}
+.case_list_xl .tag{ border-top:1px dotted #ccc;display:block; float:left; width:100%; margin-top:3px; line-height:18px; padding-top:3px; color:#333;}
+.case_list_xl .ccc{ color:#888;  margin-top:2px;}
+.case_list_xl .ccc .img_name{margin-top:15px;color:#b6b6b6;display:block;min-height:40px;}
+.case_list_xl .share{ float:right; position:absolute; bottom:10px; width:240px; right:6px;}
+.case_list_xl .share a,.case_list_xl .share b{ float:left; font-weight:normal; color:#b6b6b6;margin-right:8px;}
+.sina,.qzone,.weibo,.email{ background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat 0 -185px; width:16px; height:16px; font-size:0;}
+.qzone{ background-position:0 -209px;}
+.weibo{ background-position:0 -232px;}
+.email{ background-position:0 -273px;}
+.case_list_xl .lv{color:#3d8901;}
+.works_list .case_list li .img_f_p1{height:34px;margin-bottom:0px;}
+.works_list .case_list_m li{margin:0px 11px 8px 0px}
+.works_list .case_list .shadow{-moz-box-shadow:0 0 8px rgba(30,30,30,0.4);-webkit-box-shadow:0 0 8px rgba(30,30,30,0.4);box-shadow:0 0 8px rgba(30,30,30,0.4);}
+.works_list .case_list li{background:#fff;}
+.works_list .case_list li{background:#fff;}
+.case_list{padding:5px 0px 0px 0px;_padding:0px;*padding:0px;}
+.case_list .minW{margin:0px 16px 8px 0px;padding:0px;border:none;}
+.new_case_list_m .new_li{height:auto !important;padding:0px;border:none;}
+.case_list .addcol{color:#bebebe;width:200px;margin:auto;margin-bottom:10px;*margin-top:0px;}
+.case_list .addcol .add_number{width:14px;height:12px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif) no-repeat 0px -22px;*background-position:0px -24px;display:inline-block;}
+.case_list .addcol .add_notice{width:50px;height:22px;display:inline-block;position:absolute;top:-30px;background:#404040;color:#fff;border-radius:3px;text-align: center;line-height:22px;font-weight:100;left:0px;display:none;}
+.case_list .addcol .add_j{width:10px;height:6px;position:absolute;display:inline-block;top:-9px;left:6px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif) no-repeat -18px -28px;display:none;}
+.case_list .new_xlarge{padding:0px;border:none;width:980px;background:#fff;margin-bottom:25px;}
+.share{width:128px !important;}
+.qxbutton,.qxbuttonhover{background:url(http://img.shejiben.com/front_new/bg/up_save_pic.gif) no-repeat 0 -281px; width:70px; height:29px; border:0; cursor:pointer;margin: 30px 0 0 200px;}
+.qxbuttonhover{ background-position:-77px -281px;}
+.case_list .new_xlarge .description .sjs_line{padding:15px 0px 20px 0px;}
+.case_list .new_xlarge .description .circle_headphoto img{width:22px;height:22px;border-radius:10px;cursor:default;}
+.case_list .new_xlarge .description .sjs_line .large-page-price{display:block;padding-left:35px;color:#b7b7b7;margin-top:5px;}
+.case_list .new_xlarge .description .sjs_line .large-page-price em{color:#de0004;}
+.new_case_list_m .new_li .sjsInfo{padding:10px 15px 20px 15px;height:20px;}
+.new_case_list_m .new_li .sjsInfo .headphoto img{width:22px;height:22px;border-radius:10px;cursor:default;}
+.new_case_list_m .new_li .sjsInfo .unick {margin-left:10px;max-width: 140px;overflow: hidden;}
+.new_case_list_m .new_li .sjsInfo .unick span{display:block;height:26px;line-height:26px;color:#323232;}
+.new_case_list_m .new_li .sjsInfo .unick .reds{color:#e34c5b;font-style:normal;}
+
+/*高清大图的样式start*/
+#lbRoot{ position:fixed; z-index:1000;top:0; left:0; bottom:0; right:0; overflow: hidden;_position:absolute;}
+#lbBg{ position:absolute; background:#000; top:0; left:0; bottom:0; right:0; z-index:1;}
+#lbMain{ position:absolute; z-index:2; left:20px; top:25px; background:#090909; right:20px; bottom:25px;}
+#lbCloseLink,#lbLink{ position:absolute;  z-index:2; padding:5px 0;+padding:8px 0;display:block;}
+#lbCloseLink{left:500px;}
+#lbCloseLink a,#lbLink a{ color:#7d7d7d;}
+#lbCloseLink a:hover,#lbLink a:hover{ color:#ccc;}
+.lbComments{ background:#fff;}
+#lbLink{ bottom:0; right:20px;}
+#lbImage{ position:relative; padding:0 5px 0 20px;}
+#lbNavigationLeft,#lbNavigationRight{background:url(http://img.shejiben.com/front_end/bg/blank.gif);float:left; position:absolute; top:0; cursor:pointer; z-index:0;}
+#lbNavigationLeft{left:0;margin-top:100px;}
+#lbNavigationRight{float:right;right:0;margin-top:100px;}
+
+#lbImage #lbNavigationLeft b,#lbImage #lbNavigationRight b{ position:absolute; width:74px; height:74px;top:30%; cursor:pointer;float:left;}
+#lbImage #lbNavigationLeft b{background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140505) no-repeat 0px -352px; left:10px; }
+/*#lbImage #lbNavigationLeft b:hover,#lbImage #lbNavigationLeft .b_prev,#lbNavigationLeft:hover b{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat -19px -185px; left:10px;}*/
+#lbImage #lbNavigationRight b{background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140505) no-repeat -79px -352px;right:10px;}
+/*#lbImage #lbNavigationRight .b_next,#lbImage #lbNavigationRight b:hover,#lbNavigationRight:hover b{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat -19px -221px;right:10px}*/
+#lbImage .fullscreenButton{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat -20px -27px; width:12px; height:12px; position:absolute; top:8px; right:8px;}
+#lbImage .fullscreenButton:hover{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat -19px -261px;}
+#lbImage .fadeOutOnExit{ position:absolute; z-index:3; top:5px; left:10px;filter:alpha(opacity=60);opacity:0.6; /* IE6 */-moz-opacity:0.6; /* Mozilla */    -khtml-opacity:0.6; /* Safari */background:#000; height:60px; width:182px; padding:3px 0 3px 3px;}
+#lbImage .fadeOutOnExit:hover{filter:alpha(opacity=100);opacity:1; /* IE6 */-moz-opacity:1; /* Mozilla */    -khtml-opacity:1;}
+#lbImage .fadeOutOnExit .crumbArrow{ background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?1300506) no-repeat -19px -185px; width:17px; height:33px; float:left; margin-top:15px;}
+#lbImage .fadeOutOnExit .crumbImage{ float:left; margin:0 9px 0 15px;}
+#lbImage .fadeOutOnExit .crumbType{float:left; margin-top:20px; color:#f2f2f2;}
+#lbActions{ position:absolute; z-index:2; }
+.lbActions_bg{filter:alpha(opacity=85);opacity:0.85; /* IE6 */-moz-opacity:0.85; /* Mozilla */    -khtml-opacity:0.85; /* Safari */background:#000; position:absolute;  z-index:1;}
+.box_login{ padding:1px 0 12px;z-index:1;height:44px; background:#363636;margin-left: -20px; border-bottom: 10px solid #000;display:none;}
+.box_login a{width: 111px;display:inline-block;background-repeat: repeat-x;border: 1px solid #3D8901;border-radius: 7px;overflow: hidden; position:relative;z-index:99;height: 37px;margin-left: 10px;top: 9px;}
+.box_login a:hover{filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity: 0.7; opacity: 0.7;}
+.box_login label{color: rgb(116, 188, 60); font-size: 30px; font-weight: bold;display: block;}
+.qq_login_a{background: url(http://img.shejiben.com/front_new/bg/login_logo_ad.gif?20131119) no-repeat 0 0;}
+.wb_login_a{background: url(http://img.shejiben.com/front_new/bg/login_logo_ad.gif?20131119) no-repeat -120px 0;}
+/*收藏的样式start*/
+.new_li .wrap1{  position:absolute; top:25px;right:12px;width: auto; height: 50px;}
+.ahoveradd{ height: 30px; /*bottom:12px; left:10px;*/ text-align:left; display:none; float: left;}
+.add_atlas {/*filter:alpha(opacity=85); -moz-opacity:0.85; -khtml-opacity:0.85;opacity: 0.85; */width:24px; height:24px;float:left; background-color: #323232;background-image: linear-gradient(to bottom, #525252, #323232);border: 1px solid #000000;color: #fff!important;background-clip: padding-box;border-radius: 3px; line-height:24px;}
+.add_atlas {/*filter:alpha(opacity=85); -moz-opacity:0.85; -khtml-opacity:0.85;opacity: 0.85;*/ width:24px; height:24px;float:left; background-color: #323232;background-image: linear-gradient(to bottom, #525252, #323232);border: 1px solid #000000;color: #fff!important;background-clip: padding-box;border-radius: 3px; line-height:24px;}
+.add_atlas b{ background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?20131015) no-repeat 0 -115px; padding-left:12px;height:24px; line-height:24px;+padding-top:2px;_height:22px;_line-height:22px;display:inline; float:left;margin:0 6px; cursor:pointer; }
+.add_atlas:hover{ background-color:#387E01;background-image: linear-gradient(to bottom, #429201, #286001);border: 1px solid #2b5202!important;text-decoration:none!important;}
+.addQuestion b {background-position:0 -137px;}
+.addQuestion_thumb {margin-left:10px;}
+.newbackground{background-color:#387E01;background-image: linear-gradient(to bottom, #429201, #286001);border: 1px solid #2b5202!important;}
+.addCollection_new ,.addQuestion_thumb_new{width:90px;height:33px;line-height:33px;text-indent:21px;background:#333;color:#fff !important;border:none;border-radius:8px;font-family: "微软雅黑";font-size: 14px;}
+.addCollection_new:hover,.addQuestion_thumb_new:hover {background:#B28850;border:none !important;}
+.addCollection_new em,.addQuestion_thumb_new em{background: transparent url("http://img.shejiben.com/front_new/bg/case_list_icon.gif?20140513") no-repeat scroll 0% 0%;display: inline-block;margin-right: 10px;width: 12px;height: 12px;*height: 16px;}
+.addCollection_new em{background-position: -19px -468px;height: 13px;width: 13px;*height: 16px;}
+.addQuestion_thumb_new em{background-position: -43px -469px;}
+.add_atlas_l{  width:auto; padding-right:5px; float:right;margin-right:10px;}
+.add_atlas_l b{ float:left; font-size:12px; padding-left:16px;}
+.add_atlas_l em{ font-size:13px; font-style:normal; font-weight:bold; float:left; height:24px; line-height:24px; padding:0 2px 0 6px; border-left:1px solid #000;}
+.case_list .add_ask{ margin-left:10px;}
+.add_ask b{ background-position:-0px -135px;}
+/*收藏的样式end*/
+
+/* 新版收藏样式 */
+.case_list li .add_atlas_new{padding:0px 20px;height:32px;line-height:32px;color:#fff;background:#333333;display:inline-block;position: relative;border-radius: 9px;font-size:14px; float: left;}
+.case_list li .add_atlas_new:hover{background:#B28850;text-decoration:none;}
+.case_list li .collection{margin-right:2px; float: left;}
+.case_list li .collection em{background: url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?201405013) no-repeat;float:left;margin-right: 10px;width: 12px;background-position: -21px -460px;height: 24px;}
+.case_list li .question em{background: url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?201405013) no-repeat;float:left;margin-right: 10px;width: 12px;background-position: -43px -461px;height: 24px;}
+.gradual{position:absolute;left:0px;bottom:0px;width:100%;height:74px;background:url(http://img.shejiben.com/front_new/bg/gradual.png) repeat-x;color:#b3b2b0;display:none;}
+.gradual .thumb_name{position:absolute;left:0px;bottom:20px;width:234px;text-align:center;color:#fff;padding:0px 10px; font-size: 14px;}
+/* 新版收藏样式 END */
+
+/*下载图片提示框样式start*/
+.to_download_dialog,.less_gold{width:270px;margin:auto;text-align:center;color:#333;}
+.red{color:red;}
+.mt20{margin-top:20px;}
+.sb{background:url(http://img.shejiben.com/front_new/bg/up_save_pic.gif) no-repeat 0px -319px;width:107px;height:29px; border:0; cursor:pointer; color:#fff!important;margin-right:10px;}
+.sb2{background:url(http://img.shejiben.com/front_new/bg/up_save_pic.gif) no-repeat 0px -357px;width:107px;height:29px; border:0; cursor:pointer; color:#fff!important;margin-right:10px;}
+/*下载图片提示框样式end*/
+
+#lbActions .ahoveradd{position:relative; bottom:0; display:block}
+#lbActions .ahoveradd .add_atlas_l{ margin-left:0;}
+#lbActions .ahoveradd .add_atlas .down_img{background-position:0px -362px;}
+#lbActions .ahoveradd .add_atlas{ margin-right:10px; height:26px; line-height:26px;}
+#lbActions .ahoveradd a{ float:left; margin-right:10px;}
+#lbActions .ahoveradd .add_atlas b{height:26px; line-height:26px; background-position:0 -114px;}
+#lbActions .ahoveradd .add_atlas_l em{height:26px; line-height:26px;}
+#lbActions .ahoveradd .add_ask b{ background-position:0 -136px;}
+#lbActions .ahoveradd .add_keyword{ width:89px; text-align:center;}
+#lbActions .ahoveradd .edit{ width:48px;text-align:center;}
+#lbActions .ahoveradd .sina{background-position:-45px -25px;}
+#lbActions .ahoveradd .qzone{background-position:-45px -50px;}
+#lbActions .ahoveradd .weibo{background-position:-45px -75px;}
+#lbActions .ahoveradd .email{background-position:-45px -185px;}
+#lbActions .ahoveradd .sina,#lbActions .ahoveradd .qzone,#lbActions .ahoveradd .weibo,#lbActions .ahoveradd .email{width:24px; height:24px; margin-top:2px;}
+#lbActions .ahoveradd .sina:hover{background-position:-45px 0px;}
+#lbActions .ahoveradd .qzone:hover{background-position:-45px -260px;}
+#lbActions .ahoveradd .weibo:hover{background-position:-45px -235px;}
+#lbActions .ahoveradd .email:hover{background-position:-45px -210px;}
+#lbAnchors{ position:relative;color:#333; font-size:13px;}
+#lbAnchors .colosed{ position:absolute; right:10px; top:10px;z-index:10;}
+#lbAnchors .colosed a{background:url(http://img.shejiben.com/front_new/bg/lbBg_colosed.gif) no-repeat;width:45px;height:45px;margin:-10px;float:right;position:relative;}
+#lbAnchors .userImage{ float:left; width:100%;}
+#lbAnchors .userImage .cities{margin-top: 6px;float: left;}
+#lbAnchors .userImage .cities em{width: 10px;height: 15px;background: url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?20130401) no-repeat 0px -527px;float: left;margin: 0px 3px 0px 1px;}
+#lbAnchors .userImage li{ float:left;}
+#lbAnchors .userImage .img{ margin-right:7px;}
+#lbAnchors .userImage{ line-height:18px;}
+#lbAnchors .userImage .lx{ float:right; margin:10px 12px 0 0;}
+#lbAnchors .userImage .lx a{ background:url(http://img.shejiben.com/front_new/bg/bg/up_save_pic.gif) no-repeat 0 -392px; width:73px; height:28px; float:right;}
+#lbAnchors .pic_name{ line-height:20px;}
+#lbAnchors .c999{ color:#999;}
+#lbAnchors .line{border-bottom:1px solid #ededeb; margin:8px 0; width:100%; height:0; line-height:0; font-size:0; display:block; clear:both; float:left;}
+#lbAnchors h3{ font-size:13px; margin-bottom:8px;}
+#lbAnchors .case_img{ width:310px;}
+#lbAnchors .case_img img{ float:left; border:1px solid #eaeff2; margin-right:5px; width: 64px; height: 64px;}
+#lbAnchors .ask_user{ margin-bottom:8px; width:100%; clear:both; height: 40px;}
+#lbAnchors .ask_user img{ float:left; margin-right:8px;}
+#lbAnchors .ask_user p{ float:left; width:240px;}
+#lbAnchors .ask_user p span{ display:block;  margin-top:5px;}
+#lbAnchors .ask_user p span a{ color: #666;}
+#lbAnchors h3 .more{ width:50px;}
+#lbAnchors .category_to_ask h4{font-size:12px;margin-top:10px;}
+#lbAnchors .category_to_ask div{margin-top:10px;}
+#lbAnchors .category_to_ask p{font-size:14px;margin-top:10px;}
+#lbAnchors .category_to_ask .to_ask_button{display:inline-block;width:203px;height:40px;background:url(http://img.shejiben.com/front_new/bg/sjb_index_bg.gif?20131011) no-repeat 0px -989px}
+#lbAnchors .ask_tags span{height:18px;border:1px solid #797979;font-size:12px;line-height:18px;width:60px;display:inline-block;text-align:center;}
+#lbAnchors .ask_tags{width:300px;line-height:25px;}
+#lbAnchors .disNOne{ display:none;}
+#lbAnchors #tagsList{padding: 13px 0px 10px 15px;overflow: hidden;zoom: 1;height:200px;}
+#lbAnchors #tagsList a{float:left;margin-right:30px;color:#666666;line-height:23px;}
+#lbAnchors #tagsList a:hover{color:#B28850;}
+#lbAnchors #questions{padding: 13px 15px 10px 15px;overflow: hidden;zoom: 1;}
+#lbAnchors #questions h3{color:#333333;font-style:normal;font-weight:100;}
+#lbAnchors #questions .ans em{float:left;width:12px;height:15px;background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140505) no-repeat -141px -289px;margin-right:5px;}
+#lbAnchors #questions .questionReply .qtitle{color:#999999;margin:10px 0px;}
+#lbAnchors #questions .questionReply .pcontent{color:#26588a;}
+#lbAnchors #questions .questionReply .pcontent:hover{color:#B28850;}
+#lbAnchors #questions .questionReply a:hover{text-decoration:underline;}
+#lbAnchors #questions .questionReply .total_comment{margin:15px 0px 20px 0px;}
+#lbAnchors #questions .questionReply .total_comment span{float:left;width:8px;height:15px;background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140505) no-repeat -145px -306px;margin-right:10px;}
+#lbAnchors #questions .questionReply .cline{border-top:1px solid #cecece;position:relative;}
+#lbAnchors #questions .questionReply .cline a{position:absolute;width:121px;background:#fff;left:90px;top:-10px;}
+#lbAnchors #questions .questionReply .cline em{float:right;margin-right:4px;width:10px;height:15px;background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140505) no-repeat -143px -323px;}
+#lbMain .sbtns{position:absolute;top:30px;width:100%;display:none;}
+#lbMain .sbtns .new-bg{background:#333;border-radius:8px;border:none;height:33px;line-height:35px;font-size:14px;
+                                            padding:0px 20px;float:right;margin-right:15px;color: #fff;}
+#lbMain .sbtns .new-bg:hover{background:#B28850;}
+#lbMain .sbtns .new-bg em{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?20140513) no-repeat;display:inline-block;margin-right: 10px;width:12px;height:12px;}
+#lbMain .sbtns .addQuestion em{background-position:-43px -469px;} 
+#lbMain .sbtns .addCollection em{background-position:-21px -469px;height:13px;} 
+#lbMain .sbtns .down_img_btn em{background-position:0px -469px;}   
+#lbMain .sbtns .link-to-case em{background-position:-55px -545px;width:14px;height:13px;}                                     
+#lbMain .sbtns span.new-bg a{color:#fff;}
+#lbMain .bottom_btns{position:absolute;bottom:30px;width:100%;display:none;z-index: 300;}
+#lbMain .bottom_btns .new-bg em{background:url(http://img.shejiben.com/front_new/bg/case_list_icon.gif?20140513) no-repeat;display:inline-block;margin-right: 10px;width:12px;height:12px;}
+#lbMain .bottom_btns .down_img_btn em{background-position:0px -469px;} 
+#lbMain .bottom_btns span.new-bg a{color:#fff;}
+#lbMain .bottom_btns .share-content{float:left;margin-left:25px;}
+#lbMain .bottom_btns .share-content .share-bd{height:40px;}
+#lbMain .bottom_btns .share-content .share-bd a,.new_content_width .works_left .share-content .share-bd span{margin-top:3px;}
+.wt_design{float:left;margin-top:-10px;background:url(http://img.shejiben.com/front_new/bg/fzbbtn.png) no-repeat;width:68px;height:22px;line-height:22px;text-align:center;font-weight:bold;color:#fff;font-size:12px;}
+.design_fr{float:left;width:200px;font-size:12px; color:#666; line-height: 17px;}
+.design_fr b{ width: 150px; overflow: hidden; height: 17px; display:inline-block;color:#333; font-size: 14px;text-overflow: ellipsis;white-space: nowrap; margin-bottom: -5px; }
+.design_city{float:left;width:115px;overflow:hidden;margin-top:-5px;}
+
+/* 找设计模块新增发布需求的入口 */
+.btn_published_demand{ width:100%; height: 36px; text-align: center; line-height: 36px; color: #fff; font-size: 14px; display: block; margin: 0 auto; background: #B28850; margin-top: 32px; margin-bottom: 40px;}
+.btn_published_demand:hover{ background: #f77071; color: #fff;}
+
+/*高清大图的样式end*/
+
+/**装修图片作品频道-我关注的设计师start***/
+.my_follow_sjs {width:700px;margin:0 auto;height:300px;}
+.my_follow_sjs .tips {height:25px;line-height:25px;margin:50px;width:100%;font-size:16px;color:#333;text-indent:122px;}
+.my_follow_sjs .six_sjs {width:100%;height:290px;}
+.my_follow_sjs .six_sjs p.top {width:100%;margin:7px 0;float:left;height:22px;line-height: 22px;color:#333;}
+.my_follow_sjs .six_sjs p.top span.desc {float:left;margin: 10px 0 0 20px;font-size:14px;}
+.my_follow_sjs .six_sjs p.top span.oper {float:right;margin: 10px 10px 0 0;background: url(http://img.shejiben.com/front_new/bg/new_user_guide.gif?20130912) no-repeat;color:#FFFFFF;cursor:pointer;height:22px;line-height:22px;width: 82px;}
+.my_follow_sjs .six_sjs p.top span.others {background-position:-91px -162px;margin-left:8px;text-indent:32px;}
+.my_follow_sjs .six_sjs p.top span.followAll {background-position:0 -162px;text-align: center;}
+.my_follow_sjs .six_sjs .six_content {border:1px solid #DEDEDE;height:216px;width:682px;float:left;margin:15px 7px 7px ;}
+.my_follow_sjs .six_sjs .six_content .content_dl {margin:12px 16px 12px 36px;width:173px;height:84px;float:left;_display:inline;_height:90px;}
+.my_follow_sjs .six_sjs .six_content .content_dl dt {height:82px;float:left;width:82px;border:1px solid #bdb9b8;}
+.my_follow_sjs .six_sjs .six_content .content_dl dd {float:left;width:82px;margin-left:7px;height:19px;line-height: 19px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.my_follow_sjs .six_sjs .six_content .content_dl dd.name {color:#3d8903;margin-top:4px;}
+.my_follow_sjs .six_sjs .six_content .content_dl dd.position {color:#7c7c7c;}
+.my_follow_sjs .six_sjs .six_content .content_dl dd.follow {width:72px;height:33px;line-height: 24px;margin-top:9px;}
+.my_follow_sjs .six_sjs .six_content .content_dl .followA {float:right;background:url(http://img.shejiben.com/front_new/bg/follow.gif?20130828) no-repeat; width:72px; height:24px; line-height:24px; margin-top:8px;color:#000;}
+.my_follow_sjs .six_sjs .six_content .content_dl .followA .follow,.followA .following,
+.my_follow_sjs .six_sjs .six_content .content_dl .followA .unfollow {background:url(http://img.shejiben.com/front_new/bg/follow.gif?20130828) no-repeat; background-position:0 -57px;+background-position:0 -59px; float:left; line-height:14px; padding:0 0 0 18px; margin:4px 0 0 8px;+margin:6px 0 0 8px;}
+.my_follow_sjs .six_sjs .six_content .content_dl .followA .follow {background-position:0 -96px;}
+.my_follow_sjs .six_sjs .six_content .content_dl .followA .following{background-position: 0 -59px;cursor:pointer;+background-position:0 -98px;}
+.my_follow_sjs .six_sjs .six_content .content_dl .followA .unfollow {background-position:0 -77px;}
+/**装修图片作品频道-我关注的设计师end***/
+
+
+/**灵感图集首页样式start*/
+.classify{height:50px;background:#fff;padding:0px 20px;margin:15px 0px;}
+.classify_nav{float:left;padding-top:12px;}
+.classify_nav .type{margin-right:5px;}
+.classify_nav .type,.classify_nav .topic_link,.classify_nav .add_topic{float:left;}
+.classify_nav a{margin-right:20px;}
+#add_topic{color:#3e8803;line-height:25px;}
+.classify_nav .type{line-height:25px;}
+.classify_nav .topic_link{width:50px;text-align:center;line-height:25px;padding:0px 5px;}
+.classify_nav .on_topic_link{background:#3e8803;color:#fff;}
+.classify_nav .topic_link:hover{text-decoration:underline;}
+.classify_nav .add_topic{z-index:2;color:#3e8803;font-weight:bold;position:relative;float:left;}
+.classify_nav .add_topic .sharp2{display:none;position:absolute;width:11px;height:6px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -15px;left:26px;top:19px;}
+.classify_nav .add_topic .topic_dialog{display:none;position:absolute;width:575px;border:2px solid #3e8803;left:10px;top:25px;z-index:999;}
+.classify_nav .add_topic .topic_dialog .dialog_title{height:35px;line-height:35px;color:#fff;background:#3e8803;padding-left:15px;font-weight:100;font-size:14px;position:relative;}
+.classify_nav .add_topic .topic_dialog .dialog_title .close_dialog{cursor:pointer;width:9px;height:9px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -98px;position:absolute;right:8px;top:8px;}
+.classify_nav .add_topic .topic_dialog .dialog_content{float: left;width: 545px;padding:15px 15px 0px 15px;white-space:nowrap;background:#fff;}
+.classify_nav .add_topic .topic_dialog .dialog_content span{float:left;border:1px solid #dcdcdc;height:23px;line-height:23px;padding:0px 10px;color:#666666;font-weight:100;cursor:pointer;margin:0px 10px 10px 0px;}
+.classify_nav .add_topic .topic_dialog .dialog_content .add_tag:hover{border:1px solid #3e8803;color:#3e8803;}
+.classify_nav .add_topic .topic_dialog .dialog_content .on em{z-index:1000;display:none;font-style:normal;font-size:12px;position:absolute;width:148px;height:18px;border:1px solid #dd3333;background:filter:alpha(opacity=90);opacity:0.8; /* IE6 */-moz-opacity:0.8; /* Mozilla */ -khtml-opacity:0.8;top: 27px;left: 20px;background: #dd3333;line-height: 18px;color: #fff;z-index: 1000;padding: 0px 5px;}
+.classify_nav .add_topic .topic_dialog .dialog_content .on{background:#3e8803;color:#fff;}
+.add_img{float:right;cursor: pointer;top: 9px;width: 102px;height: 33px;line-height: 33px;background: #e94c3d;border-radius: 5px;text-align: center;color: #fff;font-size: 14px;font-family: '微软雅黑';position:relative;}
+.add_img .sharp3{display:none;position:absolute;width:10px;height:6px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -26px;top:34px;left:35px;}
+.add_img a{color:#fff;font-size:14px;}
+.add_img a:hover{color: #fff;}
+.add_img .share_dialog{font-size:12px;font-family:'宋体';color:#fff;display:none;width:280px;height:125px;position:absolute;background:#000000;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9; opacity: 0.9;top:40px;left:-200px;border-radius:5px;z-index:2;}
+.add_img .share_dialog h4,.add_img .share_dialog p{text-align:left;padding-left:10px;margin-top:15px;}
+.add_img .share_dialog p{font-weight:100;margin:0px;padding:0px 10px;line-height:23px;}
+.order_list{float:right;padding-top:20px;margin-right:20px;}
+.order_list .order_link{width:25px;display:inline-block;margin-right:10px;/*background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat -30px -14px;*/}
+.order_list .on_order{background-position:-30px 2px;color:#ff3333;}
+
+.thumb_list{height:375px;background:#fff;padding:0px 20px;margin-bottom:15px;overflow:hidden;}
+.thumb_list .thumb_intro{height:85px;margin-top: 15px;}
+.thumb_list .thumb_intro .thumb_ti{height:85px;border-right:1px solid #e6e6e6;width:865px;padding-right:20px;}
+.thumb_list .thumb_intro .thumb_ti h4{color:#000;font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑";font-size:22px;font-weight:normal;}
+.thumb_list .thumb_intro .thumb_ti .summary{line-height:25px;margin-top:10px;color:#8a8a8a;height:48px;overflow:hidden;}
+.thumb_list .thumb_intro .thumb_ti .thumb_name{color:#000;}
+.thumb_list .thumb_intro .thumb_ti .thumb_name:hover{color:#ff3333;}
+.thumb_list .thumb_intro .thumb_ti h4 span{z-index:1;position:relative;display:inline-block;width:auto;padding-left:18px;font-size:12px;font-weight:100;color:#bebebe;text-align:left;}
+.thumb_list .thumb_intro .thumb_ti h4 span .msg_box{font-style:normal;position:absolute;width:51px;padding-top:2px;height:27px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -68px;top:-25px;left:0px;color:#fff;text-align:center;}
+.thumb_list .thumb_intro .thumb_ti h4 .visits{background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131205) no-repeat 3px -280px;}
+.thumb_list .thumb_intro .thumb_ti h4 .collections{background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131205) no-repeat 3px -47px;}
+.thumb_list .thumb_intro .author{width:230px;height:71px;padding-top:14px;}
+.thumb_list .thumb_intro .author img{width:50px;height:50px;}
+.thumb_list .image_list{padding-top:15px; width: 1160px; height: 300px;}
+.thumb_list .image_list span{ width: 270px; height: 270px; display: block; float: left; margin-right: 20px;}
+.thumb_list .image_list .ndq4{float:left;margin-right:7px;}
+.justify_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
+.essences{display:inline-block;width:30px !important;height:15px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131206) no-repeat 0px -305px;}
+.w170{width:170px;}
+.w170 ul li a{color:#000;}
+.w170 ul li a:hover{color:#ff3333;}
+.w170 ul li .share_icon{display:inline-block;background:#ec5657;padding:2px;color:#fff;border-radius:2px;margin-top:14px;}
+/**灵感图集首页样式end*/
+
+
+/**灵感图集内页样式start*/
+.show_atlas{ width:662px; border:0;}
+.show_atlas li{ border:0; padding:0; width:100%; overflow:hidden;margin-bottom:13px; text-align:left;}
+.show_atlas img,.show_atlas li .add_atlas_l{ margin:0;}
+.show_atlas li .add_atlas_l {margin-right:10px;}
+.show_atlas .ahoveradd{ bottom:8px;height: 33px;}
+.show_atlas .byname{ bottom:10px;}
+.show_atlas .state{line-height:2em; text-align:left;font-size:14px;}
+.show_atlas li label{ margin-right:8px; background:none;}
+.mt15{margin-top:12px;}
+.mt15 span{float:left;}
+.w555{width:555px;}
+.position{color:#767676;position: relative; width:715px; height: 27px; margin-bottom: 5px;}
+.position a{color:#3c8900; height: 27px; line-height: 27px;}
+.position a:hover{text-decoration:underline;}
+.position02{width:722px;margin: 5px 0;}
+.position02 a{color:#666;}
+.position02 span.p_span{color: #999;}
+.loadBimg {width:690px;border:none !important;}
+.w715{width:715px;float:left;background:#fff;padding:0px 10px 20px 10px;}
+.w715 h4{margin:20px 0px;color: #000;font-family: "Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑";font-size: 22px;font-weight: normal;}
+.w715 h4 .visits{background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131205) no-repeat 2px -280px;}
+.w715 h4 .collections{background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 3px -47px;}
+.w715 h4 .visits,.w715 h4 .collections{z-index:1;position:relative;display:inline-block;width:auto;padding-left:18px;font-size:12px;font-weight:100;color:#bebebe;text-align:left;}
+.w715 h4 span .msg_box{font-style:normal;position:absolute;width:51px;padding-top:2px;height:27px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -68px;top:-25px;left:0px;color:#fff;text-align:center;}
+.w715 h4 .sharp_effective{display: inline-block;width: 6px;height: 20px;background: url(http://img.shejiben.com/ask/buttons2Bg.png?20130815) no-repeat -324px -173px;line-height: 20px;margin-bottom: -6px;}
+.w715 .author_info{height:54px;border-bottom:1px solid #e6e6e6;padding-bottom:15px;margin-bottom:10px;}
+.w715 .author_info img{width:50px;height:50px;border:1px solid #e0dee1;}
+.w715 .author_info .share_icon{margin-left:10px;display: inline-block;background: #ec5657;padding: 2px;color: #fff;border-radius: 2px;}
+.w715 .author_info .abtn{width:80px;height:30px;background:#4b9212;color:#fff;border-radius:2px;text-align:center;line-height:30px;font-weight:bold;font-size:14px;margin-top:-11px;margin-left:10px;}
+.w715 .author_info .col_number{float:right;}
+.w715 .changeSize{text-align:right;margin-bottom:20px;}
+/*.w715 .changeSize .changeSizeTab{cursor:pointer;position:relative;width:50px;height:21px;line-height:21px;display:inline-block;padding-right:6px;}
+.w715 .changeSize .changeSizeTab em{position:absolute;width:11px;height:11px;background:url(http://img.shejiben.com/front_new/bg/ranking_bg.png?20150908) no-repeat;left:10px;top:5px;}
+.w715 .changeSize .changeSizeTab .big{background-position:-60px -380px;}
+.w715 .changeSize .changeSizeTab .small{background-position:-60px -396px;}
+.w715 .changeSize .changeSizeTab .onbig{background-position:-40px -380px;}
+.w715 .changeSize .changeSizeTab .onsmall{background-position:-40px -396px;}
+.w715 .changeSize .onSelectTab{border:1px solid #d1d1d1;}*/
+.w715 .thumb_info{position:relative;}
+.w715 .thumb_info .to_comment{display:none;z-index:100;position:fixed;width:70px;height:65px;background:#1bbc9b;display:none;color:#fff;font-size:14px;text-align:center;}
+.w715 .thumb_info .to_comment .c_icon{display:block;width:17px;height:22px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -179px;margin-top:10px;margin-left:28px;}
+.w715 .thumb_info .thumb_intro{min-height:55px;line-height:25px;color:#8a8a8a;margin-bottom:10px;font-size:14px;line-height:2em;}
+.w715 .thumb_info .thumb_intro:first-letter{line-height: 55px;font-size: 3.3em;margin-right: 5px;float: left;}
+.w715 .thumb_info .simg{position:relative;width:211px;height:211px;display:block;margin:0px 0px 10px 0px;}
+.w715 .thumb_info .simg a.preview-box{ display: block;}
+.w715 .thumb_info .simg .wrap1{ position: absolute; top: 5px; right: 0;}
+.w715 .thumb_info .simg .preview-box img{width:211px;height:211px;}
+.w715 .thumb_info .simg2{width:211px;height:211px;float:none;}
+.w715 .thumb_info .smiddle{margin:0px 12px;}
+.w715 .thumb_info .mr8{margin-right:8px}
+.w715 .thumb_comment .replybtn{line-height:30px;color:#3b8901;}
+.w715 .thumb_comment .son_comment_list{line-height:30px;color:#3b8901;}
+.w715 .thumb_comment .scomment{background:#f5f5f5;}
+.w715 .thumb_comment .son_comment_list:hover{text-decoration:underline;}
+.w715 .thumb_comment .comment_list .comment_table .comment_content {padding-bottom:30px;border-bottom:1px dashed #a9a9a9;margin-top:25px;}
+.w715 .thumb_comment .thumb_ctitle,.w715 .thumb_recomm .recomm_title{font-family:'微软雅黑';font-weight:bold;color:#333333;font-size:25px;}
+.w715 .thumb_comment .thumb_ctitle span{font-size:12px;font-weight:100;color:#929191;}
+.w715 .thumb_comment .comment_input{height:85px;width:710px;outline:none;resize: none;overflow:hidden;color:#aaaaaa;}
+.w715 .thumb_comment .send_comment_btn{width:127px;height:27px;border:1px solid #c5ced6;float:right;margin-top:10px;border-radius:3px;cursor:pointer;}
+.w715 .thumb_comment .comment_list {margin-top:15px;border-left:1px solid #d2d2d2;position:relative;}
+.w715 .thumb_comment .comment_list .comment_table{padding:20px;position:relative;width:640px;float:right;border:2px solid #eaeaea;}
+.w715 .thumb_comment .comment_list .comment_table .sharp{top:10px;left:-12px;width:12px;height:8px;position:absolute;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat -20px -162px;}
+.w715 .thumb_comment .comment_list .circle{width:12px;height:12px;position:absolute;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat 0px -159px;left:-6px;top:10px;}
+.w715 .thumb_comment .comment_list .author_nick{color:#3b8901;}
+.w715 .thumb_comment .comment_list .author_nick:hover{text-decoration:underline;}
+.w715 .thumb_comment .comment_list .comments{line-height:20px;color:#8a8a8a;margin-top:5px;}
+/*评论部分*/
+.image_comment{padding:30px;clear: both;margin-top: 10px;}
+.image_comment .p_tlt{font-size: 14px;font-weight: bold;}
+.image_comment ul li{padding: 20px 0;border-top: solid 1px #eee;}
+.image_comment ul li.li_01{border: none;}
+.image_comment ul li a.com_a{display: block;width: 40px;height: 40px;float: left;border-radius: 20px;overflow: hidden;}
+.image_comment ul li a.com_a img{width: 40px;height: 40px;}
+.image_comment ul li .div_right{float: right;width: 610px;}
+.image_comment ul li .div_right .p_01 a{color: #666;margin-right: 10px;}
+.image_comment ul li .div_right .p_01 a:hover{color: #B28850;}
+.image_comment ul li .div_right .p_01 em{color: #999;}
+.image_comment ul li .div_right .p_02{margin: 12px 0 10px;font-size: 14px;width: 570px;line-height: 20px;overflow: hidden;word-wrap:break-word;word-break:break-all;}
+.image_comment ul li .com_div{width: 598px;height:26px;border:solid 1px #e3e3e3;padding: 6px;position: relative;margin-top: 10px;}
+.image_comment ul li .com_divs{position: relative;}
+.image_comment ul li .com_divs a{position: absolute;right: 7px;top: -26px;display: block;}
+.image_comment ul li.li_01 .com_div{float: right;margin: 0;} 
+.image_comment ul li .com_div label{font-size: 14px;color: #c7c7c7;position: absolute;top: 9px;left: 10px;display: block;height: 22px;line-height: 22px;*top:10px;}
+.image_comment ul li .com_div input.input_text{width: 530px;border: 0;margin-left: 3px;}
+.image_comment ul li .com_div input.sub_btn{width: 44px;height: 26px;border: 0;background: #f79b9c;color: #fff;font-size: 14px;margin-left: 14px;}
+.sub_btn02{background: #B28850;}
+.image_comment ul li .div_right .div_con{background: #f6f6f6;margin-top: 10px;}
+.image_comment ul li .div_right .div_con span{padding: 12px 10px;border-bottom: solid 1px #eee;display: block;overflow: hidden;}
+.image_comment ul li .div_right .div_con a{color: #B28850;height: 20px;cursor: pointer;line-height: 20px;}
+.image_comment ul li .div_right .div_con a.no_pointer{cursor: default;}
+.image_comment ul li .div_right .div_con span i{font-style: normal;line-height: 20px;}
+.image_comment ul li .div_right .div_con span em{word-break:break-all;word-wrap:break-word;width: 525px;line-height: 20px;}
+
+/*左侧收藏部分*/
+.img_share{position: fixed;}
+.img_share .share_top{background: #fff;width: 48px;position: relative;}
+.img_share .share_top a{display: block;width: 48px;border-bottom: solid 1px #eee;text-align: center;padding-top: 10px;}
+.img_share .share_top a i{background: url(http://img.shejiben.com/front_new/bg/img_bg.png);width: 20px;height: 20px;display: block;margin: 0 auto 2px;}
+.img_share .share_top a.a_01 i{background-position:-5px -8px; }
+.img_share .share_top a.a_02 i{background-position:-42px -8px; }
+.img_share .share_top a.a_03{position: relative;height: 45px;}
+.img_share .share_top a.a_03 i{background-position:-82px -8px;}
+.img_share .share_top a em{font-size: 14px;color: #999;margin-bottom: 5px;display: block;}
+.img_share .share_top a.a_03 em.shareCount{background: none;position: absolute;z-index: 100;left: 0;top: 0;width: 48px;height: 56px;text-align: center;line-height: 80px;}
+.img_share .share_bottom{position: relative;}
+.img_share .share_bottom a.bottom_a01{display: block;background: url(http://img.shejiben.com/front_new/bg/img_bg.png);background-position: -5px -38px;width: 48px;height: 100px;margin-top: 10px;}
+.img_share .share_bottom a.bottom_a02{position: absolute;width: 108px;height: 122px;background: url(http://img.shejiben.com/front_new/bg/img_bg.png) no-repeat -67px -34px;top:-1px;left:50px;display: none;}
+.img_share .share_bottom:hover .bottom_a02{display: block;}
+.followingA,.guanzhuA{background:url(http://img.shejiben.com/front_new/bg/follow.gif?20130828) no-repeat; width:72px; height:27px; line-height:24px; float:left; cursor:pointer;}
+.followingA:hover,.guanzhuA:hover{ background-position:0 -27px;}
+.followingA .following,.followingA .unfollow,.followingA .follow,.guanzhuA .following,.guanzhuA .unfollow,.guanzhuA .follow{background:url(http://img.shejiben.com/front_new/bg/follow.gif?20130828) no-repeat; background-position:0 -57px;+background-position:0 -59px; float:left; line-height:14px; padding:0 0 0 18px; margin:4px 0 0 8px;+margin:6px 0 0 8px;}
+.followingA .unfollow,.guanzhuA .unfollow{ background-position: 0 -77px;+background-position:0 -79px;}
+.followingA .follow,.guanzhuA .follow{background-position: 0 -96px;cursor:pointer;+background-position:0 -98px;}
+.float_r .mt15 span {cursor:pointer;display:inline-block;margin-right:8px;}
+.float_r .mt15 span#follow_span {margin-top:-5px;}
+
+/*图集评论的回复样式*/
+.comment_hf{padding-left: 4px;margin-bottom: 10px;}
+.comment_hf .hf_top{background: url(http://img.to8to.com/front_end/bg/comment_bg.jpg) no-repeat -4px -10px;width: 550px;height: 10px;}
+.comment_hf .hf_center{border: 1px solid #cccccc;border-top: none;border-bottom: none;background-color: #efefef;width: 548px;}
+.comment_hf .hf_center input{float:right;margin-right:8px;cursor: pointer;line-height: 30px;background: url(http://img.to8to.com/front_end/bg/comment_bg.jpg) no-repeat 0 -59px;width: 97px;height: 30px;border: 0;color: #7e7e7e;font-weight: bolder;}
+.comment_hf .hf_bot{background: url(http://img.to8to.com/front_end/bg/comment_bg.jpg) no-repeat -5px -41px;width: 550px;height: 5px;}
+.comment_hf .hf_center textarea{width: 524px;height: 92px;border: 1px solid #cccccc;margin-left: 11px;margin-top: 10px;}
+.comment_hf .hf_center p{text-align: right;margin-right: 10px;margin-top: 8px;line-height: 24px;font-size: 14px;color: #595959;}
+
+/*内页右侧*/
+.w237{float:right;width:237px;}
+div.right3ColBoxTitle {border-bottom:1px dashed #cbcbcb;font-weight: bold;font-size: 14px;padding-bottom: 10px;text-align: left;background:#f2f2f2;background:#fff;line-height:30px;margin-bottom:10px;}
+div.hzCommunityTitle {color:#767676;padding-bottom: 7px;}
+div.hzCommunityTopContributorList {overflow: hidden;}
+a.disabledLink {color: grey;cursor: default;text-decoration: none;}
+.weekLink {padding: 0 9px;}
+div.hzCommunityTopContributorEntry {clear: both;height: 25px;margin-bottom: 1px;}
+div.hzCommunityRank {background-color:#fff;float: left;font-size: 13px;font-weight: bold;height: 25px;line-height: 25px;margin-right: 1px;text-align: center;width: 25px;}
+a.hzCommunityUserLink {float: left;height: 25px; width: 25px;}
+div.hzCommunityUserNameDiv {background-color: #fff;display: table;float: left;font-size: 13px;height: 22px;line-height:22px;padding-top:3px;overflow: hidden;table-layout: fixed;width: 140px;}
+div.fix_ie{*width:140px;}
+a.hzCommunityUserNameLink {display: table-cell;line-height: 100%;padding-left: 10px;text-align: left;vertical-align: middle;}
+a.colorLink, .colorLink {color: #3D8901;}
+div.hzCommunityRankChange {float: left;height: 25px;width: 25px;}
+div.hzCommunityRankChange span{display: block;}
+
+.right3ColBox .gold_title{font-size:14px;color:#656565;font-weight:bold;height:30px;line-height:30px;margin-bottom:10px;}
+.right3ColBox .gold_head_photo{width:30px;height:30px;float:left;}
+.right3ColBox .gold_msg{width:180px;height:30px;float:right}
+.right3ColBox .gold_msg_content{padding:5px 0px;border-bottom:1px dashed #ccc;overflow:hidden;margin-bottom:5px;overflow:hidden;}
+.right3ColBox .author_msg a{color:#3c8801;}
+.right3ColBox .answer_gold{float:left;color:#656565}
+.right3ColBox .gold_msg .qs_title{color:#ff0000;float:right;}
+.right3ColBox .gold_msg p{overflow:hidden;}
+.right3ColBox #new_get_order{overflow:hidden;}
+/*上下一套样式*/
+.pimg{width:121px;height:84px;display:none;position:relative;}
+.PageT{top:400px;position:fixed;height:84px;width:170px;display:none;z-index:100}
+.pagel{float: left;margin-left: 10px;margin-top:20px;width:24px;height:42px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat  -33px -233px;}
+.pager{float: left;margin-left: 10px;margin-top:20px;width:24px;height:42px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131204) no-repeat  -50px -179px;}
+.pagel_on{background-position:0px -232px;}
+.pager_on{background-position:-21px -179px;}
+.cateName{position:absolute;bottom:0px;width:121px;background:#373737;color:#fff;left:0px;height:30px;line-height:30px;text-align:center;filter:alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8;opacity: 0.8;}
+.case_list .list_barrier{z-index:500;position:absolute;top:0px;left:0px;width:100%;height:100%;background:#333;filter:alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity: 0.7;opacity: 0.7;}
+.case_list .list_barrier_em{z-index:1000;position: absolute;top: 0px;left: 0px;padding:0px 35px;line-height:60px;color:#fff;background:#1bbc9b;font-style:normal;display:none;border-radius:5px;cursor:pointer;}
+
+.case_list .col_wrap {margin: 0 auto;width: 662px;overflow: hidden; position: relative;}
+.case_list .new_xlarge .wrap1{ position: absolute; top: 10px; right: 10px;}
+.case_list .col_wrap .wrap1{ position: absolute; top: 10px; right: 10px;}
+.case_list .col_wrap .col_p{color: #666;margin-top: 13px;line-height: 20px; }
+.case_list ul:after{ clear: both; content: ''; display: block;}
+.thumb_barrier{position:absolute;width:214px;height:214px;z-index:500;background:#333;filter:alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity: 0.7;opacity: 0.7;}
+.thumb_barrier_em{position:absolute;z-index:888;cursor:pointer;background:#1bbc9b;color:#fff;font-style:normal;padding:5px 20px;margin:auto;border-radius:5px;line-height:30px;margin-top:100px;margin-left:34px;display:inline-block;}
+.atlas_pic_list{ float:left; width:214px; line-height:18px; margin-right:10px; text-align:left;}
+.atlas_pic_list .img{ position:relative; margin-bottom:3px; float:left; width:214px; height:214px; overflow:hidden;}
+.atlas_pic_list .by_who{ position:absolute;z-index:2; bottom:5px; right:5px; background:#fff; padding:1px 2px; color:#000;filter:alpha(opacity=90); -moz-opacity:0.7; -khtml-opacity: 0.7;opacity: 0.7;}
+.atlas_pic_list .by_who a{color:#000;}
+.atlas_pic_list .by_who a:hover{ text-decoration:underline;}
+.atlas_pic_list .ahoveradd{ left:13px; bottom:5px; width: 207px;height:50px;}
+.atlas_pic_list .newleft{left:15px;}
+/**灵感图集内页样式end
+
+
+/* 新版分页 css */
+
+/* 分页css END */
+
+/* 套图列表页面css */
+.crumbs{margin:15px 0px;color:#333333;*margin:30px 0px;_margin:30px 0px;clear:both;overflow: hidden;zoom: 1;}
+.fiterbox{background:#fff;width:100%;padding:10px 0px;}
+.fiterbox .fiterList{width:1110px;margin:auto;}
+.fiterbox .fiterList .fiterLine{line-height:20px;margin:15px 0px;overflow:hidden;zoom:1;}
+.fiterbox .fiterList .fiterLine .title{font-size:14px;color:#333333;font-weight:bold;float:left;}
+.fiterbox .fiterList .fiterLine .selectLsist{float:left;color:#555555;width:870px;white-space: nowrap;}
+.fiterbox .fiterList .fiterLine .selectLsist a{float:left;margin:0px 15px 4px 15px;height:25px;text-align:left;padding:0px 0px 0px 5px;line-height:25px;}
+.fiterbox .fiterList .fiterLine .selectLsist .onselect{border-radius:5px;background:#B28850;padding:0px 5px;height:25px;color:#fff;line-height:25px;}
+.fiterbox .fiterList .fiterLine .selectLsist a span, .fiterbox .fiterList .fiterLine .selectLsist a em{float:left;}
+.fiterbox .fiterList .fiterLine .selectLsist .select{margin:0px 5px;display:inline-block;width:14px;height:20px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif?20140507) no-repeat -114px -147px;}
+.caseImageList{width:1210px;margin-top:10px;position: relative;}
+.caseImageList .caseList{width:282px; height: 408px;  float:left;margin:0 17px 20px 0;background:#fff; display: block;}
+.caseImageList .caseList .caseIntroduce{padding:15px;}
+.caseImageList .caseList .caseIntroduce .caseTitle{font-size:14px;color:#333333;margin-bottom:10px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.caseImageList .caseList .caseIntroduce .caseProperty{margin-bottom:10px;height:15px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.caseImageList .caseList .caseIntroduce .caseProperty .casePrice{color:#B28850;}
+.caseImageList .caseList .caseIntroduce .caseProperty .delimiter{margin:0px 8px;}
+.caseImageList .caseList .delimiter_s{height:0px;border-bottom:1px solid #e6e6e6;}
+.caseImageList .caseList .caseIntroduce .caseView{overflow:hidden;zoom:1;}
+.caseImageList .caseList .caseIntroduce .caseView span{float:left;margin-right:10px;}
+.caseImageList .caseList .caseIntroduce .caseView em{float:left;width:14px;height:14px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif?2014050702) no-repeat;}
+.caseImageList .caseList .caseIntroduce .caseView .views em{background-position:0px -168px;width:16px;}
+.caseImageList .caseList .caseIntroduce .caseView .imgNums em{background-position:-19px -168px;}
+.caseImageList .caseList .caseIntroduce .caseView .collections em{background-position:-37px -168px;}
+.caseImageList .caseList .caseAuthor{height:22px;padding:10px 15px;position: relative;z-index: 20;}
+.caseImageList .caseList .caseAuthor .authorHeadPhoto img{border-radius:10px;}
+.caseImageList .caseList .caseAuthor .authorNick{ width: 220px; height:22px;line-height:22px;margin-left:10px;color:#333333; overflow: hidden; text-overflow:ellipsis; white-space:nowrap;}
+.caseImageList .caseList .caseAuthor .authorNick a{color:#333333;}
+.caseImageList .caseList .caseAuthor .authorNick a:hover{color:#333333;text-decoration:underline;}
+.ellipsis{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.userInfoFrame{width:335px;height:152px;padding:15px 0px;background:#fff;position:absolute;border:1px solid #cbcbcb;}
+.userInfoFrame .middleFrame{width:300px;margin:auto;position:relative;}
+.userInfoFrame .middleFrame .userProperty{float:right;width:185px;}
+.userInfoFrame .middleFrame .userProperty ul li{color:#999999;line-height:22px;}
+.userInfoFrame .middleFrame .userProperty .userName{color:#333333;font-size:14px;font-family:'微软雅黑';line-height:25px;height:25px;overflow:hidden;word-break:break-all;}
+.userInfoFrame .middleFrame .userProperty .designPrice span{color:#B28850;}
+.userInfoFrame .middleFrame .userProperty .userMedal{margin-bottom:15px;}
+.medal{float:left;margin-right:5px;width:42px;height:20px;background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?201410095) no-repeat;}
+.vip{background-position:0px -268px;}
+.qy_vip{background-position:-55px -440px;}
+.fam{background-position:-56px -268px;}
+.xinrui{background-position: 0px -440px;}
+.elite{background-position:-111px -268px;}
+.userInfoFrame .middleFrame .buttons{margin-top:15px;}
+.reservation{cursor:pointer;top:20px;width:102px;height:33px;line-height:33px;background:#e94c3d;border-radius:5px;text-align:center;color:#fff;font-size:14px;font-family:'微软雅黑';}
+.reservation:hover{background:#f77071;color: #fff;}
+.userInfoFrame .middleFrame .reserveBtn{float:left;}
+.userInfoFrame .middleFrame .buttons .followBtn{padding:2px 15px;border:1px solid #e6e6e6;float:right;margin-top:5px;color:#999999;}
+.userInfoFrame .middleFrame .buttons .followBtn:hover{color:#B28850;}
+.userInfoFrame .middleFrame .buttons .followBtn span{font-size:16px;}
+.userInfoFrame .sharp{position:absolute;width:13px;height:9px;background:url(http://img.shejiben.com/front_new/bg/newworks_bg.gif?20140430) no-repeat -56px -171px;top:182px;left:25px;}
+.recTagList{margin-top:15px;}
+.recTagList li{float:left;margin-right:20px;color:#999999;height:30px;line-height:30px;}
+.recTagList li a{color:#999;}
+.recTagList a:hover{text-decoration:underline;}
+/* 套图列表页面css end */
+
+
+/* 网咖图库二维码 */
+.shejiben_qr_code{float: left; background: url(http://img.shejiben.com/front_new/bg/shejiben_qr_code.jpg?20141010);width: 175px;height: 160px;margin-top: 10px;}
+.to8to_qr_code{float: left; background: url(http://img.shejiben.com/front_new/bg/to8to_qr_code.jpg?20141010);width: 175px;height: 160px;margin-top: 10px;}
+/* 网咖图库二维码 END*/
+
+/* 友情链接 start */
+.ask_links {width:990px;margin:0 auto;color:#bfc1c0;clear:both;}
+.ask_links .itemModule {width:100%;float:left;height:auto;margin:32px 0 0 0;overflow:hidden;}
+.ask_links .itemModule .itemName {height:24px;line-height:24px;float:left;margin:0 12px;font-size:20px;font-weight: bold;color:#ababab;font-family: "微软雅黑","宋体";}
+.ask_links .itemModule .itemTips {height:20px;line-height: 20px;border-bottom:1px solid #d8d8d8;width:870px;float:right;padding-right:10px;}
+.ask_links .itemModule .itemTips p.right {float:right;}
+.ask_links .itemModule .itemTips p.right2 {color:#8d8b8c}
+.ask_links .itemModule .itemTips p.right2 em {padding:0 8px;}
+.ask_links .itemModule .itemTips p.right2 a {color:#8d8b8c}
+.ask_links .itemModule .itemTips p.right2 a:hover{color:#df3132;}
+.ask_links .itemModule .itemTips p span {font-weight: bold;color:#dd3431;}
+.ask_links .itemModule .friendLinkModule {width:990px;overflow:hidden;padding:24px 0;}
+.ask_links .itemModule .friendLinkModule a {float:left;color:#333;margin:0px 8px 5px;word-break:break-all;white-space:nowrap;line-height:120%;color:#8d8b8c;}
+/* 友情链接 end */
+
+/* 热门效果图,友情链接,最新推荐选项卡效果 */
+.bottom_tab_hd{width:1180px;height:33px; padding-top:90px;font-size:12px;color:#666;border-bottom:1px solid #e0e0e0;clear: both;}
+.bottom_tab_hd p{line-height:32px; float: left; width: 70px; height:33px; text-align: center; margin-right: 30px;cursor:pointer;border-bottom: 1px solid #e0e0e0;}
+.bottom_tab_hd .cur{border-bottom:1px solid #B28850;}
+.bottom_tab_body{width:1180px; height:90px; margin-top:14px;white-space: nowrap;}
+.bottom_tab_body ul{display:none;}
+.bottom_tab_body .tabed{display:block;}
+.bottom_tab_body ul li{float:left;line-height:24px;margin-right:20px;color:#999;}
+.bottom_tab_body ul li a{color:#999;}
+.bottom_tab_body ul li:hover a,.bottom_tab_body ul li:hover span{color:#666;}
+/*400电话*/
+.call400phone{padding: 3px 0 0 0;position: relative;margin-left:112px;}
+.call400phone span{background:url(http://img.shejiben.com/my/phone_pic.png?20150113) no-repeat -37px -8px;width: 17px;height: 17px;display: inline-block;float:left;margin: 4px 5px 0 0;}
+.call400phone p{color:#000;font-size: 16px;font-family: "Arial";}
+.call400phone p em{font-family: "Microsoft Yahei";}
+.call400phone:hover .notice{display:block;}
+.call400phone .notice{display:none; position:absolute; bottom:20px; left:2px; width:190px;}
+.call400phone .notice p{border:1px solid #f3cecb;width:auto;background: #fffdee;color:#666;font-size: 12px;line-height:20px;margin:0;padding:7px 10px;}
+.call400phone .notice span{background:url(http://img.shejiben.com/my/phone_pic.png?20150113) no-repeat -81px -13px;width: 10px;height: 6px;margin:-1px 0 0 20px;}
+
+
+/* 新增发需求表单 20150824*/
+#zsjForm{ width: auto; height: 317px; position:absolute; top: 330px;left:0;background:#fff; z-index: 100; clear: both;}
+.input_form {width:155px;padding:10px;}
+.input_form .input_form_header {background:#fff;font-size: 14px; color: #333;font-weight: bold;line-height: 23px;}
+.input_form .total {font-size: 12px; color: #999; margin-top:3px;padding-bottom: 20px;}
+.input_form .box{ width: 100%; height:auto; position: relative;margin-bottom: 10px;}
+.input_form .box .default_value{ position: absolute; font-size: 12px; left: 11px; top: 13px;color: #999999;}
+.input_form .box .input_txt{width: 153px; border: 1px #ddd solid; height: 38px; line-height: 36px;  font-size: 14px; outline: none;text-indent: 10px;}
+.input_form .box select{ width: 308px; border: 1px #ddd solid; height: 40px;  outline: none; font-size: 14px; padding: 10px 0 10px 10px; color: #666666;}
+.input_form .box .select_l,.form_content .input_form .box #User_Shen{ width: 74px;height: 40px; font-size: 12px;}
+.input_form .box .select_r,.form_content .input_form .box #User_City{ width: 74px;margin-left: 7px;line-height: 40px;font-size: 12px;}
+.input_form .box .smbmit_btn{ width: 100%; height: 40px; border: none; outline: none; background: #B28850; cursor: pointer; font-size: 16px; color: #FFF;}
+.input_form .box .smbmit_btn:hover{ background: #f77071;}
+.input_form .box .input_txt_area{ width: 137px; height: 14px; padding: 12px 10px 12px 0; margin-left: 11px;}
+.input_form .box .value_area{ left: 23px; }
+.input_form .box .msg{ width:100%; height: 20px; display:none; border-radius: 5px; height: 25px; line-height: 25px; margin-top: 5px;}
+.input_form .box .msg_error{ width: auto; display: block; border: 1px solid #faafaf; height: 25px; background: #ffeded;}
+.input_form .box .msg_error em{width: 15px; height: 15px; display: block; float: left; margin:5px 6px 0 5px; background:url("http://img.shejiben.com/global.png") -214px -125px;}
+.input_form .box .msg_error p{ float: left; line-height:27px;}
+.input_form .box .unit{ width: auto; height: auto; display: block; position: absolute; right: 10px; top:14px; font-size: 14px;}
+.input_form .box_l{ width: 74px; float: left;}
+.input_form .box_l .msg{width: 152px; margin-left:0; float: none;}
+.input_form .box_r{ width: 80px; float: left;}
+.input_form .box_r .msg{ margin-left: -75px; float: none;}
+.tags_content_left #zsjForm{ top: 755px;}
+
+
+/*发需求成功后的弹窗*/
+.popupMask{ width: 100%; height:100%; background: #000; opacity: 0.7;filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity:0.7; opacity: 0.7; position: fixed; top:0; left: 0; z-index: 1000; display: none;}
+.popup_wrapz .column_name .btn_close , .popup_wrapz .submit_status .icon { background:url("http://img.shejiben.com/global_icon.png"); }
+.popup_wrapz{ position: fixed; z-index: 1001; top:50%; left:50%; margin:-132px 0 0 -223px;background: #fff;padding:0;}
+.popup_wrapz .column_name{ background: #333; height: 40px; line-height: 38px; padding: 0 15px;}
+.popup_success{ width: 445px; padding-bottom: 50px;}
+.popup_wrapz .column_name .name{ float: left; color: #999; font-family: '微软雅黑'; font-size: 16px;}
+.popup_wrapz .column_name .btn_close{ width: 10px; height: 10px; float:right; background-position:-61px -128px; margin-top: 15px; cursor: pointer;}
+.popup_wrapz .submit_status{ width: 345px; margin:30px 50px 0; }
+.popup_wrapz .submit_status .icon{ width: 50px; height: 48px; float: left;  }
+.popup_wrapz .submit_status .icon_sucess { background-position:  -4px -129px; margin-top: 7px;}
+.popup_wrapz .submit_status .show_msg{ width: 280px; float: right;}
+.popup_wrapz .submit_status .show_msg .title{ width: 100%; font-size: 24px; font-family: '微软雅黑';}
+.popup_wrapz .submit_status .show_msg .msg{ width: 100%; line-height: 18px; font-size: 14px; margin: 10px 0 30px;}
+.popup_wrapz .submit_status .btn_ok{width: 80px; height: 36px; line-height: 36px; display: block; background: #B28850;color: #fff;margin:0 auto;text-align: center; font-size: 16px; font-family: '微软雅黑'; border-radius: 3px;clear: both;}
+
+/*图表申请定制表单*/
+#tjForm{ width: auto; position:absolute; top: 368px;right:0;background:#fff; z-index: 100;clear: both;height:291px; }
+.img_content .input_form { width: 219px;  background: #fff; padding: 20px 18px 10px;}
+.img_content .input_form .tlt{font-size: 16px; color: #666; font-weight: bold;margin-bottom: 10px;}
+.img_content .input_form .total em{ color: #B28850; padding: 0 5px;}
+.img_content .input_form .bottom{ font-size: 12px; color: #999;}
+.img_content .input_form .input_form_header{margin-bottom: 7px;}
+.img_content .input_form .total {padding-bottom: 17px;}
+.img_content .input_form .box .input_name{ width: 216px; border: 1px #e3e3e3 solid;}
+.img_content .input_form .box select{ width: 216px; border: 1px #e3e3e3 solid;line-height: 36px;}
+.img_content .input_form .box .select_l,.img_content .form_content .input_form .box #User_Shen{ width: 104px;/* float: left;height: 40px;*//*line-height: 40px;*/}
+.img_content .input_form .box .select_r,.img_content .form_content .input_form .box #User_City{ width: 105px; /*float: left; */margin-left: 10px;height: 40px;}
+.img_content .input_form .box .unit{right: 30px; top:14px;}
+.img_content .input_form .box_l{ width: 104px; float: left;}
+.img_content .input_form .box_l .msg{width: 217px; margin-left:0; float: none;}
+.img_content .input_form .box_r{ width: 105px; float: left;}
+.img_content .input_form .box_r .msg{ margin-left: -104px; float: none;width: 217px;}
+
+/*图集详情修改*/
+/*左侧*/
+.w662,.image_comment{width:662px;float:left;background:#fff;padding:20px 30px 0;font-family: "宋体";color: #333;font-size: 12px;}
+.w662 h4{font-family: "微软雅黑","Microsoft YaHei","Microsoft JhengHei","华文细黑";margin:0;}
+.w662 h4 .c3{position: relative;width: 662px;overflow: hidden;line-height: 25px;height: 25px;word-break:break-all;}
+.w662 h4 .c3 em{display: block;float: left;font-size: 18px;color: #333;}
+.w662 h4 .c3 i.essences{width:30px !important;height:15px;background:url(http://img.shejiben.com/front_new/bg/picks_bg.gif?20131206) no-repeat 0px -305px;display: block;float: left;margin: 6px 0 0 10px;}
+.w662 h4 .vis_col{margin-top: 3px;}
+.w662 h4 .vis_col .visits,.w662 h4 .vis_col .collections{margin-right: 8px;}
+.w662 .changeSize{margin: 10px 0 12px;font-size: 12px;}
+.w662 .changeSize .changeSizeTab,.w662 .changeSize .onSelectBigTab,.w662 .changeSize .onSelectSmallTab{cursor:pointer;position:relative;width:50px;height:21px;line-height:21px;display:inline-block;padding-right:6px;border:1px solid #d1d1d1;margin-left: 6px;}
+.onSelectBigTab,.onSelectSmallTab{color: #B28850;}
+.w662 .changeSize .changeSizeTab em,.onSelectBigTab em,.onSelectSmallTab em{width: 15px;height: 15px;left: 5px;top: 3px;position:absolute;background:url(http://img.shejiben.com/front_new/bg/ranking_bg.png?20150908) no-repeat;}
+.w662 .changeSize .changeSizeTab .big{background-position:-78px -379px;}
+.w662 .changeSize .changeSizeTab .small{background-position:-102px -379px;}
+.w662 .changeSize .changeSizeTab:hover .big,.onSelectBigTab em{background-position:-78px -399px;}
+.w662 .changeSize .changeSizeTab:hover .small,.onSelectSmallTab em{background-position: -102px -400px;}
+.w662 .caseDescription{padding:20px 25px;border:1px solid #d6d6d6;line-height:22px;word-break: break-all;position: relative;margin-bottom: 15px;width: 610px;margin: 10px auto 15px;color: #666;word-wrap:break-word;}
+.w662 .caseDescription .desTitle{color:#666666;position: absolute;width: 200px;text-align: center;top: -9px;background: #fff;font-size: 14px;left: 37px;}
+.w662 .more_img{width: 662px;height: 40px;border:solid 1px #e3e3e3;font-size: 14px;color: #999;margin-bottom: 30px;text-align: center;line-height: 40px;display: block;cursor: pointer;margin-top: 5px;}
+.w662 .more_img:hover{border:solid 1px #B28850;color: #B28850;}
+/*右侧*/
+.w255{float:right;width:255px;font-family: "宋体";position: relative;}
+.w255 .author_info{background:#fff;margin-bottom:10px;}
+.w255 .author_info a.user_img{width:60px;height:60px;border:1px solid #e0dee1;border-radius: 30px;margin: 15px 10px 15px 20px;display: block;float: left;overflow: hidden;}
+.w255 .author_info a.user_img img{width:60px;height:60px;}
+.w255 .author_info .share_icon{margin-left:10px;display: inline-block;background: #ec5657;padding: 2px;color: #fff;border-radius: 2px;}
+.w255 .author_info .abtn{width:80px;height:30px;background:#4b9212;color:#fff;border-radius:2px;text-align:center;line-height:30px;font-weight:bold;font-size:14px;margin-top:-11px;margin-left:10px;}
+.w255 .author_info .col_number{float:right;}
+.w255 .author_info ul{padding-top:20px;}
+.w255 .author_info ul li a.designer_name{font-size: 16px;font-weight: bold;color: #333;display: block;width: 120px;overflow: hidden;height: 18px;line-height: 18px;word-break:break-all;}
+.w255 .author_info ul li .a_show_pl{color: #00a0e8;margin-left: 10px;}
+.w255 .author_info ul li .a_show_pl:hover{color: #B28850;}
+/*.w237Position{position: fixed;top:0;bottom: 350px;}*/
+.img_content{width: 990px;position: relative;}
+.img_content .con_left{width: 722px;float: left;min-height: 700px;}
+
+/* 新版幻灯片 */
+.photo_box_new .icon ,.photo_box_new .reels_msg .column_name .icon_close,.photo_box_new .reels_msg .more_reply .num .icon_arrow_down,
+.photo_box_new .reels_pic .arrow ,.photo_box_new .reels_pic .btn_all .icon ,
+.photo_box_new .reels_msg .user_reservation .tel .notice span{background:url(http://img.shejiben.com/global.png?20151121) no-repeat }
+
+.photo_box_new{ width: 100%;height: 100%; background: #000; position: fixed; z-index: 1102; top: 0; left: 0;}
+.photo_box_new .reels_pic{ width: 1500px; height: 100%; float: left; margin:25px 0 0 25px; position: relative;}
+.photo_box_new .reels_pic .pic{ width: 640px; height: 480px; margin: 0 auto; display: block;}
+.photo_box_new .reels_pic .pic img{ margin: 0 auto; display: none;}
+.photo_box_new .reels_pic .arrow{ width: 74px; height: 74px;position: absolute; cursor: pointer; display: none; top: 50%; margin-top: -37px;}
+.photo_box_new .reels_pic .arrow_left { left: 0;  background-position: -1px -241px ;}
+.photo_box_new .reels_pic .arrow_right { right: 0; background-position: -78px -241px;}
+
+.photo_box_new .reels_pic .btn_all{ width: 100%; height: 34px; line-height: 34px; color: #fff; font-size: 14px; position: absolute; top: 0; left: 0; display: none; cursor: pointer;}
+.photo_box_new .reels_pic .btn_all .btn_share,.photo_box_new .reels_pic .btn_all .case ,.photo_box_new .reels_pic .btn_all .download,
+.photo_box_new .reels_pic .btn_all .collection ,.photo_box_new .reels_pic .btn_all .question{ min-width: 70px; height: 34px; text-align: center; padding: 0 20px; background: #333; border-radius: 5px; float: right; margin-left: 10px; }
+.photo_box_new .reels_pic .btn_all .icon{ display: inline-block; height: 16px; margin-bottom: -5px;}
+.photo_box_new .reels_pic .btn_all a{ color: #fff;}
+.photo_box_new .reels_pic .btn_all .btn_share{ float: left; width: auto; margin-left: 0;}
+.photo_box_new .reels_pic .btn_all .btn_share .btn_name{ float: left;}
+.photo_box_new .reels_pic .btn_all .btn_share #bdshare{ margin-top: 5px;}
+.photo_box_new .reels_pic .btn_all .case .icon_case{ width: 16px; background-position: -158px -215px; }
+.photo_box_new .reels_pic .btn_all .download .icon_download{width: 12px; background-position: -180px -215px;}
+.photo_box_new .reels_pic .btn_all .collection .icon_collection{width: 10px; background-position: -199px -217px;}
+.photo_box_new .reels_pic .btn_all .question .icon_question{width: 10px; background-position: -214px -216px;}
+.photo_box_new .reels_pic .btn_all .btn_share:hover,.photo_box_new .reels_pic .btn_all .case:hover ,.photo_box_new .reels_pic .btn_all .download:hover,
+.photo_box_new .reels_pic .btn_all .collection:hover ,.photo_box_new .reels_pic .btn_all .question:hover{ background: #B28850;}
+
+
+.photo_box_new .reels_msg{ width: 327px; height: 800px; margin:25px 25px 0 0; float: right; background: #fff; padding-bottom: 30px; overflow: hidden;}
+.photo_box_new .reels_msg .column_name{ width: 101%; height: 36px; line-height: 36px; background: #333; color: #fff;}
+.photo_box_new .reels_msg .column_name .title{ font-size: 14px; margin-left: 10px; float: left;}
+.photo_box_new .reels_msg .column_name .icon_close{ width: 12px; height: 12px; float: right; display: block; cursor: pointer; background-position: -60px -126px; margin: 10px 15px 0 0;}
+.photo_box_new .reels_msg .user_msg ,.photo_box_new .reels_msg .user_reservation{ margin: 20px 15px 0; padding-bottom: 20px; border-bottom: 1px #ededed solid;}
+.photo_box_new .reels_msg .user_msg .head{ width: 80px; height: 80px; display: block; float: left; margin-right: 15px;}
+.photo_box_new .reels_msg .user_msg .head img{ width: 80px; height: 80px;}
+.photo_box_new .reels_msg .user_msg .msg{ width: 199px; float: right;}
+.photo_box_new .reels_msg .user_msg .msg .name{ width:100%; height: 18px; line-height: 18px; display: block; overflow: hidden; padding-bottom: 8px;}
+.photo_box_new .reels_msg .user_msg .msg .name a{ max-width: 100px; float: left; margin-right: 5px; font-size: 14px;font-weight: bolder; display: inline-block; height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.photo_box_new .reels_msg .user_msg .msg .name em{ margin-right: 5px;}
+.photo_box_new .reels_msg .user_msg .msg .location ,.photo_box_new .reels_msg .user_msg .msg .price{ width: 100%; height: 14px; display: block; color: #999; margin-top: 10px;}
+.photo_box_new .reels_msg .user_msg .msg .location .icon ,.photo_box_new .reels_msg .user_msg .msg .price .icon{ width: 14px; height: 14px; display: inline-block; margin-right: 10px;}
+.photo_box_new .reels_msg .user_msg .msg .location .icon_location{ width: 12px; height: 15px; background-position: -242px -214px; margin-left:2px; margin-bottom: -4px;}
+.photo_box_new .reels_msg .user_msg .msg .price .icon_price{ width: 14px; height: 14px; background-position: -313px -214px; margin-bottom: -3px; margin-left:2px;}
+.photo_box_new .reels_msg .user_msg .msg .price .icon_house{ width: 14px; height: 14px; background-position: -257px -215px; margin-bottom: -3px;}
+
+
+.photo_box_new .reels_msg .user_reservation { height: 40px;}
+.photo_box_new .reels_msg .user_reservation .btn_reservation{ width: 140px; height: 40px; background: #B28850; border-radius: 4px; text-align: center; line-height: 40px; color: #fff; display: block; float:left; font-size: 16px; cursor: pointer;}
+.photo_box_new .reels_msg .user_reservation .btn_reservation:hover{ background: #f77071;}
+.photo_box_new .reels_msg .user_reservation .tel{ width: 125px; float: right; height: 40px; padding-left: 20px; font-size: 18px; position: relative;}
+.photo_box_new .reels_msg .user_reservation .tel .icon_tel{ position: absolute; left: 0; top: 2px; background-position:-275px -213px;width: 16px;height: 16px;display: block;}
+.photo_box_new .reels_msg .user_reservation .tel .notice{ display: none; position: absolute;width: 204px;font-size: 12px;background: #FFFDEE;border: 1px #F3CECB solid;height: 34px;line-height: 34px;padding: 0 10px; left: -76px; top: -43px; text-align: center;}
+.photo_box_new .reels_msg .user_reservation .tel .notice span{ width: 15px; height: 8px; display: block; background-position:-294px -214px; position: absolute;; top: 34px; left: 77px; }
+.photo_box_new .reels_msg .user_reservation .tel:hover .notice{ display: block;}
+.photo_box_new .reels_msg .questions{ margin: 20px 15px 0; overflow: hidden;}
+.photo_box_new .reels_msg .questions .title{ color: #333; font-size: 14px; height: 14px; width: 100%;}
+.photo_box_new .reels_msg .questions .icon_question{ width: 12px; height: 12px; display: block; float: left; background-position: -227px -216px; margin: 2px 5px 0 0; }
+.photo_box_new .reels_msg .question_list{ width: 100%; height: auto;}
+.photo_box_new .reels_msg .question_list li{ margin-top: 20px;}
+.photo_box_new .reels_msg .question_list li .detail{ color:#1262b2;width: 100%;height: auto;display: block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; padding-bottom: 10px;}
+.photo_box_new .reels_msg .question_list li .reply{ width: 100%; height: 14px;} 
+.photo_box_new .reels_msg .question_list li .reply .icon_arrow_right{ width: 6px; height: 14px; line-height: 14px; display: inline-block; display: inline-block;font-family: '宋体';margin-left: 10px; color: #999;}
+
+.photo_box_new .reels_msg .more_reply{ width: 100%; height: 14px; position: relative; margin-top: 14px; display: block;}
+.photo_box_new .reels_msg .more_reply .reply_string{ width: 100%; height: 1px; position: absolute;top: 7px; left: 0; background: #ededed;}
+.photo_box_new .reels_msg .more_reply .num{ width: 130px; height: 14px; position: absolute; left: 50%; margin-left: -65px; top: 0; z-index: 2; background: #fff; text-indent: 5px; cursor: pointer;}
+.photo_box_new .reels_msg .more_reply .total{ margin: 0 2px;}
+.photo_box_new .reels_msg .more_reply .num .icon_arrow_down{ width: 10px; height: 6px; display: inline-block; background-position: -170px -150px; margin-left: 10px;}
+
+.photo_box_new .cur_url{ width: auto; position: absolute; bottom: 0; right: 0; text-align: right; height: 25px; line-height: 25px; margin-right: 30px;}
+
+/*高清大图右侧-模拟滚动条样式start*/
+#lbAnchors .lbTitle{position:relative;height:35px;background:#333333;color:#fff;line-height:35px;font-size:14px;font-family:'微软雅黑';padding-left:10px;width:327px; margin-left: -10px;}
+#lbAnchors .lbTitle #closeDialog{position:absolute;width:20px;height:20px;background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140507) no-repeat 0px -333px;right:20px;top:10px;cursor:pointer;}
+#lbAnchors #shower {position:absolute;top:0px;width:324px;}
+#lbAnchors #scroller {position:absolute;right:5px;top:48px;height:150px;width:2px;z-index:10;}
+#lbAnchors #scroll_up, #scroll_down {height:0;overflow:hidden;}
+#lbAnchors #scroll_bar {width:2px;height:50px;position:relative;left:0;top:0;border:1px solid #ccc;background:#fff;}
+#lbAnchors #userData{padding:20px 0px 20px 0;overflow:hidden;zoom:1;}
+#lbAnchors .btns{margin-top:10px;}
+#lbAnchors .designPrice .dicon{margin-right:10px;float:left;width:10px;height:15px;background:url(http://img.shejiben.com/front_new/bg/blog_icon.gif?20140527) no-repeat 0px -291px;}
+#lbAnchors .designPrice .dp em{color:#e94c3d;}
+#lbAnchors .designPrice{float:left;margin-left:0px;margin-top:5px;font-size:12px;}
+/*高清大图右侧-模拟滚动条样式end*/

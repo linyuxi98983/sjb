@@ -1,0 +1,134 @@
+﻿.m-user-title li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.f-padd-l10 {
+  padding-left: 10px;
+}
+.f-font-18b-w {
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+.m-user-title li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.f-padd-l10 {
+  padding-left: 10px;
+}
+.f-font-18b-w {
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+.user-center-order .m-user-body {
+  margin: 0;
+  border: 0;
+  background: #fff;
+}
+.m-user-body {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  display: block;
+  background: #fffceb;
+}
+.user-center-order .m-table-order-flow {
+  width: 100%;
+  font-family: \5b8b\4f53;
+}
+table {
+  max-width: 100%;
+}
+.user-center-order .m-table-order-flow .m-head-table {
+  border: 0;
+}
+.user-center-order .m-table-order-flow th {
+  height: 28px;
+  background-color: #f5f5f5!important;
+}
+.user-center-order .m-table-order-flow th, .user-center-order .m-table-order-flow td {
+  text-align: center;
+  line-height: 20px;
+  background: url(../bg_user_center_order_line_ea11c80.png) no-repeat 100% 50%;
+}
+caption, th {
+  text-align: left;
+  font-weight: 400;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+Inherited from 
+.user-center-order .m-table-order-flow {
+  width: 100%;
+  font-family: \5b8b\4f53;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.user-center-order .m-table-order-flow .order-number {
+  height: 30px;
+}
+.user-center-order .m-table-order-flow .order-number td {
+  height: 30px;
+  background: #fffceb;
+  padding-left: 10px;
+  text-align: left;
+}
+.user-center-order .m-table-order-flow .order-detail {
+  border-bottom: 2px solid #a92224;
+}
+.user-center-order .m-table-order-flow .order-detail-pic {
+  text-align: left;
+  padding-left: 10px;
+}
+.user-center-order .m-table-order-flow td {
+  height: 80px;
+  text-align: center;
+}
+.user-center-order .m-table-order-flow .order-detail-pic {
+  text-align: left;
+  padding-left: 10px;
+}
+.user-center-order .m-table-order-flow td {
+  height: 80px;
+  text-align: center;
+}
+.user-center-order .order-detail-pic img {
+  width: auto;
+  height: 52px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+}
+.user-center-order .m-table-order-flow a {
+  font-size: 12px;
+}
+.user-center-order .order-tracking {
+  cursor: pointer;
+  color: #ff7b7e;
+}
+.user-center-order .m-table-order-flow .order-detail .u-order-tracking {
+  width: 520px;
+  background: #fffceb;
+  border: 1px solid #ddd;
+  position: absolute;
+  margin: -1px 0 0 -455px;
+  font-family: \5b8b\4f53;
+  display: none;
+  padding: 3px 10px 0;
+  z-index: 5;
+}

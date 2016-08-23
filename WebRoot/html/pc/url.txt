@@ -1,0 +1,27 @@
+html/pc/index.html  -- 首页
+
+html/pc/case/case.html  -- 设计案例-家装案例/工装案例
+html/pc/case/case-detail.html  --设计案例-案例详情
+html/pc/case/case-explain.html  -- 设计案例-案例解析
+
+html/pc/pics/pics-case.html  --装修图库-家装图库/工装图库
+html/pc/pics/pics-topic.html  --装修图库-图库专题
+
+html/pc/user/login.html  --登陆
+html/pc/user/register.html  --注册
+html/pc/user/other_city.html  --选择其他城市
+html/pc/user/pop_login.html  --登录弹出框
+
+html/pc/designer/decorate-apply.html  --申请定制
+html/pc/designer/order-home.html  -- 设计师-接单大厅
+html/pc/designer/order-detail.html  --设计师-接单大厅/接单详情
+html/pc/designer/designer-index.html  --找设计师
+html/pc/designer/designer-home.html  --设计师-个人中心
+html/pc/designer/designer-info.html  --设计师-个人中心-个人资料
+html/pc/designer/designer-personal.html  --设计师-个人中心-个人主页
+html/pc/designer/designer-works.html  --设计师-个人中心-我的作品
+html/pc/designer/add-works.html  --设计师-个人中心-发布作品
+html/pc/designer/designer-news.html --设计师-个人中心-我的消息
+
+
+

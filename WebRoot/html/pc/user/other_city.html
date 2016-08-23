@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>其他城市选择</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+      a:hover{color:#f00;text-decoration:none;outline: none;} ul, li, ol, dl,
+      dt {list-style: none;} *, html, p {margin: 0;padding: 0;} html, body {background:
+      #FAFAF6;font-size: 12px;color: #767676;font-family: Arial,Helvetica,sans-serif;}
+      .dialog_bg{width:100%;height:100%;background:#000;opacity:0.7;position:fixed;top:0;filter:alpha(opacity=70);
+      -moz-opacity:0.7; -khtml-opacity: 0.7;font-family: 'Microsoft YaHei' !
+      important;color: #828282;z-index: 1000;} /* 其他城市 */ .dialog_city{ width:
+      100%; height: 100%; top: 50%; left: 50%; background: rgb(255, 255, 255);
+      overflow: hidden; z-index: 9999; padding-top: 10px; } .dialog_city a{ text-decoration:none;
+      color:#666; cursor:pointer; } .dialog_city .city_cont { padding: 10px 15px
+      25px 20px; } .city_cont .close{ float:right; cursor: pointer; } .city_cont
+      .hot_city{ overflow: hidden; padding-bottom: 16px; border-bottom: 1px dashed
+      #E6E6E6; } .dialog_city label{ float:left; font-size: 14px; font-weight:
+      bold; color:#666; margin-right: 28px; } .city_cont .hot_city a{ float:left;
+      } .city_cont .hot_city a{ float:left; width: 32px; text-align: center;
+      } .city_cont .chosce_city{ padding-bottom: 20px; margin-top: 20px; border-bottom:
+      1px dashed #E6E6E6; margin-bottom: 20px; } .city_cont .chosce_city label{
+      margin-right: 9px; margin-top: 4px; } .city_cont .chosce_city select{ width:
+      117px; height: 21px; margin-left: 10px; color:#666; padding: 0px; height:
+      25px; line-height: 25px; } .city_cont .chosce_city .btn{ padding: 5px 20px;
+      background: #B28850; border-radius: 3px; color: #fff; cursor: pointer;
+      margin-left: 10px; border: 0; } .mor_city{ overflow: hidden; margin-bottom:
+      10px; color:#666; } .mor_city a{ float:left; margin-right: 10px; margin-bottom:
+      10px; }
+    </style>
+  </head>
+  
+  <body>
+    <!--其他城市 弹出框 -->
+    <div class="dialog_city">
+      <div class="city_cont">
+        <div class="hot_city">
+          <label>热门城市</label>
+          <a href="/sjb/pc/designer/designer!index.action" class="addrcity on" target="_parent">全国</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=北京" class="addrcity" target="_parent">北京</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=上海" class="addrcity" target="_parent">上海</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=广州" class="addrcity" target="_parent">广州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=深圳" class="addrcity" target="_parent">深圳</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=南京" class="addrcity" target="_parent">南京</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=天津" class="addrcity" target="_parent">天津</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=西安" class="addrcity" target="_parent">西安</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=杭州" class="addrcity" target="_parent">杭州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=成都" class="addrcity" target="_parent">成都</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=重庆" class="addrcity" target="_parent">重庆</a>
+        </div>
+        <form class="selcity" method="post">
+          <div class="chosce_city">
+            <label>按省份选择</label>
+            <select id="User_Shen" name="city" onchange="changeProvince('User_Shen','User_City','User_Town');">
+              <option value="">省/市
+              </option>
+              <option value="安徽">
+                A 安徽
+              </option>
+              <option value="北京">
+                B 北京
+              </option>
+              <option value="重庆">
+                C 重庆
+              </option>
+              <option value="福建">
+                F 福建
+              </option>
+              <option value="广西">
+                G 广西
+              </option>
+              <option value="贵州">
+                G 贵州
+              </option>
+              <option value="广东">
+                G 广东
+              </option>
+              <option value="甘肃">
+                G 甘肃
+              </option>
+              <option value="海南">
+                H 海南
+              </option>
+              <option value="湖北">
+                H 湖北
+              </option>
+              <option value="黑龙江">
+                H 黑龙江
+              </option>
+              <option value="河南">
+                H 河南
+              </option>
+              <option value="河北">
+                H 河北
+              </option>
+              <option value="湖南">
+                H 湖南
+              </option>
+              <option value="江苏">
+                J 江苏
+              </option>
+              <option value="吉林">
+                J 吉林
+              </option>
+              <option value="江西">
+                J 江西
+              </option>
+              <option value="辽宁">
+                L 辽宁
+              </option>
+              <option value="内蒙古">
+                N 内蒙古
+              </option>
+              <option value="宁夏">
+                N 宁夏
+              </option>
+              <option value="澳门">
+                O 澳门
+              </option>
+              <option value="青海">
+                Q 青海
+              </option>
+              <option value="四川">
+                S 四川
+              </option>
+              <option value="陕西">
+                S 陕西
+              </option>
+              <option value="上海">
+                S 上海
+              </option>
+              <option value="山东">
+                S 山东
+              </option>
+              <option value="山西">
+                S 山西
+              </option>
+              <option value="台湾">
+                T 台湾
+              </option>
+              <option value="天津">
+                T 天津
+              </option>
+              <option value="西藏">
+                X 西藏
+              </option>
+              <option value="香港">
+                X 香港
+              </option>
+              <option value="新疆">
+                X 新疆
+              </option>
+              <option value="云南">
+                Y 云南
+              </option>
+              <option value="浙江">
+                Z 浙江
+              </option>
+            </select>
+            &nbsp;
+            <select id="User_City" name="ncity">
+              <option value="">市/地区</option>
+            </select>
+            <input type="hidden" id="User_Town" value="">
+            <input type="button" id="submitbtn" value="确定" class="btn">
+          </div>
+        </form>
+        <div class="mor_city">
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=武汉" class="addrcity" target="_parent">武汉</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=佛山" class="addrcity" target="_parent">佛山</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=东莞" class="addrcity" target="_parent">东莞</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=沈阳" class="addrcity" target="_parent">沈阳</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=青岛" class="addrcity" target="_parent">青岛</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=大连" class="addrcity" target="_parent">大连</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=宁波" class="addrcity" target="_parent">宁波</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=济南" class="addrcity" target="_parent">济南 </a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=长春" class="addrcity" target="_parent">长春</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=厦门" class="addrcity" target="_parent">厦门</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=郑州" class="addrcity" target="_parent">郑州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=长沙" class="addrcity" target="_parent">长沙</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=福州" class="addrcity" target="_parent">福州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=昆明" class="addrcity" target="_parent">昆明</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=兰州" class="addrcity" target="_parent">兰州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=苏州" class="addrcity" target="_parent">苏州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=无锡" class="addrcity" target="_parent">无锡</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=南昌" class="addrcity" target="_parent"> 南昌</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=贵阳" class="addrcity" target="_parent">贵阳</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=南宁" class="addrcity" target="_parent">南宁</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=合肥" class="addrcity" target="_parent">合肥</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=太原" class="addrcity" target="_parent">太原</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=唐山" class="addrcity" target="_parent">唐山</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=烟台" class="addrcity" target="_parent">烟台</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=泉州" class="addrcity" target="_parent">泉州</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=石家庄" class="addrcity" target="_parent">石家庄</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=哈尔滨" class="addrcity" target="_parent">哈尔滨</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=呼和浩特" class="addrcity" target="_parent">呼和浩特</a>
+          <a href="/sjb/pc/designer/designer!index.action?searchByArea=乌鲁木齐" class="addrcity" target="_parent">乌鲁木齐</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/GlobalProvinces.js"></script>
+    <script type="text/javascript">
+      //城市类
+      var gpm = new GlobalProvincesModule;
+      gpm.def_province = ["省/市", ""];
+      gpm.def_city1 = ["市/地区", ""];
+      gpm.def_city2 = ["县/市", ""];
+      gpm.initProvince(document.getElementById('User_Shen'));
+      gpm.initCity1(document.getElementById('User_City'), gpm.getSelValue(document.getElementById('User_Shen')));
+      //重置弹框样式
+      parent.$("#dialogBox").css('border', 'none');
+      $(function(){
+      	//热门城市
+      	$(".hot_city a").click(function(){
+      		var city_name = $(this).text();
+      	});
+      	//更多城市
+      	$(".mor_city a").click(function(){
+      		var city_name = $(this).text();
+      	});
+		//确定按钮
+		$("#submitbtn").click(function(){
+			var city_name=$("#User_City").val();
+			if(city_name==""){
+				alert("请选择城市");
+				return false;
+			}
+			parent.window.location.href="/sjb/pc/designer/designer!index.action?searchByArea="+city_name
+		});   
+      });
+    </script>
+  </body>
+</html>
